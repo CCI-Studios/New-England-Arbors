@@ -54,19 +54,24 @@ $analytics = "UA-XXXXX-X"; // FIXME Update to client ID
 
 <body class="<?= $menu ?>">
 
-<div id="header">
+<div id="header"><div class="container">
+	<div id="headerTop">
+		<jdoc:include type="modules" name="headerTop" style="xhtml" />
+		<div class="clear"></div>
+	</div>
+	<div class="clear"></div>
 	<jdoc:include type="modules" name="header" style="xhtml" />
-</div>
+</div></div>
 
 <div class="clear"></div>
 
-<div id="masthead">
+<div id="masthead"><div class="container">
 	<jdoc:include type="modules" name="masthead" style="xhtml" />
-</div>
+</div></div>
 
 <div class="clear"></div>
 
-<div id="body">
+<div id="body"><div class="container">
 	<div id="top">
 		<jdoc:include type="modules" name="top" style="xhtml" />
 	</div>
@@ -74,27 +79,27 @@ $analytics = "UA-XXXXX-X"; // FIXME Update to client ID
 		<jdoc:include type="modules" name="sidebar" style="xhtml" />
 	</div>
 	<div id="content">
-		<jdoc:include type="modules" name="content" style="xhtml" />
+		<jdoc:include type="component" />
 		<div id="contentBottom">
 			<jdoc:include type="modules" name="contentBottom" style="xhtml" />
 		</div>
 	</div>
-	<div id="bottom">
+	<div id="bottom"><div class="container">
 		<jdoc:include type="modules" name="bottom" style="xhtml" />
 	</div>
-</div>
+</div></div>
 
 <div class="clear"></div>
 
-<div id="footer">
+<div id="footer"><div class="container">
 	<jdoc:include type="modules" name="footer" style="xhtml" />
-</div>
+</div></div>
 
 <div class="clear"></div>
 
-<div id="copyright">
+<div id="copyright"><div class="container">
 	<jdoc:include type="modules" name="copyright" style="xhtml" />
-</div>
+</div></div>
 
 
 

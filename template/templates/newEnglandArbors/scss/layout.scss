@@ -1,0 +1,48 @@
+/* layout */
+
+//default screen size
+
+@import "_variables.scss";
+
+.container {
+	width: 90%;
+	max-width: 940px;
+	margin: 0 auto;
+	padding: 0 1.041666667%;
+}
+
+#header {
+	border-top: 6px solid $maincolor;
+}
+
+#headerTop {
+	width: auto;
+	float: right;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	background-color: $maincolor;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 8px 11px 11px 16px;
+}
+
+//end of default screen size
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media only screen and (max-width: 767px) {
+	a {}
+	
+	#headerTop {
+		float: none;
+		margin: 0 auto;
+	}
+	
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+}

@@ -1,17 +1,26 @@
 /* elements */
 body, select, input, textarea {
-	color: #444; /* off black */
-	font-family: Helvetica, Arial, sans-serif;
-}
+  color: #444;
+  /* off black */
+  font-family: Goudy Old Style, Helvetica, Arial, sans-serif;
+  font-size: 0.875em;
+  /*14px/16px*/ }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
-h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold; }
 
 a, a:active, a:visited {
-	color: #607890;
-	text-decoration: none;
-}
+  color: #607890;
+  text-decoration: none; }
+
 a:hover {
-	color: #036;
-	text-decoration: underline;
-}
+  color: #036;
+  text-decoration: underline; }
+
+img {
+  max-width: 100%; }
+
+input {
+  height: 25px;
+  border-radius: 10px; }
