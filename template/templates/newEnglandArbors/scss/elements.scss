@@ -1,8 +1,12 @@
 /* elements */
 body, select, input, textarea {
+body {
 	color: #444; /* off black */
 	font-family: Goudy Old Style, Helvetica, Arial, sans-serif;
 	font-size: 0.875em; /*14px/16px*/
+	overflow-x: hidden;
+	background: $maincolor;
+}
 }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
