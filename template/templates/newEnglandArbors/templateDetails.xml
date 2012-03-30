@@ -37,6 +37,7 @@
 		<position>bottom</position>
 		<position>footer</position>
 		<position>copyright</position>
+		<position>mobile-menu</position>
 	</positions>
 
 	<config>
