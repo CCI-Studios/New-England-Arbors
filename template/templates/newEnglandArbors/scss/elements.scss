@@ -7,6 +7,10 @@ body {
 	overflow-x: hidden;
 	background: $maincolor;
 }
+
+select, input, textarea {
+	color: #444; /* off black */
+	font-family: Goudy Old Style, Helvetica, Arial, sans-serif;
 }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
