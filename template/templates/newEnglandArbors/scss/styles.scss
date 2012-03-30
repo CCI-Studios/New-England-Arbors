@@ -26,3 +26,17 @@
 	}
 }
 
+.desktop-only { }
+.mobile-only, .tablet-only, .phone-only { display: none; }
+
+@media only screen and (max-width: 767px) { // cell + table
+	.desktop-only { display: none; }
+	.mobile-only, .tablet-only, .phone-only { display: block; }
+	
+	.show-menu {cursor: pointer;}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) { // phone
+	.desktop-only { display: none; }
+	.mobile-only, .phone-only { display: block; }
+}
