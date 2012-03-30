@@ -58,12 +58,19 @@
 }
 
 .moduletable_hmenu > ul > li {
+.moduletable.logo {
+	float: left;
 	display: inline-block;
 	*display: inline;
 	*zoom: 1;
-	position: relative;
+}
+
+.module.welcome {
+	width: 65.957446809%; // 620/940
+	padding: 0 2.021276596% 0 0; // 20/940 
 	
-	padding: 0 3.409090909%;
+	h3 {margin: 0;}
+	p {margin-top: 0;}
 }
 
 .moduletable.logo {
