@@ -1,0 +1,73 @@
+@import "_variables";
+
+.moduletable_hmenu {
+	
+	> ul {
+		margin: 0;
+		padding: 0;
+		
+		> li {
+			display: inline-block;
+			*display: inline;
+			*zoom: 1;
+			position: relative;
+
+			padding: 0 5px;
+		}
+	}
+	
+	a {color: $maincolor;}
+}
+
+.moduletable_hmenu.primary {
+	
+	float: right;
+	margin-top: 34px;
+	
+	a {
+		font-size: 1.142857143em; // 16/14
+		padding: 0 0 5px 0;
+		&:hover {
+			text-decoration: none;
+			background: url('../images/nav_rollover.png') bottom center no-repeat;
+		}
+	}
+}
+
+.moduletable_hmenu.secondary {
+	text-align: center;
+	
+	li.active a {color: #b1cce1;}
+
+}
+
+@media only screen and (max-width: 767px) { // cell + table
+	a{}
+
+	.moduletable_hmenu.primary {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background: $maincolor;
+		
+		float: none;
+		margin: 20px 0 0 0;
+		font-size: 14px;
+		
+		ul > li {
+			display: block;
+			padding: 0 4px;
+			margin: 10px 0;
+		}
+		
+		ul ul {
+			margin-left: 1em;
+		}
+		
+		a { 
+			color: white;
+			font-size: 1.428571429em;
+		} // 20/14
+	}
+}
