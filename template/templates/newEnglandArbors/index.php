@@ -99,10 +99,11 @@ $analytics = "UA-XXXXX-X"; // FIXME Update to client ID
 <div class="clear"></div>
 
 <div id="copyright"><div class="container">
-	<jdoc:include type="modules" name="copyright" style="xhtml" />
+	&copy; <?php echo date('Y') ?> New England Arbors. All Rights Reserved.<br />
+	<a href="http://ccistudios.com">Site by CCI Studios</a>
 </div></div>
 
-
+</div>
 
 <div class="hidden">
 	<jdoc:include type="modules" name="hidden" style="raw" />
