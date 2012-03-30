@@ -31,6 +31,14 @@
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
+#copyright {
+	background: url('../images/bg_copyrightRepeat.png') top center repeat-x;
+	text-align: center;
+	font-size: 14px;
+	padding: 45px 0 50px;
+	color: #fff;
+	
+	a {color: #fff;}
 }
 
 @media only screen and (max-width: 767px) {
