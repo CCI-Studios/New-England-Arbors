@@ -13,6 +13,13 @@
 
 #header {
 	border-top: 6px solid $maincolor;
+#wrapper {
+	position: relative;
+	width: 100%;
+	left: 0;
+	background: #fff;
+	
+	-webkit-transition: left 0.3s linear;
 }
 
 #headerTop {
