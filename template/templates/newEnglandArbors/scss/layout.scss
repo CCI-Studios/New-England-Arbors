@@ -27,7 +27,12 @@
 	padding: 8px 11px 11px 16px;
 }
 
-//end of default screen size
+#top {
+	padding: 40px 0 25px;
+	border-bottom: 1px solid #e6e6e6;
+	
+	.module {float: left;}
+}
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
