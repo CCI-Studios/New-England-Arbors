@@ -22,9 +22,10 @@
 	-webkit-transition: left 0.3s linear;
 }
 
-#headerTop {
-	width: auto;
-	float: right;
+#header { border-top: 6px solid $maincolor; }
+
+#headerTop { float: right; }
+#headerTop > div {
 	display: inline-block;
 	*display: inline;
 	*zoom: 1;
