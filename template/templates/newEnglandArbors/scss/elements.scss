@@ -6,7 +6,12 @@ body, select, input, textarea {
 }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
-h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+h1, h2, h3, h4, h5, h6 { 
+	color: $maincolor;
+	font-weight: bold; 
+}
+
+.home h3 {font-size: 1.714285714em;}
 
 a, a:active, a:visited {
 	color: #607890;
