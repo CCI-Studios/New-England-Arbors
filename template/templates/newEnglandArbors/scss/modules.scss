@@ -86,15 +86,11 @@
 
 @media only screen and (max-width: 767px) {
 	a{}
-
-	.moduletable_hmenu.primary {
-		float: none;
-		text-align: center;
-		margin: 20px 0 0 0;
-		
-		a {font-size: 1.071428571em;}
-	}
 	
+	.module.welcome {
+		width: 100%;
+	}
+
 	.moduletable.logo {
 		float: none;
 		display: block;
