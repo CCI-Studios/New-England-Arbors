@@ -11,8 +11,6 @@
 	padding: 0 1.041666667%;
 }
 
-#header {
-	border-top: 6px solid $maincolor;
 #wrapper {
 	position: relative;
 	width: 100%;
@@ -42,7 +40,7 @@
 	.module {float: left;}
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+#footer {padding: 30px 0 50px;}
 
 #copyright {
 	background: url('../images/bg_copyrightRepeat.png') top center repeat-x;
@@ -54,8 +52,11 @@
 	a {color: #fff;}
 }
 
-@media only screen and (max-width: 767px) {
-	a {}
+//end of default screen size
+
+@media only screen and (max-width: 767px) {  // phone/table
+	a {} // FIXME get ride of this crap
+	
 	#wrapper.menu-open {left: 100%;}
 	
 	#headerTop {
@@ -65,6 +66,6 @@
 	
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) { // phone
 	
 }
