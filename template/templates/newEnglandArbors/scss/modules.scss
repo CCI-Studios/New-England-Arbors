@@ -1,7 +1,7 @@
 /* @group modules */
-.moduletable {}
-
 @import "_variables";
+
+.moduletable {}
 
 #headerTop {
 	.moduletable {
@@ -33,31 +33,6 @@
 	}
 }
 
-
-/* @primary menu */
-.moduletable_hmenu {}
-
-.moduletable_hmenu.primary {
-	float: right;
-	margin-top: 34px;
-	
-	a {
-		color: $maincolor;
-		font-size: 1.071428571em;
-		padding: 0 0 5px 0;
-		&:hover {
-			text-decoration: none;
-			background: url('../images/nav_rollover.png') bottom center no-repeat;
-		}
-	}
-}
-
-.moduletable_hmenu > ul {
-	margin: 0;
-	padding: 0;
-}
-
-.moduletable_hmenu > ul > li {
 .moduletable.logo {
 	float: left;
 	display: inline-block;
@@ -73,11 +48,15 @@
 	p {margin-top: 0;}
 }
 
-.moduletable.logo {
-	float: left;
-	display: inline-block;
-	*display: inline;
-	*zoom: 1;
+.module.block {
+	width: 28.936170213%; // 272/940
+	background: url('../images/bg_blockGradient.png') bottom left no-repeat;
+	
+	h3 {
+		color: #fff;
+		margin: 0px 0;
+		padding: 0;
+	}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
