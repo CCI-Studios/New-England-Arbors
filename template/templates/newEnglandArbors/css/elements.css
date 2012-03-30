@@ -1,14 +1,25 @@
 /* elements */
-body, select, input, textarea {
+body {
   color: #444;
   /* off black */
   font-family: Goudy Old Style, Helvetica, Arial, sans-serif;
   font-size: 0.875em;
-  /*14px/16px*/ }
+  /*14px/16px*/
+  overflow-x: hidden;
+  background: #00548e; }
+
+select, input, textarea {
+  color: #444;
+  /* off black */
+  font-family: Goudy Old Style, Helvetica, Arial, sans-serif; }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 {
+  color: #00548e;
   font-weight: bold; }
+
+.home h3 {
+  font-size: 1.714285714em; }
 
 a, a:active, a:visited {
   color: #607890;

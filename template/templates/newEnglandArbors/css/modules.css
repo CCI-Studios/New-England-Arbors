@@ -22,42 +22,31 @@
   #headerTop .moduletable:first-child {
     padding: 0; }
 
-/* @primary menu */
-.moduletable_hmenu.primary {
-  float: right;
-  margin-top: 34px; }
-  .moduletable_hmenu.primary a {
-    color: #00548e;
-    font-size: 1.071428571em;
-    padding: 0 0 5px 0; }
-    .moduletable_hmenu.primary a:hover {
-      text-decoration: none;
-      background: url("../images/nav_rollover.png") bottom center no-repeat; }
-
-.moduletable_hmenu > ul {
-  margin: 0;
-  padding: 0; }
-
-.moduletable_hmenu > ul > li {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  position: relative;
-  padding: 0 3.409090909%; }
-
 .moduletable.logo {
   float: left;
   display: inline-block;
   *display: inline;
   *zoom: 1; }
 
+.module.welcome {
+  width: 65.957446809%;
+  padding: 0 2.021276596% 0 0; }
+  .module.welcome h3 {
+    margin: 0; }
+  .module.welcome p {
+    margin-top: 0; }
+
+.module.block {
+  width: 28.936170213%;
+  background: url("../images/bg_blockGradient.png") bottom left no-repeat; }
+  .module.block h3 {
+    color: #fff;
+    margin: 0px 0;
+    padding: 0; }
+
 @media only screen and (max-width: 767px) {
-  .moduletable_hmenu.primary {
-    float: none;
-    text-align: center;
-    margin: 20px 0 0 0; }
-    .moduletable_hmenu.primary a {
-      font-size: 1.071428571em; }
+  .module.welcome {
+    width: 100%; }
 
   .moduletable.logo {
     float: none;

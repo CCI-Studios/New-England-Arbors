@@ -1,0 +1,46 @@
+.moduletable_hmenu > ul {
+  margin: 0;
+  padding: 0; }
+  .moduletable_hmenu > ul > li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    position: relative;
+    padding: 0 5px; }
+.moduletable_hmenu a {
+  color: #00548e; }
+
+.moduletable_hmenu.primary {
+  float: right;
+  margin-top: 34px; }
+  .moduletable_hmenu.primary a {
+    font-size: 1.142857143em;
+    padding: 0 0 5px 0; }
+    .moduletable_hmenu.primary a:hover {
+      text-decoration: none;
+      background: url("../images/nav_rollover.png") bottom center no-repeat; }
+
+.moduletable_hmenu.secondary {
+  text-align: center; }
+  .moduletable_hmenu.secondary li.active a {
+    color: #b1cce1; }
+
+@media only screen and (max-width: 767px) {
+  .moduletable_hmenu.primary {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #00548e;
+    float: none;
+    margin: 20px 0 0 0;
+    font-size: 14px; }
+    .moduletable_hmenu.primary ul > li {
+      display: block;
+      padding: 0 4px;
+      margin: 10px 0; }
+    .moduletable_hmenu.primary ul ul {
+      margin-left: 1em; }
+    .moduletable_hmenu.primary a {
+      color: white;
+      font-size: 1.428571429em; } }

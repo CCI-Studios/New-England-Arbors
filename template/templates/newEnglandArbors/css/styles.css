@@ -23,3 +23,35 @@
   background: #FF5E99;
   color: #fff;
   text-shadow: none; }
+
+.button {
+  background: url("../images/button.png") top left no-repeat;
+  height: 35px;
+  line-height: 35px;
+  padding: 0 0 0 15px; }
+  .button a {
+    background: url("../images/button.png") bottom right no-repeat;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 0 15px 0 0;
+    color: #fff; }
+
+.mobile-only, .tablet-only, .phone-only {
+  display: none; }
+
+@media only screen and (max-width: 767px) {
+  .desktop-only {
+    display: none; }
+
+  .mobile-only, .tablet-only, .phone-only {
+    display: block; }
+
+  .show-menu {
+    cursor: pointer; } }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .desktop-only {
+    display: none; }
+
+  .mobile-only, .phone-only {
+    display: block; } }
