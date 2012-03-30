@@ -56,10 +56,11 @@
 
 @media only screen and (max-width: 767px) {
 	a {}
+	#wrapper.menu-open {left: 100%;}
 	
 	#headerTop {
 		float: none;
-		margin: 0 auto;
+		text-align: center;
 	}
 	
 }
