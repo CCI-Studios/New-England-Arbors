@@ -21,7 +21,10 @@
 	-webkit-transition: left .5s ease-in-out;
 }
 
-#header { border-top: 6px solid $maincolor; }
+#header {
+	padding: 0 0 40px 0;
+	border-top: 6px solid $maincolor;
+}
 
 #headerTop { float: right; }
 #headerTop > div {
