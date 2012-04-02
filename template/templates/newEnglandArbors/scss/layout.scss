@@ -37,6 +37,13 @@
 	padding: 8px 11px 11px 16px;
 }
 
+#masthead {
+	height: 74px;
+	background: url('../images/bg_masthead.jpg') top center no-repeat;
+	
+}
+.home #masthead {display: none;}
+
 #top {
 	padding: 40px 0 25px;
 	border-bottom: 1px solid #e6e6e6;
