@@ -57,11 +57,23 @@
 				> a {
 					position: absolute;
 					left: 0;
-					top: -3.5em;
+					top: -68px;
 					font-size: 1.714285714em;
 					color: #fff;
 				}
 			}
+			&.active.parent {
+				display: block;
+				
+				> a {
+					position: absolute;
+					left: 0;
+					top: -81px;
+					font-size: 1.714285714em;
+					color: #fff;
+				}
+			}
+		
 		}
 		
 		ul {
