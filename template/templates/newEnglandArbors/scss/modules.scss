@@ -124,10 +124,6 @@
 @media only screen and (max-width: 767px) {
 	a{}
 	
-	.module.welcome {
-		width: 100%;
-	}
-
 	// header modules
 	
 	.moduletable.logo {
@@ -138,6 +134,8 @@
 	}
 
 	// #top modules
+	
+	.module.welcome {width: 100%;}
 	
 	// #bottom modules
 	
