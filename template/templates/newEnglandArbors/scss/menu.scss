@@ -41,6 +41,41 @@
 
 }
 
+.moduletable_vmenu.sidebar {
+	
+	.menu {
+		position: relative;
+		margin: -1em 0 0 0;
+		padding: 0;
+		list-style: none;
+		
+		> li {
+			display: none;
+			&.active {
+				display: block;
+				
+				> a {
+					position: absolute;
+					left: 0;
+					top: -3.5em;
+					font-size: 1.714285714em;
+					color: #fff;
+				}
+			}
+		}
+		
+		ul {
+			padding: 0;
+			list-style: none;
+			
+			li {display: block;}
+		}
+	}
+	
+	a, 
+	span {display: block;}
+}
+
 @media only screen and (max-width: 767px) { // cell + table
 	a{}
 
