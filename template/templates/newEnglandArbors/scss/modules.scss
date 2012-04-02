@@ -143,7 +143,7 @@
 	// #bottom modules
 	
 	.module.products {
-		width: 10000px;
+		width: 10000px; // FIXME Should be able to use 100%
 		padding: 0;
 		
 		.product {margin: 0 30px;}
