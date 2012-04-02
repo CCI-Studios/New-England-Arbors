@@ -1,4 +1,12 @@
 /* @group modules */
+#headerTop .moduletable,
+#headerTop .module,
+#top .moduletable,
+#top .module,
+#bottom .moduletable,
+#bottom .module {
+  float: left; }
+
 #headerTop .moduletable {
   float: left;
   padding: 0 0 0 10px;
