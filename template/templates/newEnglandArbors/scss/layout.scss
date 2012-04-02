@@ -12,12 +12,13 @@
 }
 
 #wrapper {
+	box-shadow: 0px 0px 20px #000;
 	position: relative;
 	width: 100%;
 	left: 0;
 	background: #fff;
 	
-	-webkit-transition: left 0.3s linear;
+	-webkit-transition: left .5s ease-in-out;
 }
 
 #header { border-top: 6px solid $maincolor; }
@@ -63,7 +64,7 @@
 @media only screen and (max-width: 767px) {  // phone/table
 	a {} // FIXME get ride of this crap
 	
-	#wrapper.menu-open {left: 100%;}
+	#wrapper.menu-open {left: 95%;}
 	
 	#headerTop {
 		float: none;
