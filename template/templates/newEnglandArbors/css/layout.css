@@ -59,6 +59,8 @@
   width: 74.468085106%;
   padding: 0 0 0 2.021276596%;
   border-left: 1px solid #e6e6e6; }
+  #content .item-page {
+    border-bottom: 1px solid #e6e6e6; }
 
 #footer {
   background: url("../images/bg_footer.png") center 80% no-repeat;
@@ -84,7 +86,12 @@
     float: none;
     text-align: center; }
 
+  #body {
+    background: none; }
+
   #content {
+    width: 100%;
+    padding: 0;
     border: none; }
 
   #footer {
