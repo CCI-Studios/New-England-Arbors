@@ -88,12 +88,11 @@ $analytics = "UA-XXXXX-X"; // FIXME Update to client ID
 			<jdoc:include type="modules" name="contentBottom" style="xhtml" />
 		</div>
 	</div>
-	<div id="bottom"><div class="container">
-		<jdoc:include type="modules" name="bottom" style="xhtml" />
-	</div>
-</div></div>
-
-<div class="clear"></div>
+	<div id="bottom"><div>
+		<jdoc:include type="modules" name="bottom" style="rounded" />
+		<div class="clear"></div>
+	</div></div>
+</div>
 
 <div id="footer"><div class="container">
 	<jdoc:include type="modules" name="footer" style="xhtml" />
