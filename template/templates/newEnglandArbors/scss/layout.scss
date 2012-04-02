@@ -38,7 +38,10 @@
 	border-bottom: 1px solid #e6e6e6;
 }
 
-#footer {padding: 30px 0 50px;}
+#footer {
+	background: url('../images/bg_footer.png') center 80% no-repeat;
+	padding: 30px 0 50px;
+}
 
 #copyright {
 	background: url('../images/bg_copyrightRepeat.png') top center repeat-x;
