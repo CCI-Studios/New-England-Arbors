@@ -80,7 +80,17 @@
 			padding: 0;
 			list-style: none;
 			
-			li {display: block;}
+			li {
+				display: block;
+				height: 35px;
+				line-height: 35px;
+				vertical-align: middle;
+				margin: 0 0 0 -10px;
+				padding: 0 0 0 10px;
+				&:hover {
+					background: url('../images/rollover_vmenu.png') top left no-repeat;
+				}
+			}
 		}
 	}
 	
