@@ -32,16 +32,20 @@
   border-bottom: 1px solid #e6e6e6; }
 
 #footer {
+  background: url("../images/bg_footer.png") center 80% no-repeat;
   padding: 30px 0 50px; }
 
 #copyright {
   background: url("../images/bg_copyrightRepeat.png") top center repeat-x;
   text-align: center;
   font-size: 14px;
-  padding: 45px 0 50px;
+  padding: 45px 0 20px;
   color: #fff; }
   #copyright a {
     color: #fff; }
+  #copyright > div {
+    background: url("../images/bg_copyright.png") center bottom no-repeat;
+    padding-bottom: 2em; }
 
 @media only screen and (max-width: 767px) {
   #wrapper.menu-open {
@@ -49,4 +53,7 @@
 
   #headerTop {
     float: none;
-    text-align: center; } }
+    text-align: center; }
+
+  #footer {
+    background: none; } }

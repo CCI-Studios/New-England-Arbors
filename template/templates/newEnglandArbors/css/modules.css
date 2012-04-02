@@ -67,12 +67,15 @@
   width: 65.957446809%;
   padding: 0 2.021276596% 0 0; }
   .module.products .product {
+    width: 27.419354839%;
     display: inline-block;
     *display: inline;
     *zoom: 1;
     margin-right: 5.4838709685%; }
     .module.products .product a {
       color: #00548e; }
+      .module.products .product a img {
+        height: inherit; }
       .module.products .product a p {
         font-size: 1.714285714em;
         line-height: .75em;
@@ -96,6 +99,7 @@
     width: 10000px;
     padding: 0; }
     .module.products .product {
+      width: auto;
       margin: 0 30px; }
     .module.products > div {
       width: 100%;
