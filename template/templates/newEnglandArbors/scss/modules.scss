@@ -91,6 +91,28 @@
 
 // #bottom modules
 
+.module.products {
+	width: 65.957446809%; // 620/940
+	padding: 0 2.021276596% 0 0; // 20/940	
+	
+	.product {
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		margin-right: 5.4838709685%;
+		
+		a {
+			color: $maincolor;
+
+			p {
+				font-size: 1.714285714em;
+				line-height: .75em;
+				text-align: center;
+				margin: 0 0 15px;
+			}
+		}
+	}
+}
 
 }
 
