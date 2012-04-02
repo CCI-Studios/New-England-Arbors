@@ -51,7 +51,8 @@
 
 #sidebar {
   float: left;
-  width: 23.404255319%; }
+  width: 21.276595745%;
+  padding: 0 2.127659574% 0 0; }
 
 #content {
   float: left;
@@ -82,6 +83,9 @@
   #headerTop {
     float: none;
     text-align: center; }
+
+  #content {
+    border: none; }
 
   #footer {
     background: none; } }

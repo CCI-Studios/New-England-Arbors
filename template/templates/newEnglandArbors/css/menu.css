@@ -37,17 +37,37 @@
       .moduletable_vmenu.sidebar .menu > li.active > a {
         position: absolute;
         left: 0;
-        top: -3.5em;
+        top: -68px;
+        font-size: 1.714285714em;
+        color: #fff; }
+    .moduletable_vmenu.sidebar .menu > li.active.parent {
+      display: block; }
+      .moduletable_vmenu.sidebar .menu > li.active.parent > a {
+        position: absolute;
+        left: 0;
+        top: -81px;
         font-size: 1.714285714em;
         color: #fff; }
   .moduletable_vmenu.sidebar .menu ul {
     padding: 0;
     list-style: none; }
     .moduletable_vmenu.sidebar .menu ul li {
-      display: block; }
+      display: block;
+      height: 35px;
+      line-height: 35px;
+      vertical-align: middle;
+      margin: 0 0 0 -10px;
+      padding: 0 0 0 10px; }
+      .moduletable_vmenu.sidebar .menu ul li:hover {
+        background: url("../images/rollover_vmenu.png") top left no-repeat; }
 .moduletable_vmenu.sidebar a,
 .moduletable_vmenu.sidebar span {
-  display: block; }
+  display: block;
+  color: #00548e; }
+  .moduletable_vmenu.sidebar a:hover,
+  .moduletable_vmenu.sidebar span:hover {
+    color: #fff;
+    text-decoration: none; }
 
 @media only screen and (max-width: 767px) {
   .moduletable_hmenu.primary {
