@@ -51,6 +51,10 @@
 	color: #fff;
 	
 	a {color: #fff;}
+	> div {
+		background: url('../images/bg_copyright.png') center bottom no-repeat;
+		padding-bottom: 2em;
+	}
 }
 
 //end of default screen size
