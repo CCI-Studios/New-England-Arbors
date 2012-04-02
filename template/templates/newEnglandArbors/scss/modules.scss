@@ -134,6 +134,19 @@
 
 	// #top modules
 	
+	// #bottom modules
+	
+	.module.products {
+		width: 10000px;
+		padding: 0;
+		
+		.product {margin: 0 30px;}
+		
+		> div {
+			width: 100%;
+			overflow: scroll;
+		}
+	}
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
