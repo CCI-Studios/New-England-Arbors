@@ -69,6 +69,8 @@
 	width: 74.468085106%; // 700/940
 	padding: 0 0 0 2.021276596%; // 19/940
 	border-left: 1px solid $bordercolor;
+	
+	.item-page {border-bottom: 1px solid $bordercolor;}
 }
 
 #footer {
