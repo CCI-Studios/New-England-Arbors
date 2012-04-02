@@ -42,6 +42,8 @@
 	}
 }
 
+// #top modules
+
 .moduletable.logo {
 	float: left;
 	display: inline-block;
@@ -56,6 +58,8 @@
 	h3 {margin: 0;}
 	p {margin-top: 0;}
 }
+
+// block module
 
 .module.block {
 	width: 28.936170213%; // 272/940
@@ -77,7 +81,6 @@
 		background: url('../images/bg_blockHeader.png') top right no-repeat;
 		padding-right: 3.96039604%;
 	}
-
 	
 	h3 {
 		color: #fff;
@@ -86,7 +89,8 @@
 	}
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+// #bottom modules
+
 
 }
 
@@ -97,12 +101,17 @@
 		width: 100%;
 	}
 
+	// header modules
+	
 	.moduletable.logo {
 		float: none;
 		display: block;
 		text-align: center;
 		margin-top: 26px;
 	}
+
+	// #top modules
+	
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
