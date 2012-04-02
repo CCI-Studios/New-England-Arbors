@@ -103,6 +103,8 @@
 		
 		a {
 			color: $maincolor;
+			
+			img {height: inherit;}
 
 			p {
 				font-size: 1.714285714em;
