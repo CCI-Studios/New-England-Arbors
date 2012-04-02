@@ -3,6 +3,15 @@
 
 .moduletable {}
 
+#headerTop,
+#top,
+#bottom {
+	.moduletable,
+	.module { float: left; }
+}
+
+// headerTop modules
+
 #headerTop {
 	.moduletable {
 		float: left;
