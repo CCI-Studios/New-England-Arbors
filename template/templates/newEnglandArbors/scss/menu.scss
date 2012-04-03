@@ -20,9 +20,15 @@
 }
 
 .moduletable_hmenu.primary {
+	width: auto;
+	margin: 34px 0 0 320px;
+	text-align: right;
 	
-	float: right;
-	margin-top: 34px;
+	li {
+		width: auto;
+		padding: 0 0 0 3.225806452%; // 20/620
+		&:first-child {padding: 0;}
+	}
 	
 	a {
 		font-size: 1.142857143em; // 16/14
