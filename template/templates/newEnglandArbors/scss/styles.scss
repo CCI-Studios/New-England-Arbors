@@ -32,6 +32,26 @@
 	}
 }
 
+.categoryWrapper {
+	margin-left: -2.142857143%; // 18/715
+	
+	.category {
+		width: 30.769230769%; // 220/715
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		margin: 0 0 0 2.142857143%;
+		
+		img {height: inherit;}
+
+		p {
+			font-size: 1.142857143em; // 16/14
+			color: $maincolor;
+			text-align: center;
+		}
+	}
+}
+
 .desktop-only { }
 .mobile-only, .tablet-only, .phone-only { display: none; }
 
