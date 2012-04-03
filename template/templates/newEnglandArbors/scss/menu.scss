@@ -50,52 +50,14 @@
 		list-style: none;
 		background: url('../images/bg_sidebarMenu.png') bottom center no-repeat;
 		
-		> li {
-			display: none;
-			&.active {
-				display: block;
-				
-				> a {
-					position: absolute;
-					left: 0;
-					top: -68px;
-					font-size: 1.714285714em;
-					color: #fff;
-				}
-			}
-			&.active.parent {
-				display: block;
-				
-				> a {
-					position: absolute;
-					left: 0;
-					top: -81px;
-					font-size: 1.714285714em;
-					color: #fff;
-				}
-			}
-		
-		}
-		
-		ul {
-			padding: 0;
-			list-style: none;
-			
-			li {
-				display: block;
-				height: 35px;
-				line-height: 35px;
-				vertical-align: middle;
-				margin: 0 0 0 -10px;
-				padding: 0 0 0 10px;
-				&:hover {
-					background: url('../images/rollover_vmenu.png') top left no-repeat;
-					a {
-						color: #fff;
-						text-decoration: none;
-					}
-				}
-			}
+		li {
+			display: block;
+			height: 35px;
+			line-height: 35px;
+			vertical-align: middle;
+			margin: 0 0 0 -10px;
+			padding: 0 0 0 10px;
+			&:hover {background: url('../images/rollover_vmenu.png') top left no-repeat;}
 		}
 	}
 	
