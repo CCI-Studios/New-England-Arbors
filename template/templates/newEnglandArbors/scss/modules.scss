@@ -204,8 +204,17 @@
 	a{} // FIXME REMOVE
 	
 	.module.products {
-		
 		.product {margin: 0 90px;}
-		
+	}
+	
+	.moduletable {
+		.contentBottom {
+			
+			img {
+				float: none;
+				margin: 0;
+			}
+
+		}
 	}
 }
