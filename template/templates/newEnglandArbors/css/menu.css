@@ -34,7 +34,8 @@
     color: #b1cce1; }
 
 .moduletable_hmenu.masthead li {
-  display: none; }
+  display: none;
+  padding: 0; }
   .moduletable_hmenu.masthead li.active {
     display: block; }
 .moduletable_hmenu.masthead a,
