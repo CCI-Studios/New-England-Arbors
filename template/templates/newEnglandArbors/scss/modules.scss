@@ -157,6 +157,25 @@
 	
 	.module.welcome {width: 100%;}
 	
+	// #contentBottom modules
+	
+	.moduletable {
+		.contentBottom {
+			width: 100%;
+			float: none;
+			display: inline-block;
+			*display: inline;
+			*zoom: 1;
+			margin: 0 0 1em 0;
+			
+			img {
+				float: left;
+				margin: 0 2.142857143% 0 0;
+			}
+
+		}
+	}
+	
 	// #bottom modules
 	
 	.module.products {
