@@ -91,6 +91,21 @@
 	
 }
 
+// #contentBottom modules
+
+.moduletable {
+	.contentBottom {
+		float: left;
+		width: 45.714285714%;
+		padding: 0 4.2857142860% 0 0;
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		
+		h3 {margin: 5px 0 0;}
+	}
+}
+
 // #bottom modules
 
 .module.products {
