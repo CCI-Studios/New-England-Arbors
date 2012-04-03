@@ -40,6 +40,21 @@
     padding: 0 40px 0 25px;
     color: #fff; }
 
+.categoryWrapper {
+  margin-left: -2.143%; }
+  .categoryWrapper .category {
+    width: 30.769230769%;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin: 0 0 0 2.142857143%; }
+    .categoryWrapper .category img {
+      height: inherit; }
+    .categoryWrapper .category p {
+      font-size: 1.142857143em;
+      color: #00548e;
+      text-align: center; }
+
 .mobile-only, .tablet-only, .phone-only {
   display: none; }
 

@@ -105,6 +105,17 @@
   .module.welcome {
     width: 100%; }
 
+  .moduletable .contentBottom {
+    width: 100%;
+    float: none;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin: 0 0 1em 0; }
+    .moduletable .contentBottom img {
+      float: left;
+      margin: 0 2.142857143% 0 0; }
+
   .module.products {
     width: 10000px;
     padding: 0; }
@@ -118,4 +129,8 @@
       overflow: scroll; } }
 @media only screen and (max-width: 480px) {
   .module.products .product {
-    margin: 0 90px; } }
+    margin: 0 90px; }
+
+  .moduletable .contentBottom img {
+    float: none;
+    margin: 0; } }
