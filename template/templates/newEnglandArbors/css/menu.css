@@ -28,42 +28,18 @@
 .moduletable_vmenu.sidebar .menu {
   position: relative;
   margin: -1em 0 0 0;
-  padding: 0 0 .5em 0;
+  padding: .5em 0 1em 0;
   list-style: none;
   background: url("../images/bg_sidebarMenu.png") bottom center no-repeat; }
-  .moduletable_vmenu.sidebar .menu > li {
-    display: none; }
-    .moduletable_vmenu.sidebar .menu > li.active {
-      display: block; }
-      .moduletable_vmenu.sidebar .menu > li.active > a {
-        position: absolute;
-        left: 0;
-        top: -68px;
-        font-size: 1.714285714em;
-        color: #fff; }
-    .moduletable_vmenu.sidebar .menu > li.active.parent {
-      display: block; }
-      .moduletable_vmenu.sidebar .menu > li.active.parent > a {
-        position: absolute;
-        left: 0;
-        top: -81px;
-        font-size: 1.714285714em;
-        color: #fff; }
-  .moduletable_vmenu.sidebar .menu ul {
-    padding: 0;
-    list-style: none; }
-    .moduletable_vmenu.sidebar .menu ul li {
-      display: block;
-      height: 35px;
-      line-height: 35px;
-      vertical-align: middle;
-      margin: 0 0 0 -10px;
-      padding: 0 0 0 10px; }
-      .moduletable_vmenu.sidebar .menu ul li:hover {
-        background: url("../images/rollover_vmenu.png") top left no-repeat; }
-        .moduletable_vmenu.sidebar .menu ul li:hover a {
-          color: #fff;
-          text-decoration: none; }
+  .moduletable_vmenu.sidebar .menu li {
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    vertical-align: middle;
+    margin: 0 0 0 -10px;
+    padding: 0 0 0 10px; }
+    .moduletable_vmenu.sidebar .menu li:hover {
+      background: url("../images/rollover_vmenu.png") top left no-repeat; }
 .moduletable_vmenu.sidebar a,
 .moduletable_vmenu.sidebar span {
   display: block;

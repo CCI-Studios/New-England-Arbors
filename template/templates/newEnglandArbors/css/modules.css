@@ -63,6 +63,16 @@
     margin: 0px 0;
     padding: 7px 0 0; }
 
+.moduletable .contentBottom {
+  float: left;
+  width: 45.714285714%;
+  padding: 0 4.2857142860% 0 0;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+  .moduletable .contentBottom h3 {
+    margin: 5px 0 0; }
+
 .module.products {
   width: 65.957446809%;
   padding: 0 2.021276596% 0 0; }
