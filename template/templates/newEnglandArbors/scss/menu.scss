@@ -51,6 +51,7 @@
 .moduletable_hmenu.masthead {
 	li {
 		display: none;
+		padding: 0;
 		&.active {display: block;}
 	}
 	
