@@ -61,7 +61,7 @@
   .module.block h3 {
     color: #fff;
     margin: 0px 0;
-    padding: 0; }
+    padding: 7px 0 0; }
 
 .module.products {
   width: 65.957446809%;
@@ -83,7 +83,7 @@
         margin: 0 0 15px; }
 
 .module.videos {
-  margin-top: 69px; }
+  margin-top: 48px; }
 
 @media only screen and (max-width: 767px) {
   .moduletable.logo {
@@ -98,6 +98,8 @@
   .module.products {
     width: 10000px;
     padding: 0; }
+    .module.products h3 {
+      display: none; }
     .module.products .product {
       width: auto;
       margin: 0 30px; }
