@@ -11,8 +11,16 @@
   color: #00548e; }
 
 .moduletable_hmenu.primary {
-  float: right;
-  margin-top: 34px; }
+  width: auto;
+  margin: 34px 0 0 320px;
+  text-align: right; }
+  .moduletable_hmenu.primary li {
+    width: auto;
+    padding: 0 0 0 3.225806452%; }
+    .moduletable_hmenu.primary li:first-child {
+      padding: 0; }
+  .moduletable_hmenu.primary li.item-117 {
+    display: none; }
   .moduletable_hmenu.primary a {
     font-size: 1.142857143em;
     padding: 0 0 8px 0; }
@@ -55,6 +63,7 @@
       background: url("../images/rollover_vmenu.png") top left no-repeat; }
 .moduletable_vmenu.sidebar a,
 .moduletable_vmenu.sidebar span {
+  font-size: 1.142857143em;
   display: block;
   color: #00548e;
   white-space: nowrap; }
@@ -71,6 +80,7 @@
     left: 0;
     width: 100%;
     background: #00548e;
+    text-align: left;
     float: none;
     margin: 20px 0 0 0;
     font-size: 14px; }
