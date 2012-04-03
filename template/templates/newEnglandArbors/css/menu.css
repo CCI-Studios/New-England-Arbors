@@ -15,7 +15,7 @@
   margin-top: 34px; }
   .moduletable_hmenu.primary a {
     font-size: 1.142857143em;
-    padding: 0 0 5px 0; }
+    padding: 0 0 8px 0; }
     .moduletable_hmenu.primary a:hover {
       text-decoration: none;
       background: url("../images/nav_rollover.png") bottom center no-repeat; }
@@ -24,6 +24,19 @@
   text-align: center; }
   .moduletable_hmenu.secondary li.active a {
     color: #b1cce1; }
+
+.moduletable_hmenu.masthead li {
+  display: none; }
+  .moduletable_hmenu.masthead li.active {
+    display: block; }
+.moduletable_hmenu.masthead a,
+.moduletable_hmenu.masthead span {
+  font-size: 1.714285714em;
+  color: #fff;
+  line-height: 74px; }
+  .moduletable_hmenu.masthead a:hover,
+  .moduletable_hmenu.masthead span:hover {
+    text-decoration: none; }
 
 .moduletable_vmenu.sidebar .menu {
   position: relative;
@@ -43,11 +56,13 @@
 .moduletable_vmenu.sidebar a,
 .moduletable_vmenu.sidebar span {
   display: block;
-  color: #00548e; }
+  color: #00548e;
+  white-space: nowrap; }
   .moduletable_vmenu.sidebar a:hover,
   .moduletable_vmenu.sidebar span:hover {
     color: #fff;
-    text-decoration: none; }
+    text-decoration: none;
+    background: url("../images/rollover_vmenu.png") bottom right no-repeat; }
 
 @media only screen and (max-width: 767px) {
   .moduletable_hmenu.primary {
