@@ -46,8 +46,9 @@
 	.menu {
 		position: relative;
 		margin: -1em 0 0 0;
-		padding: 0;
+		padding: 0 0 .5em 0;
 		list-style: none;
+		background: url('../images/bg_sidebarMenu.png') bottom center no-repeat;
 		
 		> li {
 			display: none;
