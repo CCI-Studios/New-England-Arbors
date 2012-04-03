@@ -80,9 +80,11 @@
 	span {
 		display: block;
 		color: $maincolor;
+		white-space: nowrap;
 		&:hover {
 			color: #fff;
 			text-decoration: none;
+			background: url('../images/rollover_vmenu.png') bottom right no-repeat;
 		}
 	}
 }
