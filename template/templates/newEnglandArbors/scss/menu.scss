@@ -41,6 +41,21 @@
 
 }
 
+.moduletable_hmenu.masthead {
+	li {
+		display: none;
+		&.active {display: block;}
+	}
+	
+	a,
+	span {
+		font-size: 1.714285714em;
+		color: #fff;
+		line-height: 74px;
+		&:hover {text-decoration: none;}
+	}
+}
+
 .moduletable_vmenu.sidebar {
 	
 	.menu {
