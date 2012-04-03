@@ -32,22 +32,39 @@
 	}
 }
 
-.categoryWrapper {
-	margin-left: -2.142857143%; // 18/715
+.categoryWrapper,
+.productWrapper {
+	margin-left: -2%; // 14/715
 	
-	.category {
+	.category,
+	.product {
 		width: 30.769230769%; // 220/715
 		display: inline-block;
 		*display: inline;
 		*zoom: 1;
-		margin: 0 0 0 2.142857143%;
+		margin: 0 0 0 2%;
 		
 		img {height: inherit;}
 
 		p {
-			font-size: 1.142857143em; // 16/14
 			color: $maincolor;
-			text-align: center;
+			margin: 0 0 40px 0;
+			&.categoryName {
+				font-size: 1.142857143em; // 16/14
+				text-align: center;
+			}
+			&.productName {
+				width: 58%;
+				float: left;
+				padding: 0 0 0 2%;
+			}
+			&.productPrice {
+				width: 38%;
+				float: right;
+				text-align: right;
+				padding: 0 2% 0 0;
+				color: #000;
+			}
 		}
 	}
 }
