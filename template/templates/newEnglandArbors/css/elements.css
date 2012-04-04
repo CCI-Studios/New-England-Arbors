@@ -2,11 +2,18 @@
 body {
   color: #444;
   /* off black */
-  font-family: Goudy Old Style, Helvetica, Arial, sans-serif;
+  font-family: 'Goudy Old Style', Helvetica, Arial, sans-serif;
   font-size: 0.875em;
   /*14px/16px*/
   overflow-x: hidden;
   background: #00548e; }
+
+@font-face {
+  font-family: 'Goudy Old Style';
+  src: url("../resources/GOUDOS.eot");
+  src: url("../resources/GOUDOS.eot?#iefix") format("embedded-opentype"), url("../resources/GOUDOS.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 
 select, input, textarea {
   color: #444;

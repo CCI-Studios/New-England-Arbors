@@ -74,6 +74,13 @@
     text-decoration: none;
     background: url("../images/rollover_vmenu.png") bottom right no-repeat; }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .moduletable_hmenu.primary {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-left: 0;
+    text-align: center; } }
 @media only screen and (max-width: 767px) {
   .moduletable_hmenu.primary {
     position: absolute;
