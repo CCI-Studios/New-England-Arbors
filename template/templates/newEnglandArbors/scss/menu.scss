@@ -143,5 +143,9 @@
 			color: white;
 			font-size: 1.428571429em;
 		} // 20/14
+			color: $maincolor;
+			font-size: 1.428571429em; // 20/14
+			&:hover {background: none;}
+		}
 	}
 }
