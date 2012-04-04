@@ -301,6 +301,9 @@ figure {
 
 form {
     margin: 0;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
 }
 
 /*
