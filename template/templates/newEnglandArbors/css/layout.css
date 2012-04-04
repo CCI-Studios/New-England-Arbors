@@ -56,14 +56,13 @@
 
 #sidebar {
   float: left;
-  width: 21.276595745%;
+  width: 200px;
   padding: 0 2.127659574% 0 0; }
 
 #content {
-  float: left;
-  width: 74.468085106%;
   padding: 0 0 0 2.021276596%;
-  border-left: 1px solid #e6e6e6; }
+  border-left: 1px solid #e6e6e6;
+  margin-left: 200px; }
   #content .item-page {
     border-bottom: 1px solid #e6e6e6; }
   #content #contentBottom {
@@ -103,7 +102,8 @@
   #content {
     width: 100%;
     padding: 0;
-    border: none; }
+    border: none;
+    margin-left: 0; }
 
   #footer {
     background: none; } }
