@@ -50,7 +50,7 @@
 .moduletable_vmenu.sidebar .menu {
   position: relative;
   margin: -1em 0 0 0;
-  padding: .5em 0 1em 0;
+  padding: .5em 10px 1em 0;
   list-style: none;
   background: url("../images/bg_sidebarMenu.png") bottom center no-repeat; }
   .moduletable_vmenu.sidebar .menu li {
