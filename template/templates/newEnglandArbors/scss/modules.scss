@@ -42,8 +42,29 @@
 	}
 }
 
+// #header modules
+
+#header {
 	.moduletable {
 		position: relative;
+		
+		.show-menu {
+			background: $maincolor;
+			display: inline-block;
+			*display: inline;
+			*zoom: 1;
+			width: auto;
+			color: #fff;
+			padding: 1em;
+
+			position: absolute;
+			top: -20px;
+			left: 0;
+		}
+	}
+}
+
+
 // #top modules
 
 .moduletable.logo {
