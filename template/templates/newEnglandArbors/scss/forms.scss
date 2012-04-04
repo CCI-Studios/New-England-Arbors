@@ -23,3 +23,15 @@ input:invalid, textarea:invalid {
 /* Make buttons play nice in IE:
    www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
 button {  width: auto; overflow: visible; }
+
+.ccms_form_element label,
+.cfdiv_text label {
+	width: 100px;
+	padding-right: 100%;
+}
+
+.ccms_form_element input, 
+textarea, 
+input[type="file"] {
+	display: inline;
+}
