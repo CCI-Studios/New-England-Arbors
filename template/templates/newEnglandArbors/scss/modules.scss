@@ -42,6 +42,8 @@
 	}
 }
 
+	.moduletable {
+		position: relative;
 // #top modules
 
 .moduletable.logo {
@@ -201,6 +203,8 @@
 		}
 	}
 }
+
+#footer {.moduletable {position: relative;}}
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
