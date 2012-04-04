@@ -32,6 +32,17 @@
 	}
 }
 
+input[type="submit"] {
+	background: url('../images/button_submit.png') top left no-repeat;
+	border-radius: 0;
+	border: none;
+	width: 140px;
+	text-align: center;
+	height: 35px;
+	vertical-align: middle;
+	color: #fff;
+}
+
 .categoryWrapper,
 .productWrapper {
 	margin-left: -2%; // 14/715
