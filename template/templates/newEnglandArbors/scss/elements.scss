@@ -6,7 +6,8 @@ body {
 	font-family: 'Goudy Old Style', Helvetica, Arial, sans-serif;
 	font-size: 0.875em; /*14px/16px*/
 	overflow-x: hidden;
-	background: $maincolor;
+	background: url('../images/bg_mobile.jpg') center center repeat;
+	
 }
 
 @font-face {
