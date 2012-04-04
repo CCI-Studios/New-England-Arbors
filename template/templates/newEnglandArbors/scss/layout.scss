@@ -23,18 +23,29 @@
 
 #header {
 	padding: 0 0 40px 0;
-	border-top: 6px solid $maincolor;
+	border-top: 7px solid #0768ab;
 }
 
-#headerTop { float: right; }
-#headerTop > div {
-	display: inline-block;
-	*display: inline;
-	*zoom: 1;
-	background-color: $maincolor;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	padding: 8px 11px 11px 16px;
+#headerTop {
+	display: block;
+	float: right;
+	
+	> div {
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		background: url('../images/bg_headerTop.png') top left no-repeat;
+		padding: 0 0 0 16px;
+		height: 41px;
+		
+		> div {
+			display: inline-block;
+			*display: inline;
+			*zoom: 1;
+			background: url('../images/bg_headerTop.png') bottom right no-repeat;
+			padding: 4px 11px 7px 0px;
+		}
+	}
 }
 
 #masthead {
@@ -104,6 +115,7 @@
 	
 	#headerTop {
 		float: none;
+		margin: 0 auto;
 		text-align: center;
 	}
 	
