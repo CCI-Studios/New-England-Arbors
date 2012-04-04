@@ -93,13 +93,27 @@
     margin: 20px 0 0 0;
     font-size: 14px; }
     .moduletable_hmenu.primary .menu {
-      padding: 0 0 0 20px; }
-    .moduletable_hmenu.primary .menu li {
-      display: block;
-      padding: 0 4px;
-      margin: 10px 0; }
-    .moduletable_hmenu.primary .menu ul {
-      margin-left: 1em; }
+      margin: 0 20px;
+      padding: 0 1.2em;
+      background: whitesmoke;
+      border-radius: 5px;
+      border: 1px solid #002d4c;
+      width: 100%; }
+      .moduletable_hmenu.primary .menu li {
+        display: block;
+        border-top: 1px solid #e6e6e6;
+        line-height: 44px;
+        margin-left: -1em;
+        padding-left: 1em; }
+        .moduletable_hmenu.primary .menu li ul {
+          margin: 0;
+          padding-left: 0; }
+          .moduletable_hmenu.primary .menu li ul li {
+            background: #fff;
+            padding-left: 3em;
+            margin-left: -1em; }
     .moduletable_hmenu.primary a {
-      color: white;
-      font-size: 1.428571429em; } }
+      color: #00548e;
+      font-size: 1.428571429em; }
+      .moduletable_hmenu.primary a:hover {
+        background: none; } }

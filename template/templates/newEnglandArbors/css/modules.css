@@ -30,6 +30,20 @@
   #headerTop .moduletable:first-child {
     padding: 0; }
 
+#header .moduletable {
+  position: relative; }
+  #header .moduletable .show-menu {
+    background: #00548e;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: auto;
+    color: #fff;
+    padding: 1em;
+    position: absolute;
+    top: -20px;
+    left: 0; }
+
 .moduletable.logo {
   float: left;
   display: inline-block;
@@ -133,6 +147,9 @@
     .module.products > div {
       width: 100%;
       overflow: scroll; } }
+#footer .moduletable {
+  position: relative; }
+
 @media only screen and (max-width: 480px) {
   .module.products .product {
     margin: 0 90px; }
