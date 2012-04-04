@@ -237,7 +237,10 @@ figure {
  * Corrects margin displayed oddly in IE6/7
  */
 form {
-  margin: 0; }
+  margin: 0;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
 
 /*
  * Define consistent margin and padding

@@ -36,3 +36,13 @@ input:invalid, textarea:invalid {
 button {
   width: auto;
   overflow: visible; }
+
+.ccms_form_element label,
+.cfdiv_text label {
+  width: 100px;
+  padding-right: 100%; }
+
+.ccms_form_element input,
+textarea,
+input[type="file"] {
+  display: inline; }
