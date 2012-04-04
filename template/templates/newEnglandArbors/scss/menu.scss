@@ -98,6 +98,18 @@
 	}
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	a{}
+	
+	.moduletable_hmenu.primary {
+		display: block;
+		float: left;
+		width: 100%;
+		margin-left: 0;
+		text-align: center;
+	}
+}
+
 @media only screen and (max-width: 767px) { // cell + table
 	a{}
 
