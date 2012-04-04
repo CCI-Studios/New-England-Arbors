@@ -70,15 +70,14 @@
 
 #sidebar {
 	float: left;
-	width: 21.276595745%; // 200/940
+	width: 200px; // 200/940
 	padding: 0 2.127659574% 0 0; // 20/940
 }
 
 #content {
-	float: left;
-	width: 74.468085106%; // 700/940
 	padding: 0 0 0 2.021276596%; // 19/940
 	border-left: 1px solid $bordercolor;
+	margin-left: 200px; // 200/940;
 
 	.item-page {border-bottom: 1px solid $bordercolor;}
 	#contentBottom {padding: 30px 0 0 0;}
@@ -125,6 +124,7 @@
 		width: 100%;
 		padding: 0;
 		border: none;
+		margin-left: 0;
 	}
 	
 	#footer {background: none;}
