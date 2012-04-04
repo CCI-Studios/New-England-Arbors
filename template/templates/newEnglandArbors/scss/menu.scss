@@ -126,23 +126,34 @@
 		font-size: 14px;
 		
 		.menu {
-			padding: 0 0 0 20px;
+			margin: 0 20px;
+			padding: 0 1.2em;
+			background: whitesmoke;
+			border-radius: 5px;
+			border: 1px solid #002d4c;
+			width: 100%;
+			
+			li {
+				display: block;
+				border-top: 1px solid $bordercolor;
+				line-height: 44px;
+				margin-left: -1em;
+				padding-left: 1em;
+				
+				ul {
+					margin: 0;
+					padding-left: 0;
+					li {
+						background: #fff;
+						padding-left: 3em;
+						margin-left: -1em;
+					}
+				}
+			}
 		}
 		
-		.menu li {
-			display: block;
-			padding: 0 4px;
-			margin: 10px 0;
-		}
-		
-		.menu ul {
-			margin-left: 1em;
-		}
 		
 		a { 
-			color: white;
-			font-size: 1.428571429em;
-		} // 20/14
 			color: $maincolor;
 			font-size: 1.428571429em; // 20/14
 			&:hover {background: none;}
