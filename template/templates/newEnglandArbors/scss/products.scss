@@ -49,6 +49,12 @@
 		width: 54.285714286%; // 380/700
 		padding-right: 2.857142857%;
 		
+		> div {
+			padding: 1em 0; 
+			border-bottom: 1px solid $bordercolor;
+			&:first-child {padding-top: 0;}
+		}
+		
 		.productImg {
 			img {padding: 6px 5px;}
 		}
@@ -77,6 +83,12 @@
 	.rightSide {
 		float: left;
 		width: 42.857142857%; // 300/700
+		
+		> div {
+			padding: 1em 0; 
+			border-bottom: 1px solid $bordercolor;
+			&:first-child {padding-top: 0;}
+		}
 		
 		.productHeader {
 			p {margin: 0;}
