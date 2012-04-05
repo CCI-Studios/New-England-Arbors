@@ -83,3 +83,11 @@
     font-size: 1.714285714em;
     color: #00548e;
     padding: 0 0 .5em; }
+  .itemWrapper .rightSide .productDetails dl {
+    clear: both; }
+    .itemWrapper .rightSide .productDetails dl dt {
+      float: left;
+      width: 56.666666667%;
+      padding: 0 0 0 3.333333333%; }
+    .itemWrapper .rightSide .productDetails dl dd {
+      float: left; }
