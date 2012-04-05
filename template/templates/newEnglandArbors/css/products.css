@@ -48,6 +48,11 @@
   float: left;
   width: 54.285714286%;
   padding-right: 2.857142857%; }
+  .itemWrapper .leftSide > div {
+    padding: 1em 0;
+    border-bottom: 1px solid #e6e6e6; }
+    .itemWrapper .leftSide > div:first-child {
+      padding-top: 0; }
   .itemWrapper .leftSide .productImg img {
     padding: 6px 5px; }
   .itemWrapper .leftSide .productThumbs {
@@ -58,17 +63,20 @@
         padding: 0; }
       .itemWrapper .leftSide .productThumbs a img {
         padding: 4px 5px; }
-  .itemWrapper .leftSide .productLinks {
-    padding: 30px 0; }
-    .itemWrapper .leftSide .productLinks div.button {
-      margin: 0 0 0 3.157894737%; }
-      .itemWrapper .leftSide .productLinks div.button:first-child {
-        margin: 0; }
-    .itemWrapper .leftSide .productLinks a {
-      padding: 0 25px 0 10px; }
+  .itemWrapper .leftSide .productLinks div.button {
+    margin: 0 0 0 3.157894737%; }
+    .itemWrapper .leftSide .productLinks div.button:first-child {
+      margin: 0; }
+  .itemWrapper .leftSide .productLinks a {
+    padding: 0 25px 0 10px; }
 .itemWrapper .rightSide {
   float: left;
   width: 42.857142857%; }
+  .itemWrapper .rightSide > div {
+    padding: 1em 0;
+    border-bottom: 1px solid #e6e6e6; }
+    .itemWrapper .rightSide > div:first-child {
+      padding-top: 0; }
   .itemWrapper .rightSide .productHeader p {
     margin: 0; }
   .itemWrapper .rightSide .productHeader .productName {
