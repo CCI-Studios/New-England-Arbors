@@ -32,6 +32,12 @@ h3 {
   font-size: 1.714285714em;
   margin: 0 0 20px; }
 
+.item-page img {
+  padding: 4px;
+  border: 1px solid #e6e6e6;
+  background-color: #ede9e9;
+  border-radius: 4px; }
+
 a, a:active, a:visited {
   color: #607890;
   text-decoration: none; }
