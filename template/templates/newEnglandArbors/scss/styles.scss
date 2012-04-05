@@ -43,43 +43,6 @@ input[type="submit"] {
 	color: #fff;
 }
 
-.categoryWrapper,
-.productWrapper {
-	margin-left: -2%; // 14/715
-	
-	.category,
-	.product {
-		width: 30.769230769%; // 220/715
-		display: inline-block;
-		*display: inline;
-		*zoom: 1;
-		margin: 0 0 0 2%;
-		
-		img {height: inherit;}
-
-		p {
-			color: $maincolor;
-			margin: 0 0 40px 0;
-			&.categoryName {
-				font-size: 1.142857143em; // 16/14
-				text-align: center;
-			}
-			&.productName {
-				width: 58%;
-				float: left;
-				padding: 0 0 0 2%;
-			}
-			&.productPrice {
-				width: 38%;
-				float: right;
-				text-align: right;
-				padding: 0 2% 0 0;
-				color: #000;
-			}
-		}
-	}
-}
-
 .desktop-only { }
 .mobile-only, .tablet-only, .phone-only { display: none; }
 
