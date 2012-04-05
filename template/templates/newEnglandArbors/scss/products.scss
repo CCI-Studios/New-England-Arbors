@@ -103,6 +103,22 @@
 				
 			}
 		}
+		
+		.productDetails {
+			
+			dl {
+				clear: both;
+				
+				dt {
+					float: left;
+					width: 56.666666667%; // 170/300
+					padding: 0 0 0 3.333333333%; // 10/300
+				}
+				dd {
+					float: left;
+				}	
+			}
+		}
 	}
 	
 }
