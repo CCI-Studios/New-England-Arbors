@@ -24,6 +24,9 @@ input:invalid, textarea:invalid {
    www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
 button {  width: auto; overflow: visible; }
 
+
+
+// testimonials
 .ccms_form_element label,
 .cfdiv_text label {
 	width: 100px;
@@ -38,4 +41,11 @@ input[type="file"] {
 
 .ccms_form_element {
 	padding: 0 0 0 5px;
+	
+	&.cfdiv_text img {
+		padding: 0;
+		border: 0;
+		background: 0;
+		box-shadow: none;
+	}
 }
