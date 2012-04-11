@@ -79,7 +79,10 @@
 	border-left: 1px solid $bordercolor;
 	margin-left: 200px; // 200/940;
 
-	.item-page {border-bottom: 1px solid $bordercolor;}
+	.item-page {
+		border-bottom: 1px solid $bordercolor;
+		position: relative;
+	}
 	#contentBottom {padding: 30px 0 0 0;}
 }
 
