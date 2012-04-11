@@ -49,7 +49,6 @@
 	h4 {margin-bottom: 1em;}
 	
 	.leftSide {
-		
 		float: left;
 		width: 52.777777778%; // 380/720
 		padding-right: 2.777777778%; // 20/720
@@ -71,6 +70,7 @@
 		}
 		
 		.productThumbs {
+			border: none;
 
 			a {
 				padding: 0 0 0 3%; // 12/400
@@ -102,11 +102,13 @@
 		
 		> div {
 			padding: 1em 0; 
-			border-bottom: 1px solid $bordercolor;
+			border-top: 1px solid $bordercolor;
 			&:first-child {padding-top: 0;}
 		}
 		
 		.productHeader {
+			border: none;
+			
 			p {margin: 0;}
 			
 			.productName {
