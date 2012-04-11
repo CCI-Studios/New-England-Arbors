@@ -56,11 +56,13 @@
 		
 		> div {
 			padding: 1em 0; 
-			border-bottom: 1px solid $bordercolor;
+			border-top: 1px solid $bordercolor;
 			&:first-child {padding-top: 0;}
 		}
 		
 		.productImg {
+			border: none;
+			
 			img {
 				padding: 6px 5px;
 				width: 97%;
