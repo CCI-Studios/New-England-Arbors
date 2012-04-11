@@ -24,6 +24,33 @@
   color: #fff;
   text-shadow: none; }
 
+div.pagination {
+  position: absolute;
+  right: 0;
+  top: 0; }
+  div.pagination .pageFirst {
+    background: url("../images/pageFirst_normal.png") center center no-repeat; }
+  div.pagination .pagePrev {
+    background: url("../images/pagePrev_normal.png") center center no-repeat; }
+  div.pagination .pageNext {
+    background: url("../images/pageNext_normal.png") center center no-repeat; }
+  div.pagination .pageLast {
+    background: url("../images/pageLast_normal.png") center center no-repeat; }
+  div.pagination ul li,
+  div.pagination ul li a {
+    padding: 0 4px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    list-style: none; }
+    div.pagination ul li:hover, div.pagination ul li.active,
+    div.pagination ul li a:hover,
+    div.pagination ul li a.active {
+      color: #000;
+      text-decoration: none; }
+  div.pagination ul a {
+    font-size: .857142857em; }
+
 .button {
   background: url("../images/buttonGradient.png") top left no-repeat;
   height: 35px;
