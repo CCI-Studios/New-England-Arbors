@@ -14,7 +14,8 @@
     .categoryWrapper .product img,
     .productWrapper .category img,
     .productWrapper .product img {
-      height: inherit; }
+      height: inherit;
+      box-shadow: 0px 5px 5px -5px #444444; }
     .categoryWrapper .category p,
     .categoryWrapper .product p,
     .productWrapper .category p,
