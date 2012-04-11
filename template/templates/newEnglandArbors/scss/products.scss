@@ -77,13 +77,15 @@
 			}
 		}
 		.productLinks {
+			text-align: center;
 
 			div.button {
-				margin: 0 0 0 3.157894737%; // 12/380
+				margin: 0 0 0 3%; // 12/400
+				padding: 0 0 0 15px;
 				&:first-child {margin: 0;}
 			}
 
-			a {padding: 0 25px 0 10px;}
+			a {padding: 0 15px 0 0;}
 		}
 	}
 	
