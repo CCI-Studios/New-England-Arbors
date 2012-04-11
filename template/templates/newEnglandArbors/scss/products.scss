@@ -56,7 +56,11 @@
 		}
 		
 		.productImg {
-			img {padding: 6px 5px;}
+			img {
+				padding: 6px 5px;
+				width: 97%;
+				height: inherit;
+			}
 		}
 		
 		.productThumbs {
