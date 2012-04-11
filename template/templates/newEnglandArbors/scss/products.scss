@@ -4,21 +4,27 @@
 
 .categoryWrapper,
 .productWrapper {
-	margin-left: -2%; // 14/715
+	margin-left: -2.777777778%; // 20/720
 	
 	.category,
 	.product {
-		width: 30.769230769%; // 220/715
+		width: 30%; // 216/720
 		display: inline-block;
 		*display: inline;
 		*zoom: 1;
-		margin: 0 0 0 2%;
+		margin: 0 0 0 2.777777778%; // 20/720
+		
+		a {
+			display: inline-block;
+			*display: inline;
+			*zoom: 1;
+		}
 		
 		img {height: inherit;}
-
+		
 		p {
 			color: $maincolor;
-			margin: 0 0 40px 0;
+			margin: 5px 0 35px 0;
 			&.categoryName {
 				font-size: 1.142857143em; // 16/14
 				text-align: center;
