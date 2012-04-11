@@ -13,6 +13,40 @@
 ::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
 ::selection { background:#FF5E99; color:#fff; text-shadow: none; }
 
+div.pagination {
+	position: absolute;
+	right: 0;
+	top: 0;
+	
+	.pageFirst,
+	.pagePrev,
+	.pageNext,
+	.pageLast {}
+	
+	.pageFirst {background: url('../images/pageFirst_normal.png') center center no-repeat;}
+
+	.pagePrev {background: url('../images/pagePrev_normal.png') center center no-repeat;}
+	
+	.pageNext {background: url('../images/pageNext_normal.png') center center no-repeat;}
+	
+	.pageLast {background: url('../images/pageLast_normal.png') center center no-repeat;}
+	
+	
+	ul {
+		li,
+		li a {
+			padding: 0 4px;
+			display: inline-block;
+			*display: inline;
+			*zoom: 1;
+			list-style: none;
+			&:hover,
+			&.active {color: #000; text-decoration: none;};
+		}
+		a {font-size: .857142857em;}
+	}
+}
+
 .button {
 	background: url('../images/buttonGradient.png') top left no-repeat;
 	height: 35px;
