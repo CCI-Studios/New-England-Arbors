@@ -46,32 +46,37 @@
 
 .itemWrapper .leftSide {
   float: left;
-  width: 54.285714286%;
-  padding-right: 2.857142857%; }
+  width: 52.777777778%;
+  padding-right: 2.777777778%; }
   .itemWrapper .leftSide > div {
     padding: 1em 0;
     border-bottom: 1px solid #e6e6e6; }
     .itemWrapper .leftSide > div:first-child {
       padding-top: 0; }
   .itemWrapper .leftSide .productImg img {
-    padding: 6px 5px; }
-  .itemWrapper .leftSide .productThumbs {
-    padding: 30px 0; }
-    .itemWrapper .leftSide .productThumbs a {
-      padding: 0 0 0 2.631578947%; }
-      .itemWrapper .leftSide .productThumbs a:first-child {
-        padding: 0; }
-      .itemWrapper .leftSide .productThumbs a img {
-        padding: 4px 5px; }
-  .itemWrapper .leftSide .productLinks div.button {
-    margin: 0 0 0 3.157894737%; }
-    .itemWrapper .leftSide .productLinks div.button:first-child {
-      margin: 0; }
-  .itemWrapper .leftSide .productLinks a {
-    padding: 0 25px 0 10px; }
+    padding: 6px 5px;
+    width: 97%;
+    height: inherit; }
+  .itemWrapper .leftSide .productThumbs a {
+    padding: 0 0 0 3%; }
+    .itemWrapper .leftSide .productThumbs a:first-child {
+      padding: 0; }
+    .itemWrapper .leftSide .productThumbs a img {
+      padding: 4px 1.25%;
+      width: 27%;
+      height: inherit; }
+  .itemWrapper .leftSide .productLinks {
+    text-align: center; }
+    .itemWrapper .leftSide .productLinks div.button {
+      margin: 0 0 0 3%;
+      padding: 0 0 0 15px; }
+      .itemWrapper .leftSide .productLinks div.button:first-child {
+        margin: 0; }
+    .itemWrapper .leftSide .productLinks a {
+      padding: 0 15px 0 0; }
 .itemWrapper .rightSide {
   float: left;
-  width: 42.857142857%; }
+  width: 41.666666667%; }
   .itemWrapper .rightSide > div {
     padding: 1em 0;
     border-bottom: 1px solid #e6e6e6; }
@@ -84,10 +89,16 @@
     color: #00548e;
     padding: 0 0 .5em; }
   .itemWrapper .rightSide .productDetails dl {
-    clear: both; }
+    margin: 0;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1; }
     .itemWrapper .rightSide .productDetails dl dt {
       float: left;
       width: 56.666666667%;
       padding: 0 0 0 3.333333333%; }
     .itemWrapper .rightSide .productDetails dl dd {
-      float: left; }
+      float: left;
+      margin: 0; }
+  .itemWrapper .rightSide .productAcc ul {
+    padding: 0 0 0 10%; }
