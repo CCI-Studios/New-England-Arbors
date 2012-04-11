@@ -139,6 +139,26 @@
 		}
 		
 		.productAcc ul {padding: 0 0 0 10%;} // 10/300
+		
+		.productPrices {
+			display: inline-block;
+			*display: inline;
+			*zoom: 1;
+			
+			input {
+				float: left;
+				height: 1em;
+				margin: 0 5% 0 0; // 15/300
+			}
+			
+			.productPrice {float: left;}
+			
+			.productName {
+				float: left;
+				width: 70%;
+				margin: 0 0 1em 5%;
+			}
+		}
 	}
 	
 }
