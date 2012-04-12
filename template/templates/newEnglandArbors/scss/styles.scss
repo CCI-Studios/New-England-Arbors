@@ -81,6 +81,7 @@ input[type="submit"] {
 .mobile-only, .tablet-only, .phone-only { display: none; }
 
 @media only screen and (max-width: 767px) { // cell + table
+	a{} // FIXME REMOVE
 	
 	div.pagination ul a {font-size: 1.142857143em;}
 	
