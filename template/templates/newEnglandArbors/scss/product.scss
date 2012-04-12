@@ -132,6 +132,49 @@
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	a{} //FIXME REMOVE
+	
+	.itemWrapper {
+		
+		.leftSide {
+			width: auto;
+			padding-right: 0;
+			float: none;
+		}
+		
+		.productHeader {
+			width: auto;
+			float: left;
+		}
+		
+		.rightSide {
+			width: auto;
+			float: none;
+			
+			.productPrices {
+				width: 100%;
+
+				input {
+					width: 5%;
+					float: left;
+					height: 1em;
+					margin: 0 3% 0 0; // 15/300
+				}
+
+				.productPrice,
+				.productName {
+					width: 10%;
+					float: left;
+					line-height: 1em;
+					margin: 0 2% 0 0; // 15/300
+				}
+
+				.productName {
+					width: 80%;
+					margin: 0 0 1em 0;
+				}
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: 767px) {
