@@ -83,7 +83,15 @@ input[type="submit"] {
 @media only screen and (max-width: 767px) { // cell + table
 	a{} // FIXME REMOVE
 	
-	div.pagination ul a {font-size: 1.142857143em;}
+	div.pagination {
+		position: none;
+		text-align: center;
+		padding: 0;
+		
+		ul {
+			a {font-size: 1.142857143em;}
+		}
+	}
 	
 	.desktop-only { display: none; }
 	.mobile-only, .tablet-only, .phone-only { display: block; }
