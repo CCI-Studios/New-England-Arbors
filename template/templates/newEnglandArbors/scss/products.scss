@@ -2,6 +2,24 @@
 
 // products page
 
+.categoryWrapper {
+	
+	.category {
+		width: 216px;
+		margin: 0 0 0 2.833333333%;
+	}
+}
+
+.productWrapper {
+	position: relative;
+	left: -2.127659574%; // 20/940
+	padding: 0 0 0 2.127659574%;
+	
+	.product {
+		width: 232px; // 232/720
+	}
+}
+
 .categoryWrapper,
 .productWrapper {
 	margin-left: -2.777777778%; // 20/720
