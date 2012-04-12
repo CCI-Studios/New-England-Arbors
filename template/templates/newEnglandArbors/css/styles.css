@@ -81,6 +81,9 @@ input[type="submit"] {
   display: none; }
 
 @media only screen and (max-width: 767px) {
+  div.pagination ul a {
+    font-size: 1.142857143em; }
+
   .desktop-only {
     display: none; }
 
