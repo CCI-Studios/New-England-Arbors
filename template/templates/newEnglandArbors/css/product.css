@@ -87,7 +87,9 @@
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .itemWrapper .leftSide {
+    margin: 0 auto;
     width: auto;
+    max-width: 80%;
     padding-right: 0;
     float: none; }
   .itemWrapper .productHeader {
@@ -114,7 +116,10 @@
         margin: 0 0 1em 0; } }
 @media only screen and (max-width: 767px) {
   .itemWrapper .leftSide {
+    margin: 0 auto;
     width: auto;
+    max-width: 80%;
+    padding-right: 0;
     float: none; }
   .itemWrapper .productHeader {
     width: auto;
