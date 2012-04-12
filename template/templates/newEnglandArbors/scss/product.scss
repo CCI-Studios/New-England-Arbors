@@ -64,19 +64,6 @@
 		> div {
 			padding: 1em 0; 
 			border-top: 1px solid $bordercolor;
-			&:first-child {padding-top: 0;}
-		}
-		
-		.productHeader {
-			border: none;
-			
-			p {margin: 0;}
-			
-			.productName {
-				font-size: 1.714285714em;
-				color: $maincolor;
-				margin: 0;
-			}
 		}
 		
 		.productDetails {
