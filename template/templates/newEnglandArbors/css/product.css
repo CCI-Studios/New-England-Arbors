@@ -38,22 +38,23 @@
           margin: 0; }
       .itemWrapper .leftSide .productLinks a {
         padding: 0 15px 0 0; }
+  .itemWrapper .productHeader {
+    width: 44.444444444%;
+    padding: 0 0 1em 0;
+    border: none;
+    float: right; }
+    .itemWrapper .productHeader p {
+      margin: 0; }
+    .itemWrapper .productHeader .productName {
+      font-size: 1.714285714em;
+      color: #00548e;
+      margin: 0; }
   .itemWrapper .rightSide {
     float: left;
-    width: 41.666666667%; }
+    width: 44.444444444%; }
     .itemWrapper .rightSide > div {
       padding: 1em 0;
       border-top: 1px solid #d8d8d8; }
-      .itemWrapper .rightSide > div:first-child {
-        padding-top: 0; }
-    .itemWrapper .rightSide .productHeader {
-      border: none; }
-      .itemWrapper .rightSide .productHeader p {
-        margin: 0; }
-      .itemWrapper .rightSide .productHeader .productName {
-        font-size: 1.714285714em;
-        color: #00548e;
-        margin: 0; }
     .itemWrapper .rightSide .productDetails dl {
       margin: 0;
       display: inline-block;
@@ -83,3 +84,57 @@
       .itemWrapper .rightSide .productPrices .productName {
         width: 70%;
         margin: 0 0 1em 5%; }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .itemWrapper .leftSide {
+    width: auto;
+    padding-right: 0;
+    float: none; }
+  .itemWrapper .productHeader {
+    width: auto;
+    float: left; }
+  .itemWrapper .rightSide {
+    width: auto;
+    float: none; }
+    .itemWrapper .rightSide .productPrices {
+      width: 100%; }
+      .itemWrapper .rightSide .productPrices input {
+        width: 5%;
+        float: left;
+        height: 1em;
+        margin: 0 3% 0 0; }
+      .itemWrapper .rightSide .productPrices .productPrice,
+      .itemWrapper .rightSide .productPrices .productName {
+        width: 10%;
+        float: left;
+        line-height: 1em;
+        margin: 0 2% 0 0; }
+      .itemWrapper .rightSide .productPrices .productName {
+        width: 80%;
+        margin: 0 0 1em 0; } }
+@media only screen and (max-width: 767px) {
+  .itemWrapper .leftSide {
+    width: auto;
+    float: none; }
+  .itemWrapper .productHeader {
+    width: auto;
+    float: left; }
+  .itemWrapper .rightSide {
+    width: auto;
+    float: none; }
+    .itemWrapper .rightSide .productPrices {
+      width: 100%; }
+      .itemWrapper .rightSide .productPrices input {
+        width: 5%;
+        float: left;
+        height: 1em;
+        margin: 0 3% 0 0; }
+      .itemWrapper .rightSide .productPrices .productPrice,
+      .itemWrapper .rightSide .productPrices .productName {
+        width: 10%;
+        float: left;
+        line-height: 1em;
+        margin: 0 2% 0 0; }
+      .itemWrapper .rightSide .productPrices .productName {
+        width: 80%;
+        margin: 0 0 1em 0; } }
