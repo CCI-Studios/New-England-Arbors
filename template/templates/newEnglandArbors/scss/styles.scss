@@ -81,6 +81,9 @@ input[type="submit"] {
 .mobile-only, .tablet-only, .phone-only { display: none; }
 
 @media only screen and (max-width: 767px) { // cell + table
+	
+	div.pagination ul a {font-size: 1.142857143em;}
+	
 	.desktop-only { display: none; }
 	.mobile-only, .tablet-only, .phone-only { display: block; }
 	
