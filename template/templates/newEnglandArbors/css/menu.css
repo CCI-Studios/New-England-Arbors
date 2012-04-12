@@ -60,19 +60,19 @@
     vertical-align: middle;
     margin: 0 0 1em -10px;
     padding: 0 0 0 10px; }
-    .moduletable_vmenu.sidebar .menu li:hover {
+    .moduletable_vmenu.sidebar .menu li:hover, .moduletable_vmenu.sidebar .menu li.active {
       background: url("../images/rollover_vmenu.png") top left no-repeat; }
-.moduletable_vmenu.sidebar a,
-.moduletable_vmenu.sidebar span {
-  font-size: 1.142857143em;
-  display: block;
-  color: #00548e;
-  white-space: nowrap; }
-  .moduletable_vmenu.sidebar a:hover,
-  .moduletable_vmenu.sidebar span:hover {
-    color: #fff;
-    text-decoration: none;
-    background: url("../images/rollover_vmenu.png") bottom right no-repeat; }
+      .moduletable_vmenu.sidebar .menu li:hover a,
+      .moduletable_vmenu.sidebar .menu li:hover span, .moduletable_vmenu.sidebar .menu li.active a, .moduletable_vmenu.sidebar .menu li.active span {
+        color: #fff;
+        text-decoration: none;
+        background: url("../images/rollover_vmenu.png") bottom right no-repeat; }
+    .moduletable_vmenu.sidebar .menu li a,
+    .moduletable_vmenu.sidebar .menu li span {
+      font-size: 1.142857143em;
+      display: block;
+      color: #00548e;
+      white-space: nowrap; }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .moduletable_hmenu.primary {
