@@ -137,16 +137,16 @@
       margin: 0 2.142857143% 0 0; }
 
   .module.products {
-    width: 10000px;
-    padding: 0; }
+    width: 100%;
+    padding: 0;
+    overflow: scroll; }
+    .module.products > div {
+      width: 5000px; }
     .module.products h3 {
       display: none; }
     .module.products .product {
       width: auto;
-      margin: 0 30px; }
-    .module.products > div {
-      width: 100%;
-      overflow: scroll; } }
+      margin: 0 30px; } }
 #footer .moduletable {
   position: relative; }
 
