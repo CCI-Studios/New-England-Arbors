@@ -208,19 +208,17 @@
 	// #bottom modules
 	
 	.module.products {
-		width: 10000px; // FIXME Should be able to use 100%
+		width: 100%; // FIXME Should be able to use 100%
 		padding: 0;
+		overflow: scroll;
+		
+		> div {width: 5000px;}
 		
 		h3 {display: none;}
 		
 		.product {
 			width: auto;
 			margin: 0 30px;
-		}
-		
-		> div {
-			width: 100%;
-			overflow: scroll;
 		}
 	}
 }
