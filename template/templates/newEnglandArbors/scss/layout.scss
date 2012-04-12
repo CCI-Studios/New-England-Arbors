@@ -19,6 +19,10 @@
 	background: #fff;
 	
 	-webkit-transition: left .5s ease-in-out;
+	-moz-transition: left .5s ease-in-out;
+	-o-transition: left .5s ease-in-out;
+	-ms-transition: left .5s ease-in-out;
+	transition: left .5s ease-in-out;
 }
 
 #header {
