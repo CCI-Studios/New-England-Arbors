@@ -58,8 +58,6 @@ input[type="submit"] {
 	color: #fff;
 }
 
-.desktop-only { }
-.mobile-only, .tablet-only, .phone-only { display: none; }
 .captioned {
 	img {
 		display: block;
@@ -69,8 +67,6 @@ input[type="submit"] {
 	&.left {margin: 0 .5em .5em 0;}
 }
 
-@media only screen and (max-width: 767px) { // cell + table
-	a{} // FIXME REMOVE
 .staffBlock {
 	width: 45%;
 	padding-left: 2.5%;
@@ -92,6 +88,10 @@ input[type="submit"] {
 	}
 }
 
+.desktop-only { }
+.mobile-only, .tablet-only, .phone-only { display: none; }
+
+@media only screen and (max-width: 767px) { // cell + table
 	.desktop-only { display: none; }
 	.mobile-only, .tablet-only, .phone-only { display: block; }
 	
