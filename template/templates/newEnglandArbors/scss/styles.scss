@@ -13,8 +13,18 @@
 ::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
 ::selection { background:#FF5E99; color:#fff; text-shadow: none; }
 
+.table4column {
+	tr {
+		td {
+			width: 22.5%;
+			padding: 0 0 0 2.5%;
+			vertical-align: top;
+			&:first-child {font-weight: bold;}
 		}
-		a {font-size: .857142857em;}
+	&:first-child td {
+		padding-bottom: 1em;
+		font-weight: bold;
+	}
 	}
 }
 
