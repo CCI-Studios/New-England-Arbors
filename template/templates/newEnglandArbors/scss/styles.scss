@@ -71,13 +71,41 @@ input[type="submit"] {
 
 @media only screen and (max-width: 767px) { // cell + table
 	a{} // FIXME REMOVE
+.staffBlock {
+	width: 45%;
+	padding-left: 2.5%;
+	float: left;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	margin-bottom: 1em;
 	
+	img {
+		float: left;
+		padding: 0 2.5% 2.5% 0;
 	}
 	
+	h4 {margin-bottom: 0}
+	h5 {
+		font-size: 1em;
+		margin: 0 0 .5em 0;
+	}
+}
+
 	.desktop-only { display: none; }
 	.mobile-only, .tablet-only, .phone-only { display: block; }
 	
 	.show-menu {cursor: pointer;}
+	
+	.staffBlock {
+		width: 100%;
+		padding-left: 0;
+		float: left;
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		margin-bottom: 1em;
+	}
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) { // phone
