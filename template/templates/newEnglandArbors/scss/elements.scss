@@ -69,6 +69,13 @@ h4 {
 	behavior: url('../templates/newEnglandArbors/resources/PIE.htc');
 }
 
+img {max-width: 100%;}
+
+ol {
+	padding: 0 0 0 20px;
+	color: $maincolor;
+}
+
 a, a:active, a:visited {
 	color: #607890;
 	text-decoration: none;
