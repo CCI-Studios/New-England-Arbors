@@ -24,6 +24,8 @@ select, input, textarea {
 	font-family: Goudy Old Style, Helvetica, Arial, sans-serif;
 }
 
+p {margin-top: 0;}
+
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 { 
 	color: $maincolor;
