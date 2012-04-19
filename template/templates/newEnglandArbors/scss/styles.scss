@@ -60,6 +60,14 @@ input[type="submit"] {
 
 .desktop-only { }
 .mobile-only, .tablet-only, .phone-only { display: none; }
+.captioned {
+	img {
+		display: block;
+		margin-bottom: .5em;
+	}
+	&.right {margin: 0 0 .5em .5em;}
+	&.left {margin: 0 .5em .5em 0;}
+}
 
 @media only screen and (max-width: 767px) { // cell + table
 	a{} // FIXME REMOVE
