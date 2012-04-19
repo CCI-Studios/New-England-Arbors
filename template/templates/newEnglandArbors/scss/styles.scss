@@ -13,36 +13,6 @@
 ::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
 ::selection { background:#FF5E99; color:#fff; text-shadow: none; }
 
-div.pagination {
-	padding: 0 0 0 2.777777778%;
-	
-	.pageFirst,
-	.pagePrev,
-	.pageNext,
-	.pageLast {}
-	
-	.pageFirst {background: url('../images/pageFirst_normal.png') center center no-repeat;}
-
-	.pagePrev {background: url('../images/pagePrev_normal.png') center center no-repeat;}
-	
-	.pageNext {background: url('../images/pageNext_normal.png') center center no-repeat;}
-	
-	.pageLast {background: url('../images/pageLast_normal.png') center center no-repeat;}
-	
-	
-	ul {
-		padding: 20px 0 25px;
-		margin: 0;
-		
-		li,
-		li a {
-			padding: 0 4px;
-			display: inline-block;
-			*display: inline;
-			*zoom: 1;
-			list-style: none;
-			&:hover,
-			&.active {color: #000; text-decoration: none;};
 		}
 		a {font-size: .857142857em;}
 	}
@@ -84,14 +54,6 @@ input[type="submit"] {
 @media only screen and (max-width: 767px) { // cell + table
 	a{} // FIXME REMOVE
 	
-	div.pagination {
-		position: none;
-		text-align: center;
-		padding: 0;
-		
-		ul {
-			a {font-size: 1.142857143em;}
-		}
 	}
 	
 	.desktop-only { display: none; }
