@@ -24,33 +24,15 @@
   color: #fff;
   text-shadow: none; }
 
-div.pagination {
-  padding: 0 0 0 2.777777778%; }
-  div.pagination .pageFirst {
-    background: url("../images/pageFirst_normal.png") center center no-repeat; }
-  div.pagination .pagePrev {
-    background: url("../images/pagePrev_normal.png") center center no-repeat; }
-  div.pagination .pageNext {
-    background: url("../images/pageNext_normal.png") center center no-repeat; }
-  div.pagination .pageLast {
-    background: url("../images/pageLast_normal.png") center center no-repeat; }
-  div.pagination ul {
-    padding: 20px 0 25px;
-    margin: 0; }
-    div.pagination ul li,
-    div.pagination ul li a {
-      padding: 0 4px;
-      display: inline-block;
-      *display: inline;
-      *zoom: 1;
-      list-style: none; }
-      div.pagination ul li:hover, div.pagination ul li.active,
-      div.pagination ul li a:hover,
-      div.pagination ul li a.active {
-        color: #000;
-        text-decoration: none; }
-    div.pagination ul a {
-      font-size: .857142857em; }
+.table4column tr td {
+  width: 22.5%;
+  padding: 0 0 0 2.5%;
+  vertical-align: top; }
+  .table4column tr td:first-child {
+    font-weight: bold; }
+.table4column tr:first-child td {
+  padding-bottom: 1em;
+  font-weight: bold; }
 
 .button {
   background: url("../images/buttonGradient.png") top left no-repeat;
@@ -78,17 +60,35 @@ input[type="submit"] {
   vertical-align: middle;
   color: #fff; }
 
+.captioned img {
+  display: block;
+  margin-bottom: .5em; }
+.captioned.right {
+  margin: 0 0 .5em .5em; }
+.captioned.left {
+  margin: 0 .5em .5em 0; }
+
+.staffBlock {
+  width: 45%;
+  padding-left: 2.5%;
+  float: left;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-bottom: 1em; }
+  .staffBlock img {
+    float: left;
+    padding: 0 2.5% 2.5% 0; }
+  .staffBlock h4 {
+    margin-bottom: 0; }
+  .staffBlock h5 {
+    font-size: 1em;
+    margin: 0 0 .5em 0; }
+
 .mobile-only, .tablet-only, .phone-only {
   display: none; }
 
 @media only screen and (max-width: 767px) {
-  div.pagination {
-    position: none;
-    text-align: center;
-    padding: 0; }
-    div.pagination ul a {
-      font-size: 1.142857143em; }
-
   .desktop-only {
     display: none; }
 
@@ -96,7 +96,16 @@ input[type="submit"] {
     display: block; }
 
   .show-menu {
-    cursor: pointer; } }
+    cursor: pointer; }
+
+  .staffBlock {
+    width: 100%;
+    padding-left: 0;
+    float: left;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin-bottom: 1em; } }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .desktop-only {
     display: none; }
