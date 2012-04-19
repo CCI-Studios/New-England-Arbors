@@ -31,8 +31,6 @@ h1, h2, h3, h4, h5, h6 {
 	color: $maincolor;
 	font-weight: bold; 
 }
-.item-page h1,
-.item-page h4 {margin-top: 0;}
 
 h1 {font-size: 1.714285714em;}
 
@@ -46,6 +44,8 @@ h4 {
 	margin: 0;
 }
 
+.item-page h1,
+.item-page h4 {margin-top: 0;}
 
 .categoryWrapper img,
 .productWrapper img,
