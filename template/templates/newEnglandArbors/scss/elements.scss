@@ -35,6 +35,8 @@ h1, h2, h3, h4, h5, h6 {
 h1 {font-size: 1.714285714em;}
 
 h3 {
+.module h3,
+.moduletable h3 {
 	font-size: 1.714285714em; // 24/14
 	font-weight: normal;
 	margin: 0 0 20px;
