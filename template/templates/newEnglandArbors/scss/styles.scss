@@ -17,12 +17,11 @@
 	tr {
 		td {
 			width: 22.5%;
-			padding: 0 0 0 2.5%;
+			padding: 1em 0 0 2.5%;
 			vertical-align: top;
 			&:first-child {font-weight: bold;}
 		}
 	&:first-child td {
-		padding-bottom: 1em;
 		font-weight: bold;
 	}
 	}
