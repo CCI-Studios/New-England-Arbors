@@ -26,12 +26,11 @@
 
 .table4column tr td {
   width: 22.5%;
-  padding: 0 0 0 2.5%;
+  padding: 1em 0 0 2.5%;
   vertical-align: top; }
   .table4column tr td:first-child {
     font-weight: bold; }
 .table4column tr:first-child td {
-  padding-bottom: 1em;
   font-weight: bold; }
 
 .button {
@@ -70,7 +69,7 @@ input[type="submit"] {
 
 .staffBlock {
   width: 45%;
-  padding-left: 2.5%;
+  padding-right: 2.5%;
   float: left;
   display: inline-block;
   *display: inline;
@@ -81,9 +80,17 @@ input[type="submit"] {
     padding: 0 2.5% 2.5% 0; }
   .staffBlock h4 {
     margin-bottom: 0; }
-  .staffBlock h5 {
+  .staffBlock span.jobTitle {
     font-size: 1em;
-    margin: 0 0 .5em 0; }
+    font-weight: bold;
+    color: #00548e;
+    margin: 0 0 .5em 0;
+    display: block; }
+
+.videoBlock {
+  width: 350px;
+  padding: 0 10px 0 0;
+  float: left; }
 
 .mobile-only, .tablet-only, .phone-only {
   display: none; }
