@@ -81,9 +81,13 @@ input[type="submit"] {
 	}
 	
 	h4 {margin-bottom: 0}
-	h5 {
+	
+	span.jobTitle {
 		font-size: 1em;
+		font-weight: bold;
+		color: $maincolor;
 		margin: 0 0 .5em 0;
+		display: block;
 	}
 }
 
