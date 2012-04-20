@@ -95,11 +95,21 @@ input[type="submit"] {
 	width: 350px;
 	padding: 0 10px 0 0;
 	float: left;
-
 }
 
 .desktop-only { }
 .mobile-only, .tablet-only, .phone-only { display: none; }
+
+@media only screen and (max-width: 991px) {
+	a{}
+	
+	.videoBlock {
+		width: 100%;
+		padding: 0 10px 0 0;
+		float: left;
+	}
+}
+
 
 @media only screen and (max-width: 767px) { // cell + table
 	.desktop-only { display: none; }
