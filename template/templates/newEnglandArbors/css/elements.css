@@ -43,15 +43,16 @@ h2, h3 {
 h4 {
   font-size: 1.142857143em; }
 
-.item-page h1,http://dev.newenglandarbors.com/#
+.item-page h1,
 .item-page h4 {
   margin-top: 0; }
 
 .module.products img,
 .categoryWrapper img,
 .productWrapper img,
-.module.contentBottom .contentBottomBlock img {
-  padding: 4px;
+.contentBottomBlock img {
+  max-width: 98%;
+  padding: 2%;
   border: 1px solid #d8d8d8;
   background-color: #ede9e9;
   -webkit-border-radius: 4px;

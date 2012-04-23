@@ -75,14 +75,13 @@
     margin: 5px 0 0; }
 
 .module.products {
-  width: 65.957446809%;
-  padding: 0 2.021276596% 0 0; }
+  width: 68.085106383%; }
   .module.products .product {
-    width: 27.419354839%;
+    width: 24.6875%;
     display: inline-block;
     *display: inline;
     *zoom: 1;
-    margin-right: 5.4838709685%; }
+    margin-right: 5.9375%; }
     .module.products .product a {
       color: #00548e; }
       .module.products .product a img {
