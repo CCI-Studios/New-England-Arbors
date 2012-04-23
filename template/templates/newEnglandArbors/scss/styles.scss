@@ -10,8 +10,8 @@
    No text-shadow: twitter.com/miketaylr/status/12228805301
    Also: hot pink! */
 /* TODO Update selection BG color */
-::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
-::selection { background:#FF5E99; color:#fff; text-shadow: none; }
+::-moz-selection{ background: $maincolor; color:#fff; text-shadow: none; }
+::selection { background: $maincolor; color:#fff; text-shadow: none; }
 
 .table4column {
 	tr {
