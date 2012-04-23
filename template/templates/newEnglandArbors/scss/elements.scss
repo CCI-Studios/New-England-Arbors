@@ -50,10 +50,12 @@ h4 {
 .item-page h1,
 .item-page h4 {margin-top: 0;}
 
+.module.products img,
 .categoryWrapper img,
 .productWrapper img,
 .contentBottomBlock img {
-	padding: 4px;
+	max-width: 98%;
+	padding: 2%;
 	border: 1px solid $bordercolor;
 	background-color: #ede9e9;
 
