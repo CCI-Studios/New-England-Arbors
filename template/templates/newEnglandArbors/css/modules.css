@@ -83,14 +83,14 @@
     margin: 0px 0;
     padding: 7px 0 0; }
 
-.moduletable .contentBottom {
+.moduletable .contentBottomBlock {
   float: left;
   width: 45.714285714%;
   padding: 0 4.2857142860% 0 0;
   display: inline-block;
   *display: inline;
   *zoom: 1; }
-  .moduletable .contentBottom h3 {
+  .moduletable .contentBottomBlock h3 {
     margin: 5px 0 0; }
 
 .module.products {
