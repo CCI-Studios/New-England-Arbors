@@ -88,37 +88,6 @@
 	p {margin-top: 0;}
 }
 
-// block module
-
-.module.block {
-	width: 28.936170213%; // 272/940
-	background: url('../images/bg_blockGradient.png') bottom left no-repeat;
-	padding-left: 1.70212766%;
-	
-	
-	> div {
-		background: url('../images/bg_blockGradient.png') bottom right no-repeat;
-		padding-bottom: 1em;
-	}
-	
-	> div > div {
-		background: url('../images/bg_blockHeader.png') top left no-repeat;
-		margin-left: -5.940594059%;
-		padding-left: 5.940594059%;
-	}
-	
-	> div > div > div {
-		background: url('../images/bg_blockHeader.png') top right no-repeat;
-		padding-right: 3.96039604%;
-	}
-	
-	h3 {
-		color: #fff;
-		margin: 0px 0;
-		padding: 7px 0 0;
-	}
-	
-}
 
 // #contentBottom modules
 
