@@ -47,9 +47,10 @@ h4 {
 .item-page h4 {
   margin-top: 0; }
 
+.moduletable.products img,
 .categoryWrapper img,
 .productWrapper img,
-.contentBottomBlock img {
+.module.contentBottom .contentBottomBlock img {
   padding: 4px;
   border: 1px solid #d8d8d8;
   background-color: #ede9e9;
