@@ -64,25 +64,6 @@
   .module.welcome p {
     margin-top: 0; }
 
-.module.block {
-  width: 28.936170213%;
-  background: url("../images/bg_blockGradient.png") bottom left no-repeat;
-  padding-left: 1.70212766%; }
-  .module.block > div {
-    background: url("../images/bg_blockGradient.png") bottom right no-repeat;
-    padding-bottom: 1em; }
-  .module.block > div > div {
-    background: url("../images/bg_blockHeader.png") top left no-repeat;
-    margin-left: -5.941%;
-    padding-left: 5.940594059%; }
-  .module.block > div > div > div {
-    background: url("../images/bg_blockHeader.png") top right no-repeat;
-    padding-right: 3.96039604%; }
-  .module.block h3 {
-    color: #fff;
-    margin: 0px 0;
-    padding: 7px 0 0; }
-
 .moduletable .contentBottomBlock {
   float: left;
   width: 45.714285714%;
