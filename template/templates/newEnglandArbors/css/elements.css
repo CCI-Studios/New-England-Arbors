@@ -43,11 +43,11 @@ h2, h3 {
 h4 {
   font-size: 1.142857143em; }
 
-.item-page h1,
+.item-page h1,http://dev.newenglandarbors.com/#
 .item-page h4 {
   margin-top: 0; }
 
-.moduletable.products img,
+.module.products img,
 .categoryWrapper img,
 .productWrapper img,
 .module.contentBottom .contentBottomBlock img {
