@@ -205,6 +205,15 @@
 
 #footer {.moduletable {position: relative;}}
 
+// show-menu mod
+
+.moduletable .show-menu {
+	display: block;
+	width: auto;
+	padding: 1em 0 0 0;
+	text-align: center;
+}
+
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
 }
