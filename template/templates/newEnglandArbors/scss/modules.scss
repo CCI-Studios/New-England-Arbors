@@ -132,7 +132,10 @@
 	}
 }
 
-.module.videos {margin-top: 48px;}
+.module.videos {
+	max-width: 272px;
+	margin-top: 48px;
+}
 
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
