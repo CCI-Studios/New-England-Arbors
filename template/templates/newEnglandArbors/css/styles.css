@@ -73,7 +73,7 @@ input[type="submit"] {
   padding-left: 1.70212766%; }
   .module.block > div {
     background: url("../images/bg_blockGradient.png") bottom right no-repeat;
-    padding-bottom: 1em; }
+    padding-bottom: 50px; }
   .module.block > div > div {
     background: url("../images/bg_blockHeader.png") top left no-repeat;
     margin-left: -5.941%;
@@ -84,7 +84,7 @@ input[type="submit"] {
   .module.block h3 {
     color: #fff;
     margin: 0px 0;
-    padding: 7px 0 0; }
+    padding: 7px 0 24px; }
 
 .staffBlock {
   width: 45%;

@@ -94,7 +94,6 @@
         margin: 0 0 15px; }
 
 .module.videos {
-  max-width: 272px;
   margin-top: 48px; }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -134,7 +133,10 @@
       display: none; }
     .module.products .product {
       width: auto;
-      margin: 0 30px; } }
+      margin: 0 30px; }
+
+  .module.videos {
+    min-width: 272px; } }
 #footer .moduletable {
   position: relative; }
 
