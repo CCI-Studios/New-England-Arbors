@@ -27,6 +27,15 @@
 	}
 }
 
+// each testimonial blog post
+
+.items-leading > div {
+	margin: 1em 0;
+	border-bottom: 1px solid $bordercolor;
+}
+
+// end of testimonial blog post
+
 .button {
 	background: url('../images/buttonGradient.png') top left no-repeat;
 	height: 35px;
