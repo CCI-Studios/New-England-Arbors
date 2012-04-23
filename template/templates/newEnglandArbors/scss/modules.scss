@@ -89,11 +89,9 @@
 	width: 68.085106383%; // 620/940
 	
 	.product {
-		width: 24.6875%; // 168/640
-		display: inline-block;
-		*display: inline;
-		*zoom: 1;
-		margin-right: 5.9375%;
+		width: 24.6875%; // 158/640
+		float: left;
+		margin-right: 8.645833333%; // 38/640
 		
 		a {
 			color: $maincolor;
