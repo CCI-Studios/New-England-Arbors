@@ -15,12 +15,12 @@
    Also: hot pink! */
 /* TODO Update selection BG color */
 ::-moz-selection {
-  background: #FF5E99;
+  background: #00548e;
   color: #fff;
   text-shadow: none; }
 
 ::selection {
-  background: #FF5E99;
+  background: #00548e;
   color: #fff;
   text-shadow: none; }
 
@@ -32,6 +32,10 @@
     font-weight: bold; }
 .table4column tr:first-child td {
   font-weight: bold; }
+
+.items-leading > div {
+  margin: 1em 0;
+  border-bottom: 1px solid #d8d8d8; }
 
 .button {
   background: url("../images/buttonGradient.png") top left no-repeat;

@@ -48,7 +48,7 @@ input[type="file"] {
   display: inline; }
 
 .ccms_form_element {
-  padding: 0 0 0 5px; }
+  padding: 0; }
   .ccms_form_element.cfdiv_text img {
     padding: 0;
     border: 0;

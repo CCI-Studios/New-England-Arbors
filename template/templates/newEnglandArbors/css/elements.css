@@ -44,7 +44,8 @@ h4 {
   font-size: 1.142857143em; }
 
 .item-page h1,
-.item-page h4 {
+.item-page h4,
+.blog h1 {
   margin-top: 0; }
 
 .module.products img,
