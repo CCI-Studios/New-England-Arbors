@@ -125,12 +125,14 @@ input[type="submit"] {
     margin: 0 0 .5em 0;
     display: block; }
 
-.videoBlock {
-  max-width: 350px;
-  padding: 0 10px 0 0;
-  float: left; }
-  .videoBlock h2 {
-    height: 40px; }
+.blog.videos .items-row {
+  clear: both; }
+  .blog.videos .items-row .item {
+    max-width: 350px;
+    padding: 0 10px 0 0;
+    float: left; }
+    .blog.videos .items-row .item h2 {
+      height: 40px; }
 
 .mobile-only, .tablet-only, .phone-only {
   display: none; }
