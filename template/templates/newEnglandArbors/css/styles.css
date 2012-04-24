@@ -33,6 +33,19 @@
 .table4column tr:first-child td {
   font-weight: bold; }
 
+.contactTable .form {
+  float: left;
+  width: 320px;
+  padding-right: 1.063829787%; }
+.contactTable .content {
+  float: left;
+  width: auto; }
+  .contactTable .content p {
+    width: 610px; }
+  .contactTable .content img {
+    float: right;
+    margin: 0 0 10px 10px; }
+
 .items-leading > div {
   margin: 1em 0;
   border-bottom: 1px solid #d8d8d8; }
