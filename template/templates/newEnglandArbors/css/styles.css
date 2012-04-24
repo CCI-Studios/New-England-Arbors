@@ -53,6 +53,7 @@
     padding: 0 40px 0 25px;
     color: #fff; }
 
+button[type="submit"],
 input[type="submit"] {
   background: url("../images/button_submit.png") top left no-repeat;
   border-radius: 0;
@@ -61,7 +62,8 @@ input[type="submit"] {
   text-align: center;
   height: 35px;
   vertical-align: middle;
-  color: #fff; }
+  color: #fff;
+  padding: 0; }
 
 .captioned img {
   display: block;
