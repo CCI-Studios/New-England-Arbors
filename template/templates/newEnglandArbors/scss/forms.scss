@@ -24,7 +24,25 @@ input:invalid, textarea:invalid {
    www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
 button {  width: auto; overflow: visible; }
 
+// login
 
+div.login fieldset {
+	border: none;
+	padding: 0;
+}
+
+.button[type="submit"] {
+	margin-top: .5em;
+}
+
+div.login-fields label {
+	display: block;
+	padding: 0 0 .5em;
+}
+
+div.login-fields input {
+	margin: 0 0 .5em;
+}
 
 // testimonials
 .ccms_form_element label,

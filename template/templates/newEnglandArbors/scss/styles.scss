@@ -55,6 +55,7 @@
 	}
 }
 
+button[type="submit"],
 input[type="submit"] {
 	background: url('../images/button_submit.png') top left no-repeat;
 	border-radius: 0;
@@ -64,6 +65,7 @@ input[type="submit"] {
 	height: 35px;
 	vertical-align: middle;
 	color: #fff;
+	padding: 0;
 }
 
 .captioned {
