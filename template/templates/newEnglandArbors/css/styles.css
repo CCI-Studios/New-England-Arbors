@@ -159,10 +159,19 @@ input[type="submit"] {
     display: inline-block;
     *display: inline;
     *zoom: 1;
-    margin-bottom: 1em; } }
+    margin-bottom: 1em; }
+
+  .contactTable .content {
+    margin-top: 2em; }
+    .contactTable .content p {
+      width: 100%; } }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .desktop-only {
     display: none; }
 
   .mobile-only, .phone-only {
     display: block; } }
+@media only screen and (max-width: 480px) {
+  .contactTable .content img {
+    float: none;
+    margin: 0 0 1em; } }
