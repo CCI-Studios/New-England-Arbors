@@ -27,6 +27,25 @@
 	}
 }
 
+.contactTable {
+	.form {
+		float: left;
+		width: 320px;
+		padding-right: 1.063829787%;
+	}
+	
+	.content {
+		float: left;
+		width: auto;
+		
+		p {width: 610px;}
+		img {
+			float: right;
+			margin: 0 0 10px 10px;
+		}
+	}
+}
+
 // each testimonial blog post
 
 .items-leading > div {
@@ -133,12 +152,18 @@ input[type="submit"] {
 	}
 }
 
-.videoBlock {
-	max-width: 350px;
-	padding: 0 10px 0 0;
-	float: left;
-	
-	h2 {height: 40px;}
+.blog.videos {
+	.items-row {
+		clear: both;
+		
+		.item {
+			max-width: 350px;
+			padding: 0 10px 0 0;
+			float: left;
+
+			h2 {height: 40px;}
+		}
+	}
 }
 
 .desktop-only { }
@@ -170,9 +195,31 @@ input[type="submit"] {
 		*zoom: 1;
 		margin-bottom: 1em;
 	}
+	
+	.contactTable {
+
+		.content {
+			margin-top: 2em;
+
+			p {width: 100%;}
+		}
+	}
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) { // phone
 	.desktop-only { display: none; }
 	.mobile-only, .phone-only { display: block; }
+}
+
+@media only screen and (max-width: 480px) {
+	a{} // FIXME REMOVE
+	
+	.contactTable {
+		.content {
+			img {
+				float: none;
+				margin: 0 0 1em;
+			}
+		}
+	}
 }
