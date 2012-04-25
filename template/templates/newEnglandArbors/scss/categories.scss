@@ -1,5 +1,29 @@
 @import "_variables";
 
+// dealer page
+
+.categories {
+	
+	ul {
+		padding: 0;
+		
+		li {
+			list-style: none;
+			
+			.item-title a {
+				font-size: 1.142857143em;
+				margin: 1em 0;
+				display: inline-block;
+				*display: inline;
+				*zoom: 1;
+			}
+			&.first .item-title a {margin-top: 0;}
+		}
+	}	
+}
+
+// our staff and video category blocks
+
 .blog {
 	
 	.items-row {
