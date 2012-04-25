@@ -127,77 +127,19 @@ input[type="submit"] {
 	
 }
 
-.staffBlock {
-	width: 45%;
-	padding-right: 2.5%;
-	float: left;
-	display: inline-block;
-	*display: inline;
-	*zoom: 1;
-	margin-bottom: 1em;
-	
-	img {
-		float: left;
-		padding: 0 2.5% 2.5% 0;
-	}
-	
-	h4 {margin-bottom: 0}
-	
-	span.jobTitle {
-		font-size: 1em;
-		font-weight: bold;
-		color: $maincolor;
-		margin: 0 0 .5em 0;
-		display: block;
-	}
-}
-
-.blog.videos {
-	.items-row {
-		clear: both;
-		display: inline-block;
-		*display: inline;
-		*zoom: 1;
-		
-		.item {
-			max-width: 350px;
-			padding: 0 10px 0 0;
-			float: left;
-
-			h1 {height: 50px;}
-		}
-	}
-}
-
 .desktop-only { }
 .mobile-only, .tablet-only, .phone-only { display: none; }
 
 @media only screen and (max-width: 991px) {
 	a{}
-	
-	.videoBlock {
-		width: 100%;
-		padding: 0 10px 0 0;
-		float: left;
-	}
-}
 
+}
 
 @media only screen and (max-width: 767px) { // cell + table
 	.desktop-only { display: none; }
 	.mobile-only, .tablet-only, .phone-only { display: block; }
 	
 	.show-menu {cursor: pointer;}
-	
-	.staffBlock {
-		width: 100%;
-		padding-left: 0;
-		float: left;
-		display: inline-block;
-		*display: inline;
-		*zoom: 1;
-		margin-bottom: 1em;
-	}
 	
 	.contactTable {
 
