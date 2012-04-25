@@ -1,3 +1,16 @@
+.categories ul {
+  padding: 0; }
+  .categories ul li {
+    list-style: none; }
+    .categories ul li .item-title a {
+      font-size: 1.142857143em;
+      margin: 1em 0;
+      display: inline-block;
+      *display: inline;
+      *zoom: 1; }
+    .categories ul li.first .item-title a {
+      margin-top: 0; }
+
 .blog .items-row {
   clear: both;
   display: inline-block;

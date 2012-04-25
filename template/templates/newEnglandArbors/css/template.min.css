@@ -882,7 +882,6 @@ input[type="file"] {
     top: 0;
     left: 0;
     width: 80%;
-    background: #00548e;
     text-align: left;
     float: none;
     margin: 20px 0 0 0;
@@ -1172,6 +1171,19 @@ div.pagination ul {
     padding: 0; }
     div.pagination ul a {
       font-size: 1.142857143em; } }
+.categories ul {
+  padding: 0; }
+  .categories ul li {
+    list-style: none; }
+    .categories ul li .item-title a {
+      font-size: 1.142857143em;
+      margin: 1em 0;
+      display: inline-block;
+      *display: inline;
+      *zoom: 1; }
+    .categories ul li.first .item-title a {
+      margin-top: 0; }
+
 .blog .items-row {
   clear: both;
   display: inline-block;
