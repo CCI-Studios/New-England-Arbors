@@ -105,46 +105,9 @@ input[type="submit"] {
     margin: 0px 0;
     padding: 7px 0 24px; }
 
-.staffBlock {
-  width: 45%;
-  padding-right: 2.5%;
-  float: left;
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  margin-bottom: 1em; }
-  .staffBlock img {
-    float: left;
-    padding: 0 2.5% 2.5% 0; }
-  .staffBlock h4 {
-    margin-bottom: 0; }
-  .staffBlock span.jobTitle {
-    font-size: 1em;
-    font-weight: bold;
-    color: #00548e;
-    margin: 0 0 .5em 0;
-    display: block; }
-
-.blog.videos .items-row {
-  clear: both;
-  display: inline-block;
-  *display: inline;
-  *zoom: 1; }
-  .blog.videos .items-row .item {
-    max-width: 350px;
-    padding: 0 10px 0 0;
-    float: left; }
-    .blog.videos .items-row .item h1 {
-      height: 50px; }
-
 .mobile-only, .tablet-only, .phone-only {
   display: none; }
 
-@media only screen and (max-width: 991px) {
-  .videoBlock {
-    width: 100%;
-    padding: 0 10px 0 0;
-    float: left; } }
 @media only screen and (max-width: 767px) {
   .desktop-only {
     display: none; }
@@ -154,15 +117,6 @@ input[type="submit"] {
 
   .show-menu {
     cursor: pointer; }
-
-  .staffBlock {
-    width: 100%;
-    padding-left: 0;
-    float: left;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
-    margin-bottom: 1em; }
 
   .contactTable .content {
     margin-top: 2em; }

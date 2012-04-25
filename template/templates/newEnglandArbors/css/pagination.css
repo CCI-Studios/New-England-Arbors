@@ -26,6 +26,8 @@ div.pagination ul {
     div.pagination ul li:hover, div.pagination ul li.active {
       color: #000;
       text-decoration: none; }
+    div.pagination ul li:first-child a, div.pagination ul li:first-child span {
+      padding-left: 0; }
     div.pagination ul li a,
     div.pagination ul li span {
       padding: .25em .75em;
