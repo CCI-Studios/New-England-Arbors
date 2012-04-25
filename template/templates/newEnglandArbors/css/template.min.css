@@ -606,7 +606,8 @@ input[type="file"] {
   #content.wide1 {
     width: 100%;
     margin-left: 0;
-    border-left: none; }
+    border-left: none;
+    padding-left: 0; }
   #content.wide2 {
     width: auto; }
 
@@ -630,6 +631,9 @@ input[type="file"] {
     padding-bottom: 2em; }
 
 @media only screen and (max-width: 767px) {
+  #header {
+    padding: 0 0 20px 0; }
+
   #wrapper.menu-open {
     left: 95%; }
 
@@ -648,7 +652,8 @@ input[type="file"] {
     margin-left: 0; }
 
   #footer {
-    background: none; } }
+    background: none;
+    padding: 10px 0 20px; } }
 /* @group modules */
 #headerTop .moduletable,
 #headerTop .module,
@@ -777,7 +782,8 @@ input[type="file"] {
 .moduletable .show-menu {
   display: block;
   width: auto;
-  padding: 1em 0 0 0;
+  padding: 0;
+  margin: 1em 0 0 0;
   text-align: center; }
 
 @media only screen and (max-width: 480px) {
@@ -875,7 +881,7 @@ input[type="file"] {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 80%;
     background: #00548e;
     text-align: left;
     float: none;
