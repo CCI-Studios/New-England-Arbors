@@ -1,37 +1,45 @@
 @import "_variables";
 
 div.pagination {
-	padding: 0 0 0 2.777777778%;
 	
-	.pageFirst,
-	.pagePrev,
-	.pageNext,
-	.pageLast {}
+	.pagination-start a,
+	.pagination-prev a,
+	.pagination-next a,
+	.pagination-end a,
+	.pagination-start span,
+	.pagination-prev span,
+	.pagination-next span,
+	.pagination-end span {
+		text-indent: -9999px;
+	}
 	
-	.pageFirst {background: url('../images/pageFirst_normal.png') center center no-repeat;}
+	.pagination-start {background: url('../images/pageFirst_normal.png') center center no-repeat;}
 
-	.pagePrev {background: url('../images/pagePrev_normal.png') center center no-repeat;}
+	.pagination-prev {background: url('../images/pagePrev_normal.png') center center no-repeat;}
 	
-	.pageNext {background: url('../images/pageNext_normal.png') center center no-repeat;}
+	.pagination-next {background: url('../images/pageNext_normal.png') center center no-repeat;}
 	
-	.pageLast {background: url('../images/pageLast_normal.png') center center no-repeat;}
+	.pagination-end {background: url('../images/pageLast_normal.png') center center no-repeat;}
 	
 	
 	ul {
-		padding: 20px 0 25px;
 		margin: 0;
+		padding: 0;
 		
-		li,
-		li a {
-			padding: 0 4px;
+		li {
 			display: inline-block;
 			*display: inline;
 			*zoom: 1;
 			list-style: none;
 			&:hover,
 			&.active {color: #000; text-decoration: none;};
+
+			a,
+			span {
+				padding: .25em .75em;
+				font-size: .857142857em
+			}
 		}
-		a {font-size: .857142857em;}
 	}
 }
 
