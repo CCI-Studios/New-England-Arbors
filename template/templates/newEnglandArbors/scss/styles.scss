@@ -155,6 +155,9 @@ input[type="submit"] {
 .blog.videos {
 	.items-row {
 		clear: both;
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
 		
 		.item {
 			max-width: 350px;
