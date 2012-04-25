@@ -126,13 +126,16 @@ input[type="submit"] {
     display: block; }
 
 .blog.videos .items-row {
-  clear: both; }
+  clear: both;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
   .blog.videos .items-row .item {
     max-width: 350px;
     padding: 0 10px 0 0;
     float: left; }
-    .blog.videos .items-row .item h2 {
-      height: 40px; }
+    .blog.videos .items-row .item h1 {
+      height: 50px; }
 
 .mobile-only, .tablet-only, .phone-only {
   display: none; }
