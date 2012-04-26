@@ -85,6 +85,7 @@ input[type="submit"] {
 	vertical-align: middle;
 	color: #fff;
 	padding: 0;
+	&.validate {margin-top: .5em;}
 }
 
 .captioned {
