@@ -24,6 +24,23 @@
 
 .blog {
 	
+	//inside category
+	&.categories {
+		
+		.items-row {
+			display: block;
+			border-top: 1px solid $bordercolor;
+			&.row-0 {border-top: none;}
+			
+			h2 {
+				margin-top: 14px;
+				height: 1em;
+			}
+			
+			p {margin-left: 2em;}
+		}
+	}
+	
 	.items-row {
 		clear: both;
 		display: inline-block;
