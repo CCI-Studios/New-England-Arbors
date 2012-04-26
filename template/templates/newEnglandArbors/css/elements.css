@@ -11,7 +11,7 @@ body {
 @font-face {
   font-family: 'Goudy Old Style';
   src: url("../resources/GOUDOS.eot");
-  src: url("../resources/GOUDOS.eot?#iefix") format("embedded-opentype"), url("../resources/GOUDOS.ttf") format("truetype");
+  src: url("../resources/GOUDOS.eot?#iefix") format("embedded-opentype"), url("../resources/GOUDOS.TTF") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -72,7 +72,8 @@ h4 {
   behavior: url("../templates/newEnglandArbors/resources/PIE.htc"); }
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  height: inherit; }
 
 ol {
   padding: 0 0 0 20px;

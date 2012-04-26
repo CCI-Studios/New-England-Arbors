@@ -77,6 +77,9 @@ input[type="submit"] {
   vertical-align: middle;
   color: #fff;
   padding: 0; }
+  button[type="submit"].validate,
+  input[type="submit"].validate {
+    margin-top: .5em; }
 
 .captioned img {
   display: block;
@@ -99,7 +102,7 @@ input[type="submit"] {
     padding-left: 5.940594059%; }
   .module.block > div > div > div {
     background: url("../images/bg_blockHeader.png") top right no-repeat;
-    padding-right: 3.96039604%; }
+    padding-right: 5.940594059%; }
   .module.block h3 {
     color: #fff;
     margin: 0px 0;

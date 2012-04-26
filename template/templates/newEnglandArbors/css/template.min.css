@@ -380,7 +380,7 @@ body {
 @font-face {
   font-family: 'Goudy Old Style';
   src: url("../resources/GOUDOS.eot");
-  src: url("../resources/GOUDOS.eot?#iefix") format("embedded-opentype"), url("../resources/GOUDOS.ttf") format("truetype");
+  src: url("../resources/GOUDOS.eot?#iefix") format("embedded-opentype"), url("../resources/GOUDOS.TTF") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -441,7 +441,8 @@ h4 {
   behavior: url("../templates/newEnglandArbors/resources/PIE.htc"); }
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  height: inherit; }
 
 ol {
   padding: 0 0 0 20px;
@@ -712,6 +713,8 @@ input[type="file"] {
   *zoom: 1; }
   .moduletable .contentBottomBlock h3 {
     margin: 5px 0 0; }
+  .moduletable .contentBottomBlock.leftClear {
+    clear: left; }
 
 .module.products {
   width: 68.085106383%; }
@@ -787,9 +790,14 @@ input[type="file"] {
   .module.products .product {
     margin: 0 90px; }
 
-  .moduletable .contentBottom img {
+  .moduletable .contentBottomBlock {
     float: none;
-    margin: 0; } }
+    width: 100%;
+    padding: 0; }
+    .moduletable .contentBottomBlock img {
+      float: none;
+      margin: 0;
+      padding: 1.5%; } }
 .moduletable_hmenu .menu {
   margin: 0;
   padding: 0; }
@@ -1317,6 +1325,9 @@ input[type="submit"] {
   vertical-align: middle;
   color: #fff;
   padding: 0; }
+  button[type="submit"].validate,
+  input[type="submit"].validate {
+    margin-top: .5em; }
 
 .captioned img {
   display: block;
@@ -1339,7 +1350,7 @@ input[type="submit"] {
     padding-left: 5.940594059%; }
   .module.block > div > div > div {
     background: url("../images/bg_blockHeader.png") top right no-repeat;
-    padding-right: 3.96039604%; }
+    padding-right: 5.940594059%; }
   .module.block h3 {
     color: #fff;
     margin: 0px 0;

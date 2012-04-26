@@ -59,6 +59,8 @@
   *zoom: 1; }
   .moduletable .contentBottomBlock h3 {
     margin: 5px 0 0; }
+  .moduletable .contentBottomBlock.leftClear {
+    clear: left; }
 
 .module.products {
   width: 68.085106383%; }
@@ -134,6 +136,11 @@
   .module.products .product {
     margin: 0 90px; }
 
-  .moduletable .contentBottom img {
+  .moduletable .contentBottomBlock {
     float: none;
-    margin: 0; } }
+    width: 100%;
+    padding: 0; }
+    .moduletable .contentBottomBlock img {
+      float: none;
+      margin: 0;
+      padding: 1.5%; } }
