@@ -1,27 +1,24 @@
 @import "_variables";
 
-// dealer page
 // dealer category page
 
-.categories {
-	
-	ul {
-		padding: 0;
-		
-		li {
-			list-style: none;
-			
-			.item-title a {
-				font-size: 1.142857143em;
-				margin: 1em 0;
-				display: inline-block;
-				*display: inline;
-				*zoom: 1;
-			}
-			&.first .item-title a {margin-top: 0;}
+.categories ul {
+	padding: 0;
+
+	li {
+		list-style: none;
+
+		.item-title a {
+			font-size: 1.142857143em;
+			margin: 1em 0;
+			display: inline-block;
+			*display: inline;
+			*zoom: 1;
 		}
-	}	
+		&.first .item-title a {margin-top: 0;}
+	}
 }
+
 
 // our staff and video category blocks
 
@@ -34,6 +31,7 @@
 		*zoom: 1;
 	}
 	
+	// our staff page
 	.staffBlock {
 		width: 45%;
 		padding-right: 2.5%;
@@ -61,6 +59,7 @@
 		}
 	}
 	
+	// video page
 	&.videos {
 		.item {
 			max-width: 350px;
