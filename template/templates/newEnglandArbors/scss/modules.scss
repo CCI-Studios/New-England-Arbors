@@ -206,13 +206,17 @@
 	}
 	
 	.moduletable {
-		.contentBottom {
+		.contentBottomBlock {
+			float: none;
+			width: 100%;
+			padding: 0;
 			
 			img {
 				float: none;
 				margin: 0;
+				padding: 1.5%;
 			}
-
 		}
 	}
+	
 }
