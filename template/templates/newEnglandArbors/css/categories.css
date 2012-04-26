@@ -11,6 +11,16 @@
     .categories ul li.first .item-title a {
       margin-top: 0; }
 
+.blog.categories .items-row {
+  display: block;
+  border-top: 1px solid #d8d8d8; }
+  .blog.categories .items-row.row-0 {
+    border-top: none; }
+  .blog.categories .items-row h2 {
+    margin-top: 14px;
+    height: 1em; }
+  .blog.categories .items-row p {
+    margin-left: 2em; }
 .blog .items-row {
   clear: both;
   display: inline-block;
@@ -39,8 +49,8 @@
   max-width: 350px;
   padding: 0 10px 0 0;
   float: left; }
-  .blog.videos .item h1 {
-    height: 50px; }
+  .blog.videos .item h2 {
+    height: 1em; }
 
 @media only screen and (max-width: 991px) {
   .videoBlock {

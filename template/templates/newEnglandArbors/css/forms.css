@@ -41,9 +41,6 @@ div.login fieldset {
   border: none;
   padding: 0; }
 
-.button[type="submit"] {
-  margin-top: .5em; }
-
 div.login-fields label {
   display: block;
   padding: 0 0 .5em; }
