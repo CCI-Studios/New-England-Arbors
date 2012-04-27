@@ -43,8 +43,6 @@
 
 // #header modules
 
-// #top modules
-
 .moduletable.logo {
 	float: left;
 	display: inline-block;
@@ -52,13 +50,18 @@
 	*zoom: 1;
 }
 
+// #top modules
+
 .module.welcome {
+	float: left;
 	width: 65.957446809%; // 620/940
 	padding: 0 2.021276596% 0 0; // 20/940 
 	
 	h3 {margin: 0;}
 	p {margin-top: 0;}
 }
+
+.module.newsletter {float: left;}
 
 
 // #contentBottom modules
@@ -81,6 +84,7 @@
 // #bottom modules
 
 .module.products {
+	float: left;
 	width: 68.085106383%; // 620/940
 	
 	.product {
@@ -104,6 +108,7 @@
 }
 
 .module.videos {
+	float: left;
 	margin-top: 48px;
 }
 
@@ -156,6 +161,7 @@
 	// #bottom modules
 	
 	.module.products {
+		float: none;
 		width: 100%;
 		padding: 0;
 		overflow: scroll;
@@ -171,7 +177,10 @@
 	}
 	
 	.module.videos {
+		float: none;
 		min-width: 272px;
+		display: block;
+		margin: 1em auto 0;
 	}
 }
 
