@@ -64,7 +64,8 @@
 #content {
   padding: 0 0 0 2.021276596%;
   border-left: 1px solid #d8d8d8;
-  margin-left: 200px; }
+  margin-left: 200px;
+  *zoom: 1; }
   #content .item-page {
     position: relative; }
   #content #contentBottom {
