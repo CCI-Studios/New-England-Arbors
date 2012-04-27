@@ -58,66 +58,65 @@ $analytics = "UA-31248154-1"; // FIXME Update to client ID
 	</div>
 
 	<div id="wrapper">
-<div id="header"><div class="container">
-	<div id="headerTop"><div><div>
-		<jdoc:include type="modules" name="headerTop" style="xhtml" />
-	</div></div></div>
-	<div class="clear"></div>
-	<jdoc:include type="modules" name="header" style="xhtml" />
-	<div class="clear"></div>
-</div></div>
+		<div id="header"><div class="container">
+			<div id="headerTop"><div><div>
+				<jdoc:include type="modules" name="headerTop" style="xhtml" />
+			</div></div></div>
+				<div class="clear"></div>
+				<jdoc:include type="modules" name="header" style="xhtml" />
+				<div class="clear"></div>
+		</div></div>
 
-<div id="masthead"><div class="container">
-	<jdoc:include type="modules" name="masthead" style="xhtml" />
-	<div class="clear"></div>
-</div></div>
-
-<div id="body"><div class="container">
-	<?php if ($this->countModules('top')): ?>
-	<div id="top">
-		<jdoc:include type="modules" name="top" style="rounded" />
-		<div class="clear"></div>
-	</div>
-	<?php endif; ?>
-	<?php if ($this->countModules('sidebar')): ?>
-	<div id="sidebar">
-		<jdoc:include type="modules" name="sidebar" style="xhtml" />
-	</div>
-	<?php endif; ?>
-	<div id="content" class="<?php 
-				if (!$this->countModules('sidebar')) {
-					echo 'wide1';
-				} else {
-					echo 'wide2';
-				}
-		?>">
-		<jdoc:include type="component" />
-		<div class="clear"></div>
-		<?php if ($this->countModules('contentBottom')): ?>
-		<div id="contentBottom">
-			<jdoc:include type="modules" name="contentBottom" style="xhtml" />
+		<div id="masthead"><div class="container">
+			<jdoc:include type="modules" name="masthead" style="xhtml" />
 			<div class="clear"></div>
-		</div>
-		<?php endif; ?>
+		</div></div>
+
+		<div id="body"><div class="container">
+			<?php if ($this->countModules('top')): ?>
+			<div id="top">
+				<jdoc:include type="modules" name="top" style="rounded" />
+				<div class="clear"></div>
+			</div>
+			<?php endif; ?>
+			<?php if ($this->countModules('sidebar')): ?>
+			<div id="sidebar">
+				<jdoc:include type="modules" name="sidebar" style="xhtml" />
+			</div>
+			<?php endif; ?>
+			<div id="content" class="<?php 
+						if (!$this->countModules('sidebar')) {
+							echo 'wide1';
+						} else {
+							echo 'wide2';
+						}
+				?>">
+				<jdoc:include type="component" />
+				<div class="clear"></div>
+				<?php if ($this->countModules('contentBottom')): ?>
+					<div id="contentBottom">
+						<jdoc:include type="modules" name="contentBottom" style="xhtml" />
+						<div class="clear"></div>
+					</div>
+				<?php endif; ?>
+			</div>
+			<div id="bottom"><div>
+				<jdoc:include type="modules" name="bottom" style="rounded" />
+				<div class="clear"></div>
+			</div></div>
+		</div></div>
+
+			<div id="footer"><div class="container">
+				<jdoc:include type="modules" name="footer" style="xhtml" />
+			</div></div>
+
+			<div class="clear"></div>
+
+			<div id="copyright"><div class="container">
+				&copy; <?php echo date('Y') ?> New England Arbors. All Rights Reserved.<br />
+				<a href="http://ccistudios.com">Site by CCI Studios</a>
+			</div></div>
 	</div>
-	<div id="bottom"><div>
-		<jdoc:include type="modules" name="bottom" style="rounded" />
-		<div class="clear"></div>
-	</div></div>
-</div></div>
-
-<div id="footer"><div class="container">
-	<jdoc:include type="modules" name="footer" style="xhtml" />
-</div></div>
-
-<div class="clear"></div>
-
-<div id="copyright"><div class="container">
-	&copy; <?php echo date('Y') ?> New England Arbors. All Rights Reserved.<br />
-	<a href="http://ccistudios.com">Site by CCI Studios</a>
-</div></div>
-
-</div>
 
 <div class="hidden">
 	<jdoc:include type="modules" name="hidden" style="raw" />
