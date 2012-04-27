@@ -1179,7 +1179,8 @@ div.pagination ul {
     div.pagination ul a {
       font-size: 1.142857143em; } }
 .categories ul {
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
   .categories ul li {
     list-style: none; }
     .categories ul li .item-title a {
@@ -1195,6 +1196,9 @@ div.pagination ul {
   display: block;
   border-top: 1px solid #d8d8d8; }
   .blog.categories .items-row.row-0 {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
     border-top: none; }
   .blog.categories .items-row h2 {
     margin-top: 14px;
