@@ -41,6 +41,18 @@ div.login-fields input {
 }
 
 // testimonials
+.ccms_form_element {
+	padding: 0;
+	*zoom: 1;
+	
+	&.cfdiv_text img {
+		padding: 0;
+		border: 0;
+		background: 0;
+		box-shadow: none;
+	}
+}
+
 .ccms_form_element label,
 .cfdiv_text label {
 	width: 100px;
@@ -51,15 +63,4 @@ div.login-fields input {
 textarea, 
 input[type="file"] {
 	display: inline;
-}
-
-.ccms_form_element {
-	padding: 0;
-	
-	&.cfdiv_text img {
-		padding: 0;
-		border: 0;
-		background: 0;
-		box-shadow: none;
-	}
 }
