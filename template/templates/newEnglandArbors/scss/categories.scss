@@ -31,7 +31,12 @@
 		.items-row {
 			display: block;
 			border-top: 1px solid $bordercolor;
-			&.row-0 {border-top: none;}
+			&.row-0 {
+				display: inline-block;
+				*display: inline;
+				*zoom: 1;
+				border-top: none;
+			}
 			
 			h2 {
 				margin-top: 14px;
