@@ -122,6 +122,13 @@
 @media only screen and (max-width: 767px) {
 	a{}
 	
+	#headerTop {
+		.moduletable { 
+			float: right;
+			padding: 0 10px 0 0;
+		}
+	}
+	
 	// header modules
 	
 	.moduletable.logo {
