@@ -191,11 +191,12 @@
 
 // show-menu mod
 
-.moduletable .show-menu {
+.moduletable.show-menu {
+	float: left !important;
 	display: block;
 	width: auto;
 	padding: 0;
-	margin: 1em 0 0 0;
+	margin: 0;
 	text-align: center;
 }
 
