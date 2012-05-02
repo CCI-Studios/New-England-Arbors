@@ -82,6 +82,10 @@
     text-align: center;
     margin-top: 26px; } }
 @media only screen and (max-width: 767px) {
+  #headerTop .moduletable {
+    float: right;
+    padding: 0 10px 0 0; }
+
   .moduletable.logo {
     float: none;
     display: block;
@@ -123,11 +127,12 @@
 #footer .moduletable {
   position: relative; }
 
-.moduletable .show-menu {
+.moduletable.show-menu {
+  float: left !important;
   display: block;
   width: auto;
   padding: 0;
-  margin: 1em 0 0 0;
+  margin: 0;
   text-align: center; }
 
 @media only screen and (max-width: 480px) {

@@ -375,7 +375,7 @@ body {
   font-size: 0.875em;
   /*14px/16px*/
   overflow-x: hidden;
-  background: url("../images/bg_mobile.jpg") center center repeat; }
+  background: #00548e; }
 
 @font-face {
   font-family: 'Goudy Old Style';
@@ -633,14 +633,24 @@ input[type="file"] {
 @media only screen and (max-width: 767px) {
   #header {
     padding: 0 0 20px 0; }
+    #header .container {
+      width: 100%;
+      padding-left: 0; }
 
   #wrapper.menu-open {
-    left: 95%; }
+    left: 85%; }
 
   #headerTop {
     float: none;
     margin: 0 auto;
     text-align: center; }
+    #headerTop > div {
+      display: block;
+      background: url("../images/bg_headerTopMobile.png") top center repeat-x;
+      padding: 0 16px; }
+    #headerTop > div > div {
+      width: 100%;
+      background: none; }
 
   #body {
     background: none; }
@@ -738,6 +748,10 @@ input[type="file"] {
     text-align: center;
     margin-top: 26px; } }
 @media only screen and (max-width: 767px) {
+  #headerTop .moduletable {
+    float: right;
+    padding: 0 10px 0 0; }
+
   .moduletable.logo {
     float: none;
     display: block;
@@ -779,11 +793,12 @@ input[type="file"] {
 #footer .moduletable {
   position: relative; }
 
-.moduletable .show-menu {
+.moduletable.show-menu {
+  float: left !important;
   display: block;
   width: auto;
   padding: 0;
-  margin: 1em 0 0 0;
+  margin: 0;
   text-align: center; }
 
 @media only screen and (max-width: 480px) {

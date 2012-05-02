@@ -101,14 +101,24 @@
 @media only screen and (max-width: 767px) {
   #header {
     padding: 0 0 20px 0; }
+    #header .container {
+      width: 100%;
+      padding-left: 0; }
 
   #wrapper.menu-open {
-    left: 95%; }
+    left: 85%; }
 
   #headerTop {
     float: none;
     margin: 0 auto;
     text-align: center; }
+    #headerTop > div {
+      display: block;
+      background: url("../images/bg_headerTopMobile.png") top center repeat-x;
+      padding: 0 16px; }
+    #headerTop > div > div {
+      width: 100%;
+      background: none; }
 
   #body {
     background: none; }
