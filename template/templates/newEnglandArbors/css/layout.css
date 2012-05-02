@@ -106,7 +106,7 @@
       padding-left: 0; }
 
   #wrapper.menu-open {
-    left: 85%; }
+    left: 84%; }
 
   #headerTop {
     float: none;
@@ -115,7 +115,7 @@
     #headerTop > div {
       display: block;
       background: url("../images/bg_headerTopMobile.png") top center repeat-x;
-      padding: 0 16px; }
+      padding: 0 10px; }
     #headerTop > div > div {
       width: 100%;
       background: none; }

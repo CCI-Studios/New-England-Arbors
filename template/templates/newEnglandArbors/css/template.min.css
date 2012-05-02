@@ -638,7 +638,7 @@ input[type="file"] {
       padding-left: 0; }
 
   #wrapper.menu-open {
-    left: 85%; }
+    left: 84%; }
 
   #headerTop {
     float: none;
@@ -647,7 +647,7 @@ input[type="file"] {
     #headerTop > div {
       display: block;
       background: url("../images/bg_headerTopMobile.png") top center repeat-x;
-      padding: 0 16px; }
+      padding: 0 10px; }
     #headerTop > div > div {
       width: 100%;
       background: none; }
@@ -802,6 +802,9 @@ input[type="file"] {
   text-align: center; }
 
 @media only screen and (max-width: 480px) {
+  #headerTop input {
+    width: 135px; }
+
   .module.products .product {
     margin: 0 90px; }
 

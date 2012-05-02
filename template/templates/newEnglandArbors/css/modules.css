@@ -136,6 +136,9 @@
   text-align: center; }
 
 @media only screen and (max-width: 480px) {
+  #headerTop input {
+    width: 135px; }
+
   .module.products .product {
     margin: 0 90px; }
 
