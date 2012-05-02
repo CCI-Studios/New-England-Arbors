@@ -144,6 +144,17 @@
 		float: none;
 		margin: 0 auto;
 		text-align: center;
+		
+		> div {
+			display: block;
+			background: url('../images/bg_headerTopMobile.png') top center repeat-x;
+			padding: 0 16px;
+		}
+		
+		> div > div {
+			width: 100%;
+			background: none;
+		}
 	}
 	
 	#body {background: none;}
