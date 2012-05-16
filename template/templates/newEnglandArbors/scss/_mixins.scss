@@ -1,0 +1,13 @@
+@mixin transition($settings) {
+	-webkit-transition: $settings;
+	-moz-transition: $settings;
+	-o-transition: $settings;
+	-ms-transition: $settings;
+	transition: $settings;
+}
+
+@mixin inline-block {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
