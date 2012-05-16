@@ -21,9 +21,11 @@
       top: 4px;
       left: 7px;
       width: 18px;
+      height: 18px;
       border: none;
       text-indent: -999999px;
-      background: url("../images/button_search.png") top left no-repeat;
+      background: url("../images/button_search-2x.png") top left no-repeat;
+      background-size: 18px 18px;
       background-color: none; }
   #headerTop .moduletable:first-child {
     padding: 0; }
