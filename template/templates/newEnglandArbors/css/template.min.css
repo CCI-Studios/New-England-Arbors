@@ -555,7 +555,8 @@ input[type="file"] {
 
 #headerTop {
   display: block;
-  float: right; }
+  float: right;
+  margin-top: -1px; }
   #headerTop > div {
     display: inline-block;
     *display: inline;
