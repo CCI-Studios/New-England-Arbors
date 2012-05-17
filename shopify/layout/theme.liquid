@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="canonical" href="{{ canonical_url }}" /> 
+
+	{{content_for_header}}
+	<title>{{ shop.name }} - {{ page_title }}</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="http://dev.newenglandarbors.com/templates/newEnglandArbors/css/template.css">
+	<script src="http://dev.newenglandarbors.com/templates/newEnglandArbors/js/libs/modernizr-1.7.min.js"></script>
+</head>
+
+<body>
+
+	<div id="mobile-menu" class="mobile-only">
+		{% assign product_classes = 'moduletable_hmenu primary' %}
+		{% include 'product-menu' %}
+	</div>
+
+	<div id="wrapper">
+		<div id="header"><div class="container">
+			<div id="headerTop"><div><div>
+				<div class="moduletable">
+					<a href="#"><img src="http://dev.newenglandarbors.com/images/icons/icon_facebook.png" alt="icon facebook" width="26" height="26"></a>
+				</div>
+				
+				<div class="moduletable">
+					<a href="#"><img src="http://dev.newenglandarbors.com/images/icons/icon_youtube.png" alt="icon youtube" width="27" height="26"></a>
+				</div>					
+
+				<div class="moduletable search">
+					<form id="mod-finder-searchform" action="http://dev.newenglandarbors.com/index.php/component/finder/search" method="get">
+						<div class="finder search">
+							<button class="button search finder search" type="submit">Go</button>
+							<input type="text" name="q" id="mod-finder-searchword" class="inputbox" size="22" value="" autocomplete="off" placeholder="Search Products">
+							<input type="hidden" name="Itemid" value="118">
+						</div>
+					</form>
+				</div>
+				
+				<div class="moduletable mobile-only show-menu">
+					<div class="custom mobile-only show-menu">
+						<div class="show-menu">
+							<img src="http://dev.newenglandarbors.com/images/icons/icon_showMenu.png" width="34" height="27" alt="ShowMenu">
+						</div>
+					</div>
+				</div>
+			</div></div></div>
+
+			<div class="clear"></div>
+
+			<div class="moduletable logo">
+				<a href="/">
+					<img src="http://dev.newenglandarbors.com/images/logo-2x.png" width="301" height="80">
+				</a>
+			</div>
+			{% assign menu_classes = 'moduletable_hmenu primary desktop-only' %}
+			{% include 'menu' %}
+		</div></div>
+
+		<div id="masthead"><div class="container">
+			<div class="moduletable_hmenu masthead span">
+				<span>Products</span>
+			</div>
+			
+			<div class="clear"></div>
+		</div></div>
+
+		<div id="body"><div class="container">
+			<div id="sidebar">
+				{% assign product_classes = 'moduletable_vmenu sidebar desktop-only' %}
+				{% include 'product-menu' %}
+			</div>
+
+			<div id="content">
+				<div class="item-page">
+					{{ content_for_layout }}
+				</div>
+				
+				<div class="clear"></div>
+			</div>
+		</div></div>
+
+		<div id="footer"><div class="container">
+			{% assign menu_classes = 'moduletable_hmenu secondary desktop-only' %}
+			{% include 'menu' %}
+		</div></div>
+
+		<div id="copyright"><div class="container">
+			&copy; {{ 'now' | date: '%Y' }} New England Arbors. All Rights Reserved.<br />
+			<a href="http://ccistudios.com" target="_blank">Site by CCI Studios</a>			
+		</div></div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js"></script>
+	<script src="http://dev.newenglandarbors.com/templates/newEnglandArbors/js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<h1 class="title">{{ page.title | escape }}</h1>
+
+<div class="categoryWrapper">
+{% for collection in collections %}
+	{% unless collection.handle == 'frontpage' %}
+	<div class="category">
+		<a href="{{ collection.url }}">
+			<img src="{{ collection.products.first.images[0] | product_img_url: "medium" }}" alt="{{ collection.title | escape }}">
+			<p class="categoryName">{{ collection.title | escape }}</p>
+		</a>
+	</div>
+	{% endunless %}
+{% endfor %}
+</div>

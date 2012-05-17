@@ -1,0 +1,21 @@
+{
+  "current": {
+    "typography": "Impact, Charcoal, Helvetica, Arial, sans-serif",
+    "logo_usage": "disabled",
+    "text_primary_color": "#262626",
+    "text_secondary_color": "#11234e",
+    "text_alternate_color": "#0e74be",
+    "text_accent_color": "#65c12c",
+    "bg_primary_color": "#0e74be",
+    "bg_secondary_color": "#bed9ee",
+    "bg_alternate_color": "#11234e",
+    "bg_accent_color": "#65c12c",
+    "twitter": "ccistudios",
+    "retweet": "enabled",
+    "notes": "enabled",
+    "customer_login_link_text": "Customer Login",
+    "customer_logout_link_text": "Logout",
+    "customer_account_link_text": "My Account",
+    "customer_layout": "theme"
+  }
+}
