@@ -11,11 +11,11 @@
   width: 100%;
   left: 0;
   background: #fff;
-  -webkit-transition: left .5s ease-in-out;
-  -moz-transition: left .5s ease-in-out;
-  -o-transition: left .5s ease-in-out;
-  -ms-transition: left .5s ease-in-out;
-  transition: left .5s ease-in-out; }
+  -webkit-transition: left 0.3s ease-in-out;
+  -moz-transition: left 0.3s ease-in-out;
+  -o-transition: left 0.3s ease-in-out;
+  -ms-transition: left 0.3s ease-in-out;
+  transition: left 0.3s ease-in-out; }
 
 #header {
   padding: 0 0 40px 0;
@@ -23,7 +23,8 @@
 
 #headerTop {
   display: block;
-  float: right; }
+  float: right;
+  margin-top: -1px; }
   #headerTop > div {
     display: inline-block;
     *display: inline;
@@ -100,12 +101,13 @@
 
 @media only screen and (max-width: 767px) {
   #header {
-    padding: 0 0 20px 0; }
+    padding: 0 0 20px 0;
+    border-top: 0; }
     #header .container {
       width: 100%;
       padding-left: 0; }
 
-  #wrapper.menu-open {
+  body.menu-open #wrapper {
     left: 84%; }
 
   #headerTop {

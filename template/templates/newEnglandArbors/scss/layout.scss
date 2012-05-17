@@ -3,6 +3,7 @@
 //default screen size
 
 @import "_variables.scss";
+@import "_mixins.scss";
 
 .container {
 	width: 90%;
@@ -17,12 +18,8 @@
 	width: 100%;
 	left: 0;
 	background: #fff;
-	
-	-webkit-transition: left .5s ease-in-out;
-	-moz-transition: left .5s ease-in-out;
-	-o-transition: left .5s ease-in-out;
-	-ms-transition: left .5s ease-in-out;
-	transition: left .5s ease-in-out;
+
+	@include transition(left .3s ease-in-out);	
 }
 
 #header {
@@ -33,6 +30,7 @@
 #headerTop {
 	display: block;
 	float: right;
+	margin-top: -1px;
 	
 	> div {
 		display: inline-block;
@@ -131,6 +129,7 @@
 	
 	#header {
 		padding: 0 0 20px 0;
+		border-top: 0;
 		
 		.container {
 			width: 100%;
@@ -138,7 +137,7 @@
 		}
 	}
 	
-	#wrapper.menu-open {left: 84%;}
+	body.menu-open #wrapper {left: 84%;}
 	
 	#headerTop {
 		float: none;
