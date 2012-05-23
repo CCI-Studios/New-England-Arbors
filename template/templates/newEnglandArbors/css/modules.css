@@ -83,6 +83,7 @@
     display: block;
     text-align: center;
     padding-top: 26px; } }
+/*/mediaquery*/
 @media only screen and (max-width: 767px) {
   #headerTop {
     border-top: 7px solid #0768ab;
@@ -139,18 +140,19 @@
     float: none;
     min-width: 272px;
     display: block;
-    margin: 1em auto 0; } }
-#footer .moduletable {
-  position: relative; }
+    margin: 1em auto 0; }
 
-.moduletable.show-menu {
-  float: left !important;
-  display: block;
-  width: auto;
-  padding: 0;
-  margin: 0;
-  text-align: center; }
+  #footer .moduletable {
+    position: relative; }
 
+  .moduletable.show-menu {
+    float: left !important;
+    display: block;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    text-align: center; } }
+/*/mediaquery*/
 @media only screen and (max-width: 480px) {
   #headerTop input {
     width: 135px; }
@@ -166,3 +168,4 @@
       float: none;
       margin: 0;
       padding: 1.5%; } }
+/*/mediaquery*/

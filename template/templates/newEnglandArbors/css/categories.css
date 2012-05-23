@@ -61,6 +61,7 @@
     width: 100%;
     padding: 0 10px 0 0;
     float: left; } }
+/*/mediaquery*/
 @media only screen and (max-width: 767px) {
   .blog .staffBlock {
     width: 100%;
@@ -72,3 +73,4 @@
     margin-bottom: 1em; }
     .blog .staffBlock img {
       padding: 0 10px 5px 0; } }
+/*/mediaquery*/

@@ -666,6 +666,7 @@ input[type="file"] {
   #footer {
     background: none;
     padding: 10px 0 20px; } }
+/*/mediaquery*/
 /* @group modules */
 #headerTop .moduletable {
   float: left;
@@ -751,6 +752,7 @@ input[type="file"] {
     display: block;
     text-align: center;
     padding-top: 26px; } }
+/*/mediaquery*/
 @media only screen and (max-width: 767px) {
   #headerTop {
     border-top: 7px solid #0768ab;
@@ -807,18 +809,19 @@ input[type="file"] {
     float: none;
     min-width: 272px;
     display: block;
-    margin: 1em auto 0; } }
-#footer .moduletable {
-  position: relative; }
+    margin: 1em auto 0; }
 
-.moduletable.show-menu {
-  float: left !important;
-  display: block;
-  width: auto;
-  padding: 0;
-  margin: 0;
-  text-align: center; }
+  #footer .moduletable {
+    position: relative; }
 
+  .moduletable.show-menu {
+    float: left !important;
+    display: block;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    text-align: center; } }
+/*/mediaquery*/
 @media only screen and (max-width: 480px) {
   #headerTop input {
     width: 135px; }
@@ -834,6 +837,7 @@ input[type="file"] {
       float: none;
       margin: 0;
       padding: 1.5%; } }
+/*/mediaquery*/
 .moduletable_hmenu .menu {
   margin: 0;
   padding: 0; }
@@ -919,6 +923,7 @@ input[type="file"] {
     width: 100%;
     margin-left: 0;
     text-align: center; } }
+/*/mediaquery*/
 @media only screen and (max-width: 767px) {
   .moduletable_hmenu.primary {
     position: absolute;
@@ -959,6 +964,7 @@ input[type="file"] {
       font-size: 1.428571429em; }
       .moduletable_hmenu.primary a:hover {
         background: none; } }
+/*/mediaquery*/
 .categoryWrapper .category {
   width: 216px;
   margin: 0 0 0 2.833333333%; }
@@ -1021,12 +1027,15 @@ input[type="file"] {
         padding: 0 2% 0 0;
         color: #000; }
 
+/*/mediaquery*/
+/*/mediaquery*/
 @media only screen and (max-width: 480px) {
   .categoryWrapper .category .productName,
   .categoryWrapper .product .productName,
   .productWrapper .category .productName,
   .productWrapper .product .productName {
     text-align: left; } }
+/*/mediaquery*/
 .itemWrapper {
   display: inline-block;
   *display: inline;
@@ -1143,6 +1152,7 @@ input[type="file"] {
       .itemWrapper .rightSide .productPrices .productName {
         width: 80%;
         margin: 0 0 1em 0; } }
+/*/mediaquery*/
 @media only screen and (max-width: 767px) {
   .itemWrapper .leftSide {
     margin: 0 auto;
@@ -1172,6 +1182,7 @@ input[type="file"] {
       .itemWrapper .rightSide .productPrices .productName {
         width: 80%;
         margin: 0 0 1em 0; } }
+/*/mediaquery*/
 div.pagination .pagination-start a,
 div.pagination .pagination-prev a,
 div.pagination .pagination-next a,
@@ -1214,6 +1225,7 @@ div.pagination ul {
     padding: 0; }
     div.pagination ul a {
       font-size: 1.142857143em; } }
+/*/mediaquery*/
 .categories ul {
   padding: 0;
   margin: 0; }
@@ -1277,6 +1289,7 @@ div.pagination ul {
     width: 100%;
     padding: 0 10px 0 0;
     float: left; } }
+/*/mediaquery*/
 @media only screen and (max-width: 767px) {
   .blog .staffBlock {
     width: 100%;
@@ -1288,6 +1301,7 @@ div.pagination ul {
     margin-bottom: 1em; }
     .blog .staffBlock img {
       padding: 0 10px 5px 0; } }
+/*/mediaquery*/
 .clr, .clear {
   clear: both; }
 
@@ -1349,12 +1363,12 @@ div.pagination ul {
   *display: inline;
   *zoom: 1; }
   .button a {
+    color: #fff;
     background: url("../images/buttonGradient.png") bottom right no-repeat;
     display: inline-block;
     *display: inline;
     *zoom: 1;
-    padding: 0 40px 0 25px;
-    color: #fff; }
+    padding: 0 40px 0 25px; }
 
 button[type="submit"],
 input[type="submit"] {
@@ -1415,14 +1429,17 @@ input[type="submit"] {
     margin-top: 2em; }
     .contactTable .content p {
       width: 100%; } }
+/*/mediaquery*/
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .desktop-only {
     display: none; }
 
   .mobile-only, .phone-only {
     display: block; } }
+/*/mediaquery*/
 @media only screen and (max-width: 480px) {
   .contactTable .content img {
     float: none;
     margin: 0 0 1em; } }
+/*/mediaquery*/
 /* editor content */

@@ -127,12 +127,10 @@
 			}
 		}
 	}
-	
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-	a{} //FIXME REMOVE
-	
+
 	.itemWrapper {
 		
 		.leftSide {
@@ -178,10 +176,9 @@
 			}
 		}
 	}
-}
+}/*/mediaquery*/
 
 @media only screen and (max-width: 767px) {
-	a {} // FIXME REMOVE
 	
 	.itemWrapper {
 		
@@ -227,8 +224,4 @@
 			}
 		}
 	}
-}
-
-@media only screen and (max-width: 480px) {
-	a{} //FIXME REMOVE
-}
+}/*/mediaquery*/

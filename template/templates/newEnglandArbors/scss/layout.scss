@@ -125,7 +125,6 @@
 //end of default screen size
 
 @media only screen and (max-width: 767px) {  // phone/table
-	a {} // FIXME get ride of this crap
 	
 	#header {
 		padding: 0 0 20px 0;
@@ -170,8 +169,4 @@
 		padding: 10px 0 20px;
 	}
 	
-}
-
-@media only screen and (min-width: 480px) and (max-width: 767px) { // phone
-	
-}
+}/*/mediaquery*/

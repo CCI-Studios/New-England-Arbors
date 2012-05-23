@@ -62,7 +62,6 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-	a{} //FIXME REMOVE
 	
 	.categoryWrapper {
 		.category {}
@@ -76,10 +75,9 @@
 			
 		}
 	}
-}
+}/*/mediaquery*/
 
 @media only screen and (max-width: 767px) {
-	a {} // FIXME REMOVE
 	
 	.categoryWrapper,
 	.productWrapper {
@@ -89,11 +87,10 @@
 			
 		}
 	}
-}
+}/*/mediaquery*/
 
 @media only screen and (max-width: 480px) {
-	a{} //FIXME REMOVE
-	
+
 	.categoryWrapper,
 	.productWrapper {
 
@@ -103,4 +100,4 @@
 			.productName {text-align:left;}
 		}
 	}
-}
+}/*/mediaquery*/

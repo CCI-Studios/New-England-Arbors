@@ -59,12 +59,12 @@
   *display: inline;
   *zoom: 1; }
   .button a {
+    color: #fff;
     background: url("../images/buttonGradient.png") bottom right no-repeat;
     display: inline-block;
     *display: inline;
     *zoom: 1;
-    padding: 0 40px 0 25px;
-    color: #fff; }
+    padding: 0 40px 0 25px; }
 
 button[type="submit"],
 input[type="submit"] {
@@ -125,13 +125,16 @@ input[type="submit"] {
     margin-top: 2em; }
     .contactTable .content p {
       width: 100%; } }
+/*/mediaquery*/
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .desktop-only {
     display: none; }
 
   .mobile-only, .phone-only {
     display: block; } }
+/*/mediaquery*/
 @media only screen and (max-width: 480px) {
   .contactTable .content img {
     float: none;
     margin: 0 0 1em; } }
+/*/mediaquery*/
