@@ -39,7 +39,7 @@ $analytics = "UA-31248154-1"; // FIXME Update to client ID
 
 	<!-- load css -->
 	<?php if ($testing): ?>
-		<link rel="stylesheet" href="/templates/<?= $this->template ?>/css/template.css">
+		<link rel="stylesheet" href="/templates/<?= $this->template ?>/css/template.min.css">
 	<?php else: ?>
 		<link rel="stylesheet" href="/templates/<?= $this->template ?>/css/template.min.css">
 	<?php endif; ?>
@@ -50,7 +50,8 @@ $analytics = "UA-31248154-1"; // FIXME Update to client ID
 	<?php else: ?>
 		<script src="/templates/<?= $this->template ?>/js/libs/modernizr-1.7.min.js"></script>
 	<?php endif; ?>
-	<script src="/templates/<?= $this->template ?>/js/respond.js"></script>
+		
+	<script src="/templates/newEnglandArbors/js/respond.min.js"></script>
 </head>
 
 <body class="<?= $menu ?>">
