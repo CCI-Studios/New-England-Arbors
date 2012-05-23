@@ -50,6 +50,7 @@ $analytics = "UA-31248154-1"; // FIXME Update to client ID
 	<?php else: ?>
 		<script src="/templates/<?= $this->template ?>/js/libs/modernizr-1.7.min.js"></script>
 	<?php endif; ?>
+	<script src="/templates/<?= $this->template ?>/js/respond.js"></script>
 </head>
 
 <body class="<?= $menu ?>">
