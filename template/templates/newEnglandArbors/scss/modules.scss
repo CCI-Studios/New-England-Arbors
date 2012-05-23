@@ -9,7 +9,7 @@
 #headerTop {
 	.moduletable {
 		float: left;
-		padding: 0 0 0 10px;
+		padding: 5px 0 0 10px;
 		display: inline-block;
 		*display: inline;
 		*zoom: 1;
@@ -40,7 +40,7 @@
 				background-color: none;
 			}
 		}
-		&:first-child {padding: 0;}
+		&:first-child {padding-left: 0;}
 	}
 }
 
