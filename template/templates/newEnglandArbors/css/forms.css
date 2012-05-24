@@ -35,7 +35,9 @@ input:invalid, textarea:invalid {
    www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
 button {
   width: auto;
-  overflow: visible; }
+  overflow: visible;
+  border: none;
+  background: none; }
 
 div.login fieldset {
   border: none;

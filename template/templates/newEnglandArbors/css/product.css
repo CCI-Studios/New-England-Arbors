@@ -20,13 +20,15 @@
         width: 97%;
         height: inherit; }
     .itemWrapper .leftSide .productThumbs {
-      border: none; }
+      border: none;
+      text-align: center; }
       .itemWrapper .leftSide .productThumbs a {
         padding: 0 0 0 3%; }
-        .itemWrapper .leftSide .productThumbs a:first-child {
-          padding: 0; }
+        .itemWrapper .leftSide .productThumbs a:first-child, .itemWrapper .leftSide .productThumbs a:nth-child(3n-2) {
+          padding-right: 0; }
         .itemWrapper .leftSide .productThumbs a img {
           padding: 4px 1.25%;
+          margin-bottom: 1em;
           width: 27%;
           height: inherit; }
     .itemWrapper .leftSide .productLinks {

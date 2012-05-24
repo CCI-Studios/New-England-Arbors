@@ -13,9 +13,7 @@
 		</div>
 		<div class="productThumbs">
 			{% for image in product.images %}
-			<a href="#">
-				<img src="{{ image | product_img_url: 'small' }}" alt="" />
-			</a>
+			<a href="#"><img src="{{ image | product_img_url: 'compact' }}" alt="" class="imageblock" /></a>
 			{% endfor %}
 		</div>
 		<div class="productLinks">
@@ -23,6 +21,9 @@
 			<div class="button"><a href="#">Line Drawings</a></div>
 			<div class="button"><a href="#">Videos</a></div>
 		</div>
+		
+		<div class="hr"></div>
+		
 	</div>
 	
 	<div class="rightSide">
@@ -32,6 +33,30 @@
 		</div>
 		
 		<div class="productPrices">
+			
+			
+			<form method="post" action="/cart/add">
+				{% if product.variants.size == 1 %}
+					<input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+				{% else %}
+					<!-- START VARIANTS -->
+					{% for variant in product.variants %}
+						{% if variant.available %}
+							<input type="radio" name="id" value="{{ variant.id }}" /> {{ variant.price | money }} - {{ variant.title | escape }} <br/>
+						{% endif %}
+					{% endfor %}
+					<!-- END VARIANTS -->
+				{% endif %}
+				
+				<div class="hr"></div>
+				
+				<button>
+					<div class="button"><span>
+						Add to Cart
+					</span></div>
+				</button>
+			</form>
+			
 		</div>
 	</div>
 </div>

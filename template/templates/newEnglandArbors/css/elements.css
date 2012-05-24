@@ -54,7 +54,8 @@ h4 {
 .module.products img,
 .categoryWrapper img,
 .productWrapper img,
-.contentBottomBlock img {
+.contentBottomBlock img,
+.imageblock {
   max-width: 98%;
   padding: 2%;
   border: 1px solid #d8d8d8;

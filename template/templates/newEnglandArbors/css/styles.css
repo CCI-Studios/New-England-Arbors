@@ -24,6 +24,12 @@
   color: #fff;
   text-shadow: none; }
 
+.hr {
+  border-top: 1px solid #d8d8d8;
+  width: 100%;
+  height: 0;
+  clear: both; }
+
 .table4column tr td {
   width: 22.5%;
   padding: 1em 0 0 2.5%;
@@ -58,7 +64,7 @@
   display: inline-block;
   *display: inline;
   *zoom: 1; }
-  .button a {
+  .button > * {
     background: url("../images/buttonGradient.png") bottom right no-repeat;
     display: inline-block;
     *display: inline;
