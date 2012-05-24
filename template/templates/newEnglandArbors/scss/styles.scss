@@ -172,6 +172,9 @@ input[type="submit"] {
 }/*/mediaquery*/
 
 @media only screen and (max-width: 480px) {
+	.noFloat {
+		float: none !important;
+	}
 
 	.contactTable {
 		.content {
