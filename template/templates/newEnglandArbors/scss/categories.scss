@@ -87,7 +87,7 @@
 	// video page
 	&.videos {
 		.item {
-			max-width: 350px;
+			width: 350px;
 			padding: 0 10px 0 0;
 			float: left;
 
@@ -96,15 +96,20 @@
 	}
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1024px) {
 	
-	.videoBlock {
-		width: 100%;
-		padding: 0 10px 0 0;
-		float: left;
-	}
-}/*/mediaquery*/
+	.blog {
+		&.videos {
+			.item {
+				width: 100%;
+				padding: 0;
 
+				h2 {height: 1em;}
+			}
+		}
+	}
+	
+}/*/mediaquery*/
 
 @media only screen and (max-width: 767px) { // cell + table
 
@@ -116,4 +121,5 @@
 		
 		.media { padding: 0 10px 5px 0; }		
 	}
+	
 }/*/mediaquery*/

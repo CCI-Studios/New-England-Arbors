@@ -41,13 +41,12 @@
 
 .contactTable .form {
   float: left;
-  width: 320px;
+  max-width: 34.042553191%;
   padding-right: 1.063829787%; }
 .contactTable .content {
-  float: left;
-  width: auto; }
-  .contactTable .content p {
-    width: 610px; }
+  float: none;
+  width: auto;
+  margin-left: 350px; }
   .contactTable .content img {
     float: right;
     margin: 0 0 10px 10px; }
@@ -117,6 +116,11 @@ input[type="submit"] {
 .mobile-only, .tablet-only, .phone-only {
   display: none; }
 
+@media only screen and (max-width: 1023px) {
+  .contactTable .content {
+    float: left;
+    margin: 20px 0 0 0; } }
+/*/mediaquery*/
 @media only screen and (max-width: 767px) {
   .desktop-only {
     display: none; }

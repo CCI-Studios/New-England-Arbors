@@ -49,17 +49,18 @@
   *display: inline;
   *zoom: 1; }
 .blog.videos .item {
-  max-width: 350px;
+  width: 350px;
   padding: 0 10px 0 0;
   float: left; }
   .blog.videos .item h2 {
     height: 1em; }
 
-@media only screen and (max-width: 991px) {
-  .videoBlock {
+@media only screen and (max-width: 1024px) {
+  .blog.videos .item {
     width: 100%;
-    padding: 0 10px 0 0;
-    float: left; } }
+    padding: 0; }
+    .blog.videos .item h2 {
+      height: 1em; } }
 /*/mediaquery*/
 @media only screen and (max-width: 767px) {
   .media-blog .item {
