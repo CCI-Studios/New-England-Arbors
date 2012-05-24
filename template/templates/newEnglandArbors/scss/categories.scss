@@ -121,3 +121,19 @@
 	}
 	
 }/*/mediaquery*/
+
+@media only screen and (max-width: 480px) {
+
+	.blog {
+		&.videos {
+			.item {
+
+				iframe {
+					width: 290px;
+					height: 172px;
+				}
+			}
+		}
+	}
+	
+}/*/mediaquery*/
