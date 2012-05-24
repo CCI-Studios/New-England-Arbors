@@ -61,9 +61,7 @@
     width: 100%;
     padding: 0; }
     .blog.videos .item h2 {
-      height: 1em; }
-    .blog.videos .item .videoBlock p {
-      float: left; } }
+      height: 1em; } }
 /*/mediaquery*/
 @media only screen and (max-width: 767px) {
   .blog .staffBlock {
