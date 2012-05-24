@@ -144,6 +144,9 @@ input[type="submit"] {
     display: block; } }
 /*/mediaquery*/
 @media only screen and (max-width: 480px) {
+  .noFloat {
+    float: none !important; }
+
   .contactTable .content img {
     float: none;
     margin: 0 0 1em; } }

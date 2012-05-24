@@ -53,14 +53,12 @@
   padding: 0 10px 0 0;
   float: left; }
   .blog.videos .item h2 {
-    height: 1em; }
+    height: auto; }
 
 @media only screen and (max-width: 1024px) {
   .blog.videos .item {
     width: 100%;
-    padding: 0; }
-    .blog.videos .item h2 {
-      height: 1em; } }
+    padding: 0; } }
 /*/mediaquery*/
 @media only screen and (max-width: 767px) {
   .media-blog .item {
@@ -70,4 +68,9 @@
     margin-bottom: 1em; }
     .media-blog .item .media {
       padding: 0 10px 5px 0; } }
+/*/mediaquery*/
+@media only screen and (max-width: 480px) {
+  .blog.videos .item iframe {
+    width: 290px;
+    height: 172px; } }
 /*/mediaquery*/
