@@ -423,7 +423,8 @@ h4 {
 .module.products img,
 .categoryWrapper img,
 .productWrapper img,
-.contentBottomBlock img {
+.contentBottomBlock img,
+.imageblock {
   max-width: 98%;
   padding: 2%;
   border: 1px solid #d8d8d8;
@@ -498,7 +499,9 @@ input:invalid, textarea:invalid {
    www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
 button {
   width: auto;
-  overflow: visible; }
+  overflow: visible;
+  border: none;
+  background: none; }
 
 div.login fieldset {
   border: none;
@@ -697,8 +700,17 @@ input[type="file"] {
       background: url("../images/button_search-2x.png") top left no-repeat;
       background-size: 18px 18px;
       background-color: none; }
+  #headerTop .moduletable.cart {
+    background: url(http://cdn.shopify.com/s/files/1/0157/3614/t/2/assets/cart.png?503) left no-repeat;
+    padding-left: 35px;
+    margin-left: 5px;
+    color: white;
+    line-height: 1.8em;
+    float: right; }
+    #headerTop .moduletable.cart a {
+      color: white; }
   #headerTop .moduletable:first-child {
-    padding-left: 0; }
+    padding: 0; }
 
 .moduletable.logo {
   float: left;
@@ -1057,13 +1069,15 @@ input[type="file"] {
         width: 97%;
         height: inherit; }
     .itemWrapper .leftSide .productThumbs {
-      border: none; }
+      border: none;
+      text-align: center; }
       .itemWrapper .leftSide .productThumbs a {
         padding: 0 0 0 3%; }
-        .itemWrapper .leftSide .productThumbs a:first-child {
-          padding: 0; }
+        .itemWrapper .leftSide .productThumbs a:first-child, .itemWrapper .leftSide .productThumbs a:nth-child(3n-2) {
+          padding-right: 0; }
         .itemWrapper .leftSide .productThumbs a img {
           padding: 4px 1.25%;
+          margin-bottom: 1em;
           width: 27%;
           height: inherit; }
     .itemWrapper .leftSide .productLinks {
@@ -1330,6 +1344,12 @@ div.pagination ul {
   color: #fff;
   text-shadow: none; }
 
+.hr {
+  border-top: 1px solid #d8d8d8;
+  width: 100%;
+  height: 0;
+  clear: both; }
+
 .table4column tr td {
   width: 22.5%;
   padding: 1em 0 0 2.5%;
@@ -1363,7 +1383,7 @@ div.pagination ul {
   display: inline-block;
   *display: inline;
   *zoom: 1; }
-  .button a {
+  .button > * {
     color: #fff;
     background: url("../images/buttonGradient.png") bottom right no-repeat;
     display: inline-block;

@@ -27,8 +27,17 @@
       background: url("../images/button_search-2x.png") top left no-repeat;
       background-size: 18px 18px;
       background-color: none; }
+  #headerTop .moduletable.cart {
+    background: url(http://cdn.shopify.com/s/files/1/0157/3614/t/2/assets/cart.png?503) left no-repeat;
+    padding-left: 35px;
+    margin-left: 5px;
+    color: white;
+    line-height: 1.8em;
+    float: right; }
+    #headerTop .moduletable.cart a {
+      color: white; }
   #headerTop .moduletable:first-child {
-    padding-left: 0; }
+    padding: 0; }
 
 .moduletable.logo {
   float: left;

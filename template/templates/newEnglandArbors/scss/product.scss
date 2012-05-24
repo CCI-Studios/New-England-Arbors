@@ -32,13 +32,16 @@
 		
 		.productThumbs {
 			border: none;
+			text-align: center;
 
 			a {
 				padding: 0 0 0 3%; // 12/400
-				&:first-child {padding: 0;}
+				&:first-child,
+				&:nth-child(3n-2) { padding-right: 0 };
 				
 				img {
 					padding: 4px 1.25%;
+					margin-bottom: 1em;
 					width: 27%; // 108/400
 					height: inherit;
 				} 

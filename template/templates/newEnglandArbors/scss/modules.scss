@@ -40,7 +40,17 @@
 				background-color: none;
 			}
 		}
-		&:first-child {padding-left: 0;}
+		&.cart {
+			background: url(http://cdn.shopify.com/s/files/1/0157/3614/t/2/assets/cart.png?503) left no-repeat;
+			padding-left: 35px;
+			margin-left: 5px;
+			color: white;
+			line-height: 1.8em;
+			float: right;
+
+			a { color: white; }
+		}
+		&:first-child {padding: 0;}
 	}
 }
 
