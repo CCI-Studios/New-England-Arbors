@@ -30,15 +30,15 @@
 .contactTable {
 	.form {
 		float: left;
-		width: 320px;
+		max-width: 34.042553191%;
 		padding-right: 1.063829787%;
 	}
 	
 	.content {
-		float: left;
+		float: none;
 		width: auto;
-		
-		p {width: 610px;}
+		margin-left: 350px;
+	
 		img {
 			float: right;
 			margin: 0 0 10px 10px;
@@ -131,6 +131,17 @@ input[type="submit"] {
 .desktop-only { }
 .mobile-only, .tablet-only, .phone-only { display: none; }
 
+@media only screen and (max-width: 1023px) {
+	
+	.contactTable {
+		.content {
+			float: left;
+			margin: 20px 0 0 0;
+		}
+	}
+	
+}/*/mediaquery*/
+
 @media only screen and (max-width: 767px) { // cell + table
 	.desktop-only { display: none; }
 	.mobile-only, .tablet-only, .phone-only { display: block; }
@@ -145,6 +156,7 @@ input[type="submit"] {
 			p {width: 100%;}
 		}
 	}
+	
 }/*/mediaquery*/
 
 @media only screen and (min-width: 480px) and (max-width: 767px) { // phone
