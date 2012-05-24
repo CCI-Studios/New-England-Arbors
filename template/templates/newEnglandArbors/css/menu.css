@@ -83,6 +83,7 @@
     width: 100%;
     margin-left: 0;
     text-align: center; } }
+/*/mediaquery*/
 @media only screen and (max-width: 767px) {
   .moduletable_hmenu.primary {
     position: absolute;
@@ -123,3 +124,4 @@
       font-size: 1.428571429em; }
       .moduletable_hmenu.primary a:hover {
         background: none; } }
+/*/mediaquery*/

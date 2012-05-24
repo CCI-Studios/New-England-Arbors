@@ -105,8 +105,7 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-	a{}
-	
+
 	.moduletable_hmenu.primary {
 		display: block;
 		float: left;
@@ -114,10 +113,9 @@
 		margin-left: 0;
 		text-align: center;
 	}
-}
+}/*/mediaquery*/
 
 @media only screen and (max-width: 767px) { // cell + table
-	a{}
 
 	.moduletable_hmenu.primary {
 		position: absolute;
@@ -162,11 +160,10 @@
 			}
 		}
 		
-		
 		a { 
 			color: $maincolor;
 			font-size: 1.428571429em; // 20/14
 			&:hover {background: none;}
 		}
 	}
-}
+}/*/mediaquery*/

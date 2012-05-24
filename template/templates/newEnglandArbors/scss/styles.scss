@@ -72,12 +72,12 @@
 	*zoom: 1;
 	
 	> * {
+		color: #fff;
 		background: url('../images/buttonGradient.png') bottom right no-repeat;
 		display: inline-block;
 		*display: inline;
 		*zoom: 1;
 		padding: 0 40px 0 25px;
-		color: #fff;
 	}
 }
 
@@ -138,11 +138,6 @@ input[type="submit"] {
 .desktop-only { }
 .mobile-only, .tablet-only, .phone-only { display: none; }
 
-@media only screen and (max-width: 991px) {
-	a{}
-
-}
-
 @media only screen and (max-width: 767px) { // cell + table
 	.desktop-only { display: none; }
 	.mobile-only, .tablet-only, .phone-only { display: block; }
@@ -157,16 +152,15 @@ input[type="submit"] {
 			p {width: 100%;}
 		}
 	}
-}
+}/*/mediaquery*/
 
 @media only screen and (min-width: 480px) and (max-width: 767px) { // phone
 	.desktop-only { display: none; }
 	.mobile-only, .phone-only { display: block; }
-}
+}/*/mediaquery*/
 
 @media only screen and (max-width: 480px) {
-	a{} // FIXME REMOVE
-	
+
 	.contactTable {
 		.content {
 			img {
@@ -175,4 +169,4 @@ input[type="submit"] {
 			}
 		}
 	}
-}
+}/*/mediaquery*/

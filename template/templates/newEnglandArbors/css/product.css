@@ -116,6 +116,7 @@
       .itemWrapper .rightSide .productPrices .productName {
         width: 80%;
         margin: 0 0 1em 0; } }
+/*/mediaquery*/
 @media only screen and (max-width: 767px) {
   .itemWrapper .leftSide {
     margin: 0 auto;
@@ -145,3 +146,4 @@
       .itemWrapper .rightSide .productPrices .productName {
         width: 80%;
         margin: 0 0 1em 0; } }
+/*/mediaquery*/

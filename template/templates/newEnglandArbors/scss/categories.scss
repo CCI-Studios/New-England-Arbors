@@ -95,18 +95,16 @@
 }
 
 @media only screen and (max-width: 991px) {
-	a{}
 	
 	.videoBlock {
 		width: 100%;
 		padding: 0 10px 0 0;
 		float: left;
 	}
-}
+}/*/mediaquery*/
 
 
 @media only screen and (max-width: 767px) { // cell + table
-	a{}
 
 	.blog {
 		.staffBlock {
@@ -122,13 +120,4 @@
 		}	
 	}
 	
-}
-
-@media only screen and (min-width: 480px) and (max-width: 767px) { // phone
-
-}
-
-@media only screen and (max-width: 480px) {
-	a{} // FIXME REMOVE
-
-}
+}/*/mediaquery*/
