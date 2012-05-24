@@ -228,8 +228,14 @@
 @media only screen and (max-width: 480px) {
 	
 	#headerTop {
-		input {
-			width: 135px;
+		
+		.moduletable {
+			input {
+				width: 100px;
+			}
+			&:first-child {
+				padding-right: 0;
+			}
 		}
 	}
 	
