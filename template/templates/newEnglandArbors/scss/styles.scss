@@ -72,13 +72,14 @@
 	*zoom: 1;
 	
 	> * {
-		color: #fff;
 		background: url('../images/buttonGradient.png') bottom right no-repeat;
 		display: inline-block;
 		*display: inline;
 		*zoom: 1;
 		padding: 0 40px 0 25px;
 	}
+	
+	a {color: #fff;}
 }
 
 button[type="submit"],
