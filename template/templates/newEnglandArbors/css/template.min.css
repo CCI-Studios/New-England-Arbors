@@ -569,7 +569,8 @@ input[type="file"] {
       *display: inline;
       *zoom: 1;
       background: url("../images/bg_headerTop.png") bottom right no-repeat;
-      padding: 4px 11px 7px 0px; }
+      padding: 0px 11px 0px 0px;
+      height: 41px; }
 
 #masthead {
   height: 74px;
@@ -670,7 +671,7 @@ input[type="file"] {
 /* @group modules */
 #headerTop .moduletable {
   float: left;
-  padding: 0 0 0 10px;
+  padding: 5px 0 0 10px;
   display: inline-block;
   *display: inline;
   *zoom: 1; }
@@ -697,7 +698,7 @@ input[type="file"] {
       background-size: 18px 18px;
       background-color: none; }
   #headerTop .moduletable:first-child {
-    padding: 0; }
+    padding-left: 0; }
 
 .moduletable.logo {
   float: left;
@@ -770,7 +771,7 @@ input[type="file"] {
       left: 84%; }
     #headerTop .moduletable {
       float: right;
-      padding: 0 10px 0 0; }
+      padding: 5px 10px 0 0; }
 
   .moduletable.logo {
     float: none;
@@ -1276,17 +1277,20 @@ div.pagination ul {
     margin: 0 0 .5em 0;
     display: block; }
 .blog.videos .item {
-  max-width: 350px;
+  width: 350px;
   padding: 0 10px 0 0;
   float: left; }
   .blog.videos .item h2 {
     height: 1em; }
 
-@media only screen and (max-width: 991px) {
-  .videoBlock {
+@media only screen and (max-width: 1024px) {
+  .blog.videos .item {
     width: 100%;
-    padding: 0 10px 0 0;
-    float: left; } }
+    padding: 0; }
+    .blog.videos .item h2 {
+      height: 1em; }
+    .blog.videos .item .videoBlock p {
+      float: left; } }
 /*/mediaquery*/
 @media only screen and (max-width: 767px) {
   .blog .staffBlock {
@@ -1337,13 +1341,12 @@ div.pagination ul {
 
 .contactTable .form {
   float: left;
-  width: 320px;
+  max-width: 34.042553191%;
   padding-right: 1.063829787%; }
 .contactTable .content {
-  float: left;
-  width: auto; }
-  .contactTable .content p {
-    width: 610px; }
+  float: none;
+  width: auto;
+  margin-left: 350px; }
   .contactTable .content img {
     float: right;
     margin: 0 0 10px 10px; }
@@ -1413,6 +1416,11 @@ input[type="submit"] {
 .mobile-only, .tablet-only, .phone-only {
   display: none; }
 
+@media only screen and (max-width: 1023px) {
+  .contactTable .content {
+    float: left;
+    margin: 20px 0 0 0; } }
+/*/mediaquery*/
 @media only screen and (max-width: 767px) {
   .desktop-only {
     display: none; }

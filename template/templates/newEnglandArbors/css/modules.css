@@ -1,7 +1,7 @@
 /* @group modules */
 #headerTop .moduletable {
   float: left;
-  padding: 0 0 0 10px;
+  padding: 5px 0 0 10px;
   display: inline-block;
   *display: inline;
   *zoom: 1; }
@@ -28,7 +28,7 @@
       background-size: 18px 18px;
       background-color: none; }
   #headerTop .moduletable:first-child {
-    padding: 0; }
+    padding-left: 0; }
 
 .moduletable.logo {
   float: left;
@@ -101,7 +101,7 @@
       left: 84%; }
     #headerTop .moduletable {
       float: right;
-      padding: 0 10px 0 0; }
+      padding: 5px 10px 0 0; }
 
   .moduletable.logo {
     float: none;
