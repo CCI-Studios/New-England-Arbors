@@ -23,6 +23,36 @@
 
 // our staff and video category blocks
 
+.media-blog {
+	.items-row {
+		float: left;
+	}
+
+
+	.item {
+		width: 45%;
+		padding-right: 2.5%;
+		float: left;
+		
+		.media {
+			float: left;
+			padding: 0 2.5% 5px 0;
+		}
+		
+		h2 {
+			font-size: 1em;
+			margin: 0;
+		}
+		
+		.subtitle {
+			font-size: 1em;
+			font-weight: bold;
+			color: $maincolor;
+			margin: 0 0 0.5em 0;
+		}
+	}
+}
+
 .blog {
 	
 	//inside category
@@ -54,34 +84,6 @@
 		*zoom: 1;
 	}
 	
-	// our staff page
-	.staffBlock {
-		width: 45%;
-		padding-right: 2.5%;
-		float: left;
-		display: inline-block;
-		*display: inline;
-		*zoom: 1;
-
-		img {
-			float: left;
-			padding: 0 2.5% 5px 0;
-		}
-
-		h2 {
-			font-size: 1em;
-			margin: 0
-		}
-
-		span.jobTitle {
-			font-size: 1em;
-			font-weight: bold;
-			color: $maincolor;
-			margin: 0 0 .5em 0;
-			display: block;
-		}
-	}
-	
 	// video page
 	&.videos {
 		.item {
@@ -111,18 +113,13 @@
 
 @media only screen and (max-width: 767px) { // cell + table
 
-	.blog {
-		.staffBlock {
-			width: 100%;
-			padding-left: 0;
-			float: left;
-			display: inline-block;
-			*display: inline;
-			*zoom: 1;
-			margin-bottom: 1em;
-			
-			img {padding: 0 10px 5px 0;}
-		}
+	.media-blog  .item {
+		width: 100%;
+		padding: 0;
+		float: static;
+		margin-bottom: 1em;		
+		
+		.media { padding: 0 10px 5px 0; }		
 	}
 	
 }/*/mediaquery*/
