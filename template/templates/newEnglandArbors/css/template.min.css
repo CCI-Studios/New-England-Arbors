@@ -1429,7 +1429,7 @@ input[type="submit"] {
     margin-bottom: 1em; }
     .module.block .mc-field-group input {
       border-radius: 5px;
-      width: 95%;
+      width: 90%;
       padding-left: 5%;
       border: 1px solid #d8d8d8;
       line-height: 1em;
