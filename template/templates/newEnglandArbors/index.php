@@ -93,6 +93,7 @@ $analytics = "UA-31248154-1"; // FIXME Update to client ID
 							echo 'wide2';
 						}
 				?>">
+				<jdoc:include type="message" />
 				<jdoc:include type="component" />
 				<div class="clear"></div>
 				<?php if ($this->countModules('contentBottom')): ?>
@@ -142,6 +143,7 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 		<script src="/templates/<?= $this->template ?>/js/dropmenu.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/html5.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/menu.js"></script>
+		<script src="/templates/<?= $this->template ?>/js/location.js"></script>
 	<?php else: ?>
 		<script>
 			var _gaq=[["_setAccount","<?php echo $analytics?>"],["_trackPageview"]];

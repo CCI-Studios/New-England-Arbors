@@ -66,6 +66,8 @@ h4 {
 img {
   max-width: 100%;
   height: inherit; }
+  .ie7 img, .ie8 img {
+    max-width: auto; }
 
 ol {
   padding: 0 0 0 20px;

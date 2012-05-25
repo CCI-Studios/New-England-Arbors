@@ -1,0 +1,16 @@
+.submission-list {
+
+}
+
+.submission-list .item {
+	text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+	.submission-list .item {
+		float: left;
+
+		width: 30%;
+		padding-right: 2.5%;
+	}
+}

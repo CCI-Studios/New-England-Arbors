@@ -67,7 +67,14 @@ h4 {
 	box-shadow: 0px 12px 12px -12px #444;
 }
 
-img {max-width: 100%; height: inherit;}
+img {
+	max-width: 100%;
+	height: inherit;
+
+	.ie7 &, .ie8 & {
+		max-width: auto;
+	}
+}
 
 ol {
 	padding: 0 0 0 20px;

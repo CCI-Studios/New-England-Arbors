@@ -1,6 +1,5 @@
 window.addEvent('domready', function() {
-	var displayers = $$('.show-menu')
-		menu = $$('.moduletable_hmenu.primary')[0],
+	var displayers = $$('.show-menu'),
 		wrapper = $('wrapper'),
 		body = $$('body')[0],
 		visible = false;

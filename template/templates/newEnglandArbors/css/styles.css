@@ -133,6 +133,12 @@ input[type="submit"] {
 .mobile-only, .tablet-only, .phone-only {
   display: none; }
 
+.chronoform {
+  display: none; }
+
+.Chronoform {
+  float: left; }
+
 @media only screen and (max-width: 1023px) {
   .contactTable .content {
     float: left;

@@ -1,4 +1,10 @@
 /* @group modules */
+.moduletable.icon {
+  width: 26px;
+  height: 26px; }
+  .moduletable.icon img {
+    display: block; }
+
 #headerTop .moduletable {
   float: left;
   padding: 5px 0 0 10px;
@@ -10,7 +16,8 @@
     #headerTop .moduletable .search input {
       padding: 0 10px 0 35px;
       border: none;
-      border-radius: 10px; }
+      border-radius: 10px;
+      line-height: 25px; }
     #headerTop .moduletable .search button {
       position: absolute;
       top: 4px;
