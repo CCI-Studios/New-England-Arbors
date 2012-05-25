@@ -10,6 +10,10 @@
 	max-width: 940px;
 	margin: 0 auto;
 	padding: 0 1.041666667%;
+
+	html.ie7 &, html.ie8 & {
+		width: 940px;
+	}
 }
 
 #wrapper {
