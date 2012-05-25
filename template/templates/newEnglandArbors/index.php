@@ -124,6 +124,18 @@ $analytics = "UA-31248154-1"; // FIXME Update to client ID
 	<jdoc:include type="modules" name="hidden" style="raw" />
 </div>
 
+<div id="zopium">
+	<!--Start of Zopim Live Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+$.src='//cdn.zopim.com/?ZOL7j2NYo2S65T3yeXZpRcalpTesJuIk';z.t=+new Date;$.
+type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+</script>
+<!--End of Zopim Live Chat Script-->
+</div>
+
 	<!-- load scripts -->
 	<?php if ($testing): ?>
 		<script src="/templates/<?= $this->template ?>/js/columns.js"></script>
