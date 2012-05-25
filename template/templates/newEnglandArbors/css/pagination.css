@@ -7,14 +7,6 @@ div.pagination .pagination-prev span,
 div.pagination .pagination-next span,
 div.pagination .pagination-end span {
   text-indent: -9999px; }
-div.pagination .pagination-start {
-  background: url("../images/pageFirst_normal.png") center center no-repeat; }
-div.pagination .pagination-prev {
-  background: url("../images/pagePrev_normal.png") center center no-repeat; }
-div.pagination .pagination-next {
-  background: url("../images/pageNext_normal.png") center center no-repeat; }
-div.pagination .pagination-end {
-  background: url("../images/pageLast_normal.png") center center no-repeat; }
 div.pagination ul {
   margin: 0;
   padding: 0; }

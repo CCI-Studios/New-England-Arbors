@@ -74,6 +74,7 @@
 
 button[type="submit"],
 input[type="submit"] {
+  font-family: 'Goudy Old Style';
   background: url("../images/button_submit.png") top left no-repeat;
   border-radius: 0;
   border: none;

@@ -82,6 +82,8 @@
     padding-left: 0; }
   #content.wide2 {
     width: auto; }
+  #content .finder {
+    margin-top: 1em; }
 
 #bottom {
   padding: 25px 0 0; }
