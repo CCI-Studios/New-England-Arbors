@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="View Submissions">
+		<message><![CDATA[]]></message>		
+	</layout>
+
+	<fields name="params">
+		<fieldset name="basic">
+
+			<field name="description" type="textarea"
+				label="Description" />
+		</fieldset>
+	</fields>
+</metadata>
