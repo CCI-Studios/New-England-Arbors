@@ -64,3 +64,16 @@ textarea,
 input[type="file"] {
 	display: inline;
 }
+
+@media only screen and (max-width: 480px) {
+
+	.ccms_form_element input, textarea, input[type="file"] {
+		width: 270px
+	}
+	
+	.chrono_captcha_input {
+		width: inherit !important;
+	}
+
+}/*/mediaquery*/
+
