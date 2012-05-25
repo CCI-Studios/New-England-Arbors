@@ -129,6 +129,8 @@ input[type="submit"] {
       line-height: 1em;
       height: 30px;
       font-style: italic; }
+      .ie8 .module.block .mc-field-group input, .ie7 .module.block .mc-field-group input {
+        line-height: 30px; }
 
 .mobile-only, .tablet-only, .phone-only {
   display: none; }
