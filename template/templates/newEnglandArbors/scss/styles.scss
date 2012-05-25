@@ -153,6 +153,8 @@ input[type="submit"] {
 			line-height: 1em;
 			height: 30px;
 			font-style: italic;
+			.ie8 &,
+			.ie7 & {line-height: 30px;}
 		}
 	}
 	
