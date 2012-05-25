@@ -100,12 +100,7 @@
       background: whitesmoke;
       width: 100%;
       border: 1px solid #002d4c;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      -ms-border-radius: 5px;
-      -o-border-radius: 5px;
-      border-radius: 5px;
-      behavior: url("../templates/newEnglandArbors/resources/PIE.htc"); }
+      border-radius: 5px; }
       .moduletable_hmenu.primary .menu li {
         display: block;
         border-top: 1px solid #d8d8d8;
