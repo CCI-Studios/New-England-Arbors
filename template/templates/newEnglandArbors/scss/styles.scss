@@ -111,6 +111,7 @@ input[type="submit"] {
 	width: 28.936170213%; // 272/940
 	background: url('../images/bg_blockGradient.png') bottom left no-repeat;
 	padding-left: 1.70212766%;
+	text-align: center;
 	
 	> div {
 		background: url('../images/bg_blockGradient.png') bottom right no-repeat;
@@ -132,6 +133,26 @@ input[type="submit"] {
 		color: #fff;
 		margin: 0px 0;
 		padding: 7px 0 24px;
+		text-align: left;
+	}
+	
+	p {
+		text-align: left;
+	}
+	
+	.mc-field-group {
+		text-align: center;
+		margin-bottom: 1em;
+		
+		input {
+			border-radius: 5px;
+			width: 95%;
+			padding-left: 5%;
+			border: 1px solid $bordercolor;
+			line-height: 1em;
+			height: 30px;
+			font-style: italic;
+		}
 	}
 	
 }
