@@ -39,7 +39,7 @@ $analytics = "UA-31248154-1"; // FIXME Update to client ID
 
 	<!-- load css -->
 	<?php if ($testing): ?>
-		<link rel="stylesheet" href="/templates/<?= $this->template ?>/css/template.min.css">
+		<link rel="stylesheet" href="/templates/<?= $this->template ?>/css/template.css">
 	<?php else: ?>
 		<link rel="stylesheet" href="/templates/<?= $this->template ?>/css/template.min.css">
 	<?php endif; ?>
