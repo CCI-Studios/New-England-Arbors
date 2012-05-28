@@ -1,0 +1,40 @@
+#top .module {
+  float: right;
+  margin: 0 5px; }
+  #top .module.show-menu {
+    float: left; }
+  #top .module:first-child {
+    margin-left: 0; }
+#top .search form {
+  margin: 0;
+  position: relative; }
+  #top .search form button {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 18px;
+    height: 18px;
+    background: url(../images/icon-search.png) center no-repeat;
+    text-indent: -9999em; }
+  #top .search form input {
+    padding-left: 23px;
+    width: 100px; }
+
+#header .hmenu {
+  padding-top: 40px;
+  text-align: right; }
+
+.module.block {
+  background: url(../images/block-bg1.png) left top no-repeat;
+  padding-left: 8px; }
+  .module.block > div {
+    background: url(../images/block-bg1.png) right top no-repeat;
+    padding-right: 8px; }
+  .module.block > div > div {
+    background: url(../images/block-bg2.png) left top no-repeat;
+    margin-left: -7px;
+    padding-left: 7px;
+    height: 278px; }
+  .module.block > div > div > div {
+    background: url(../images/block-bg2.png) right top no-repeat;
+    padding-right: 5px; }

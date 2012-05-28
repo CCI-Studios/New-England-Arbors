@@ -1,0 +1,35 @@
+@import "_variables";
+@import "_mixins";
+
+.media-blog {
+	.items-row {
+		float: left;
+	}
+
+
+	.item {
+		width: 45%;
+		padding-right: 2.5%;
+		float: left;
+		
+		.media {
+			float: left;
+			padding: 0 2.5% 0 0;
+			width: 125px;
+
+			img { display: block; }
+		}
+		
+		h2 {
+			font-size: 1em;
+			margin: 0;
+		}
+		
+		.subtitle {
+			font-size: 1em;
+			font-weight: bold;
+			color: $maincolor;
+			margin: 0 0 0.5em 0;
+		}
+	}
+}

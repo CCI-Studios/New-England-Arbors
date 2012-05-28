@@ -1,0 +1,162 @@
+@import "_variables";
+
+.hmenu {
+
+	.menu {
+		margin: 0;
+		padding: 0;
+
+		li {
+			display: inline-block;
+			*display: inline;
+			*zoom: 1;
+			padding-left: 10px;
+			position: relative;
+
+			&:first-child { padding-left: 0; }
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+			display: none;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			right: 0;
+
+
+			li {
+				display: block;
+				padding: 0.5em 1em;
+			}
+		}
+	}
+
+	&.primary {
+		li {
+			padding-left: 35px;
+
+			> a, > span {
+				font-size: 14px;
+				color: $maincolor;
+				text-decoration: none;
+				display: block;
+				padding-bottom: 10px;
+			}
+
+			&.active > a, &.active > span,
+			> a:hover, > span:hover {
+				background: url(../images/menu-hover-bg.png) bottom no-repeat;
+			}
+		}
+	}
+
+	&.secondary {
+		text-align: center;
+
+		li {
+			> a, > span {
+				color: $maincolor;
+				text-decoration: none;
+			}
+		}
+
+		li.active > a, li.active > span,
+		a:hover, span:hover {
+			color: #b1cce1;
+		}
+	}
+}
+
+.vmenu {
+
+	.menu {
+		margin: 0;
+		padding: 0;
+
+
+		li {
+			display: block;
+		}
+
+		ul {
+			margin: 0.5em 0;
+
+			li {
+
+				
+			}
+		}
+	}
+
+	&.sidebar {
+		margin: 1em 0;
+
+		li {
+			margin-left: -9px;
+			padding-left: 9px;
+
+			> a, > span {
+				display: block;
+				font-size: 14px;
+				color: $maincolor;
+				height: 35px;
+				line-height: 35px;
+				margin-bottom: 4px;
+				text-decoration: none;
+			}
+		}
+
+		li.active, li:hover {
+			background: url(../images/menu-roll-bg.png) left top no-repeat;
+
+			> a, > span {
+				color: #fff;
+				background: url(../images/menu-roll-bg.png) right bottom no-repeat;
+			}
+		}
+	}
+
+	&.mobile {
+		position: fixed;
+		top: 20px;
+		bottom: 20px;
+		left: 20px;
+		right: 0;
+
+		border-radius: 5px;
+		border: 1px solid #002d4c;
+		background: whitesmoke;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+
+		.menu {
+			li {
+				font-size: 18px;
+				line-height: 44px;
+				padding: 0 0 0 1em;
+				border-top: 1px solid $bordercolor;
+
+				&:first-child { border-top: none; }
+
+				li {
+					background: #fff;
+					padding-left: 3em;
+					margin-left: -1em;
+				}
+			}
+
+			ul {
+				margin: 0 0 0 -1em;
+				background: #d7d7d7;
+			}
+		}
+
+		a { 
+			color: $maincolor;
+			font-size: 1.428571429em; // 20/14
+			&:hover {background: none;}
+		}
+	}
+}

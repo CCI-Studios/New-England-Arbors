@@ -24,6 +24,18 @@ if ($_SERVER['SERVER_PORT'] === 8888 ||
 	$testing = false;
 }
 
+if ($this->countModules('sidebar1')) {
+	$contentWidth = 9;
+} else {
+	$contentWidth = 12;
+}
+
+if ($this->countModules('sidebar2')) {
+	$componentWidth = 8;
+} else {
+	$componentWidth = 12;
+}
+
 $analytics = "UA-31248154-1"; // FIXME Update to client ID
 ?>
 
@@ -33,15 +45,17 @@ $analytics = "UA-31248154-1"; // FIXME Update to client ID
 
  	<jdoc:include type="head" />
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="/templates/<?= $this->template ?>/resources/favicon.ico">
 	<link rel="apple-touch-icon" href="/templates/<?= $this->template ?>/resources/apple-touch-icon.png">
 
 	<!-- load css -->
 	<?php if ($testing): ?>
-		<link rel="stylesheet" href="/templates/<?= $this->template ?>/css/template.css">
+		<link rel="stylesheet" href="/templates/<?= $this->template ?>/css/template.min.css">
+		<link rel="stylesheet" href="/templates/<?= $this->template ?>/css/bootstrap.responsive.css">
 	<?php else: ?>
 		<link rel="stylesheet" href="/templates/<?= $this->template ?>/css/template.min.css">
+		<link rel="stylesheet" href="/templates/<?= $this->template ?>/css/bootstrap.responsive.css">
 	<?php endif; ?>
 
 	<!-- load modernizer, all other at bottom -->
@@ -55,13 +69,73 @@ $analytics = "UA-31248154-1"; // FIXME Update to client ID
 
 <body class="<?= $menu ?>">
 
+	<div id="mobile-menu">
+		<jdoc:include type="modules" name="mobile-menu" style="rounded" />
+	</div>
+
+	<div id="wrapper">
+		<div id="top" class="container"><div><div>
+			<jdoc:include type="modules" name="top" style="rounded" />
+			<div class="clear"></div>
+		</div></div></div>
+
+		<div id="header">
+			<div class="container-fluid"><div class="row-fluid">
+				<jdoc:include type="modules" name="header" style="rounded" />
+			</div></div>
+		</div>
+
+		<?php if ($this->countModules('header')): ?>
+		<div id="masthead"><div><div>
+			<div class="container">
+				<jdoc:include type="modules" name="masthead" style="rounded" />
+			</div>
+		</div></div></div>
+		<?php endif; ?>
+
+		<div id="body">
+			<div class="container-fluid"><div class="row-fluid">
+
+				<? if ($this->countModules('sidebar1')): ?>
+					<div id="sidebar1" class="span3">
+						<jdoc:include type="modules" name="sidebar1" style="rounded" />
+					</div>
+				<? endif; ?>
+
+				<div class="span<?= $contentWidth ?>">
+
+					<div class="row-fluid">
+						<div id="component" class="span<?= $componentWidth ?>">
+							<jdoc:include type="component" />
+						</div>
+
+						<? if ($this->countModules('sidebar2')): ?>
+							<div id="sidebar2" class="span4">
+								<jdoc:include type="modules" name="sidebar2" style="rounded" />
+							</div>
+						<? endif; ?>
+					</div>
+				</div>
+			</div></div>
+		</div>
+
+		<div id="footer"><div class="container-fluid">
+			<jdoc:include type="modules" name="footer" style="rounded" />
+		</div></div>
+		
+		<div id="copyright"><div>
+			<p>
+				&copy; <?= date('Y'); ?> New England Arbors. All Rights Reserved.<br/>
+				Site by <a href="http://ccistudios.com" target="_blank">CCI Studios</a>
+			</p>
+		</div></div>
+	</div>
 
 
 
-<div class="hidden">
-	<jdoc:include type="modules" name="hidden" style="raw" />
-</div>
-
+	<div class="hidden">
+		<jdoc:include type="modules" name="hidden" style="raw" />
+	</div>
 
 <!--Start of Zopim Live Chat Script-->
 <script type="text/javascript">

@@ -1,0 +1,48 @@
+@import "_variables";
+@import "_mixins";
+
+body {
+	color: #444; /* off black */
+	font-family: 'Goudy Old Style', Helvetica, Arial, sans-serif;
+	font-size: 0.875em; /*14px/16px*/
+	overflow-x: hidden;
+	background: $maincolor;
+	
+}
+
+@font-face {
+    font-family: 'Goudy Old Style';
+    src: url('../resources/GOUDOS.eot');
+    src: url('../resources/GOUDOS.eot?#iefix') format('embedded-opentype'),
+         url('../resources/GOUDOS.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1, h2, h3, h4, h5, h6 { 
+	color: $maincolor;
+	font-weight: bold; 
+}
+
+h1 { font-size: 1.714285714em; }
+h2 { font-size: 1.142857143em; }
+h3 { font-size: 1em; }
+ 
+.module h3,
+.moduletable h3 {
+	font-size: 1.714285714em; // 24/14
+	font-weight: normal;
+	margin: 0 0 20px;
+}
+
+h4 { font-size: 1.142857143em; }
+
+.item-page h1,
+.item-page h4,
+.blog h1 {margin-top: 0;}
+
+.left { float: left; }
+.right { float: right; }
+.hidden { display: none; }
+.clr, .clear { clear: both; }

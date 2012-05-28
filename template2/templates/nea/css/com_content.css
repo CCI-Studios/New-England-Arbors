@@ -1,0 +1,20 @@
+.media-blog .items-row {
+  float: left; }
+.media-blog .item {
+  width: 45%;
+  padding-right: 2.5%;
+  float: left; }
+  .media-blog .item .media {
+    float: left;
+    padding: 0 2.5% 0 0;
+    width: 125px; }
+    .media-blog .item .media img {
+      display: block; }
+  .media-blog .item h2 {
+    font-size: 1em;
+    margin: 0; }
+  .media-blog .item .subtitle {
+    font-size: 1em;
+    font-weight: bold;
+    color: #00548e;
+    margin: 0 0 0.5em 0; }
