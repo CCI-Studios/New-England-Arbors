@@ -20,7 +20,10 @@
   float: left; }
   .media-blog .item .media {
     float: left;
-    padding: 0 2.5% 5px 0; }
+    padding: 0 2.5% 0 0;
+    width: 125px; }
+    .media-blog .item .media img {
+      display: block; }
   .media-blog .item h2 {
     font-size: 1em;
     margin: 0; }

@@ -36,7 +36,10 @@
 		
 		.media {
 			float: left;
-			padding: 0 2.5% 5px 0;
+			padding: 0 2.5% 0 0;
+			width: 125px;
+
+			img { display: block; }
 		}
 		
 		h2 {
