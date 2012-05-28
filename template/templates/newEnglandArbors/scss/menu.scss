@@ -119,29 +119,32 @@
 @media only screen and (max-width: 767px) { // cell + table
 
 	.moduletable_hmenu.primary {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 80%;
+		position: fixed;
+		top: 20px;
+		bottom: 20px;
+		left: 20px;
+		right: 0;
 		text-align: left;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch; // iPhone inertial scrolling
+
+		border-radius: 5px;
+		border: 1px solid #002d4c;
+		background: whitesmoke;
 		
 		float: none;
-		margin: 20px 0 0 0;
+		margin: 0;
+		padding: 0;
 		font-size: 14px;
 		
 		.menu {
-			margin: 0 20px;
-			padding: 0 1.2em;
-			background: whitesmoke;
-			width: 100%;
-			border: 1px solid #002d4c;
-			border-radius: 5px;
+			margin: 0;
+			padding: 0;
 			
 			li {
 				display: block;
 				border-top: 1px solid $bordercolor;
 				line-height: 44px;
-				margin-left: -1em;
 				padding-left: 1em;
 				
 				ul {
