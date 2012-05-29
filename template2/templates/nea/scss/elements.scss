@@ -55,6 +55,10 @@ a:visited {color: $maincolor; text-decoration: none;}
 
 a:hover {text-decoration: underline;}
 
+ol {
+	color: $maincolor;
+}
+
 .left { float: left; }
 .right { float: right; }
 .hidden { display: none; }
