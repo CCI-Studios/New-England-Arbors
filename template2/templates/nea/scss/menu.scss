@@ -183,3 +183,18 @@
 		}
 	}
 }
+
+@media only screen and (min-width: 768px) {
+	
+	.hmenu {
+
+		&.page-title {
+			ul {
+
+				li.active {
+					padding: 0;
+				}
+			}
+		}
+	}
+}
