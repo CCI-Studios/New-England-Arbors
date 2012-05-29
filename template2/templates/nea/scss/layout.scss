@@ -44,16 +44,22 @@
 }
 
 #masthead {
-	background: $maincolor; // FIXME
-
+	background: url('../images/bg_masthead.jpg') top center repeat-x;
+	font-size: 1.714285714em;
+	
 	> div {
-		background: url(../images/masthead-shadow-top.png) top repeat-x;
-		padding-top: 11px;
+		background: url('../images/bg_mastheadGlow.png') top center no-repeat;
 	}
-
+	
 	> div > div {
-		background: url(../images/masthead-shadow-bottom.png) bottom repeat-x;
-		padding-bottom: 11px;
+		background: url('../images/bg_mastheadShadowTop.png') top center repeat-x;
+		padding-top: 7px;
+	}
+	
+	> div > div > div {
+		background: url('../images/bg_mastheadShadowBottom.png') bottom center repeat-x;
+		padding-bottom: 7px;
+		max-height: 261px;
 	}
 }
 
