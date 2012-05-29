@@ -1,7 +1,8 @@
 @import "_variables";
 @import "_mixins";
 
-div .button {
+div .button,
+.cfdiv_submit input {
 	display: inline-block;
 	*display: inline;
 	*zoom: 1;
