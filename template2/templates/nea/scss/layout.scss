@@ -148,6 +148,14 @@
 		margin-top: 0;
 		padding-top: 30px;
 	}
+	
+	#component {
+		margin-bottom: 25px;
+
+		> div {
+			padding: 0;
+		}
+	}
 
 	#sidebar1 + div {
 		border-left: 1px solid $bordercolor;
