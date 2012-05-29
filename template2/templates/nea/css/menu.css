@@ -45,9 +45,10 @@
   .hmenu.page-title ul li {
     display: none; }
   .hmenu.page-title ul li.active {
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 60px;
     color: #fff;
+    padding: 0;
     display: block; }
     .hmenu.page-title ul li.active a {
       color: #fff;
