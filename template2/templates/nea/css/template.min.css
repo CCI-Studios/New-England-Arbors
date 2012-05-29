@@ -1346,7 +1346,8 @@ div .button {
   cursor: pointer;
   background: url(../images/button.png) center no-repeat;
   text-align: center;
-  padding: 0; }
+  padding: 0;
+  border: 0; }
   div .button a {
     color: #fff;
     text-decoration: none; }
@@ -1477,6 +1478,11 @@ div .button {
     margin-top: 0;
     padding-top: 30px; }
 
+  #component {
+    margin-bottom: 25px; }
+    #component > div {
+      padding: 0; }
+
   #sidebar1 + div {
     border-left: 1px solid #d8d8d8; }
 
@@ -1520,19 +1526,22 @@ html.ie7 #header, html.ie8 #header {
   text-align: center; }
   .products .product a {
     color: #00548e;
-    text-decoration: none; }
+    text-decoration: none;
+    font-size: 24px; }
+    .products .product a p {
+      margin: 0 0 10px 0; }
 
 #top .module {
   float: right;
-  margin: 0 5px; }
+  margin: 0 10px 0 0; }
   #top .module.show-menu {
     float: left; }
   #top .module:first-child {
     margin-left: 0; }
-#top .search form {
+#top .search {
   margin: 0;
   position: relative; }
-  #top .search form button {
+  #top .search button {
     position: absolute;
     top: 5px;
     left: 5px;
@@ -1540,7 +1549,7 @@ html.ie7 #header, html.ie8 #header {
     height: 18px;
     background: url(../images/icon-search.png) center no-repeat;
     text-indent: -9999em; }
-  #top .search form input {
+  #top .search input {
     padding: 0 10px 0 35px;
     width: 100px;
     border: none;
