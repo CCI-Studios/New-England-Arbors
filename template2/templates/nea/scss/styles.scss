@@ -53,3 +53,31 @@ div .button,
 	border-radius: 4px;
 	box-shadow: 0px 12px 12px -12px #444;
 }
+
+
+
+@media only screen and (min-width: 768px) {
+	
+}
+
+@media only screen and (min-width: 980px) {
+	
+	.contactTable {
+		.form {
+			float: left;
+			max-width: 34.042553191%;
+			padding-right: 1.063829787%;
+		}
+
+		.content {
+			float: none;
+			width: auto;
+			margin-left: 330px;
+
+			img {
+				float: right;
+				margin: 0 0 10px 10px;
+			}
+		}
+	}
+}
