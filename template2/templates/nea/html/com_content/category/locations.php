@@ -3,7 +3,7 @@
  * @version		$Id: blog.php 20960 2011-03-12 14:14:00Z chdemko $
  * @package		Joomla.Site
  * @subpackage	com_content
- * @copyright	Copyright (C) 2005 - 2011 Open Source Matters, Inc. All rights reserved.
+ * @copydright	Copyright (C) 2005 - 2011 Open Source Matters, Inc. All rights reserved.
  * @license		GNU General Public License version 2 or later; see LICENSE.txt
  */
 
@@ -19,6 +19,8 @@ JHtml::addIncludePath(JPATH_COMPONENT.'/helpers');
 		<?php echo $this->escape($this->params->get('page_heading')); ?>
 	</h1>
 	<?php endif; ?>
+
+	<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=205770342986406212006.0004c11e3802a06f5e544&amp;hl=en&amp;ie=UTF8&amp;ll=89.323848,66.357422&amp;spn=0,0&amp;t=m&amp;output=embed"></iframe><br />
 
 	<div>
 		Select a state to find a location near you: 

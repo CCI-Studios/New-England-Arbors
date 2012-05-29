@@ -10,6 +10,8 @@
 	left: 0;
 	z-index: 5;
 	box-shadow: 0 0 30px #333;
+	min-height: 100%;
+	background: $maincolor;
 
 	@include transition(left 0.3s ease-in-out);
 
@@ -23,6 +25,7 @@
 	left: 0;
 	width: 100%;
 	top: 0;
+	padding: 0;
 	
 	background: $maincolor url(../images/top-mobile-bg.png);
 	@include transition(left 0.3s ease-in-out);
@@ -61,8 +64,21 @@
 	body.home & { background: #fff; }
 }
 
-#component > div {
-	padding: 0 10px;
+#component {
+	margin-bottom: 25px;
+
+	> div {
+		padding: 0 10px;
+	}
+}
+
+#sidebar2 { margin-bottom: 25px; }
+
+#bottom {
+	border-top: 1px solid $bordercolor;
+	clear: both;
+	padding-top: 25px;
+	margin-top: 25px;
 }
 
 #copyright {
@@ -101,6 +117,7 @@
 		top: 7px;
 		background: none;
 		padding: 0;
+		max-width: 940px;
 		margin: 0 auto;
 
 		> div {
@@ -109,7 +126,7 @@
 			right: 0;
 
 			background: url(../images/top-bg.png) top left repeat-x;
-			padding-left: 15px;
+			padding: 0 0 0 15px;
 
 			> div {
 				background: url(../images/top-bg.png) bottom right repeat-x;
@@ -135,7 +152,7 @@
 		padding-bottom: 10px;
 	}
 
-	#component > div {
+	#sidebar1 + div #component > div {
 		padding: 0 0 0 20px;
 	}
 }

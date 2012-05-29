@@ -1,3 +1,6 @@
+html, body {
+  min-height: 100%; }
+
 body {
   color: #444;
   /* off black */
@@ -14,9 +17,15 @@ body {
   font-weight: normal;
   font-style: normal; }
 
+select, input, textarea {
+  color: #444;
+  /* off black */
+  font-family: Goudy Old Style, Helvetica, Arial, sans-serif; }
+
 h1, h2, h3, h4, h5, h6 {
   color: #00548e;
-  font-weight: bold; }
+  font-weight: bold;
+  margin: 0 0 0.7em; }
 
 h1 {
   font-size: 1.714285714em; }
@@ -30,8 +39,7 @@ h3 {
 .module h3,
 .moduletable h3 {
   font-size: 1.714285714em;
-  font-weight: normal;
-  margin: 0 0 20px; }
+  font-weight: normal; }
 
 h4 {
   font-size: 1.142857143em; }

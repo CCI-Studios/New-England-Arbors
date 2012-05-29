@@ -21,3 +21,5 @@ input:invalid, textarea:invalid {
 /* Make buttons play nice in IE:
    www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
 button {  width: auto; overflow: visible; border: none; background: none; }
+
+form { margin: 0; }

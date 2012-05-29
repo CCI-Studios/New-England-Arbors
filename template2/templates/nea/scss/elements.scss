@@ -1,6 +1,10 @@
 @import "_variables";
 @import "_mixins";
 
+html, body {
+	min-height: 100%;
+}
+
 body {
 	color: #444; /* off black */
 	font-family: 'Goudy Old Style', Helvetica, Arial, sans-serif;
@@ -19,10 +23,15 @@ body {
     font-style: normal;
 }
 
+select, input, textarea {
+	color: #444; /* off black */
+	font-family: Goudy Old Style, Helvetica, Arial, sans-serif;
+}
 
 h1, h2, h3, h4, h5, h6 { 
 	color: $maincolor;
-	font-weight: bold; 
+	font-weight: bold;
+	margin: 0 0 0.7em;
 }
 
 h1 { font-size: 1.714285714em; }
@@ -33,7 +42,6 @@ h3 { font-size: 1em; }
 .moduletable h3 {
 	font-size: 1.714285714em; // 24/14
 	font-weight: normal;
-	margin: 0 0 20px;
 }
 
 h4 { font-size: 1.142857143em; }

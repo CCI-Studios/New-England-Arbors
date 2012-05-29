@@ -69,12 +69,12 @@ $analytics = "UA-31248154-1"; // FIXME Update to client ID
 
 <body class="<?= $menu ?>">
 
-	<div id="mobile-menu">
+	<div id="mobile-menu" class="visible-phone">
 		<jdoc:include type="modules" name="mobile-menu" style="rounded" />
 	</div>
 
 	<div id="wrapper">
-		<div id="top" class="container"><div><div>
+		<div id="top" class="container-fluid"><div><div>
 			<jdoc:include type="modules" name="top" style="rounded" />
 			<div class="clear"></div>
 		</div></div></div>
@@ -87,7 +87,7 @@ $analytics = "UA-31248154-1"; // FIXME Update to client ID
 
 		<?php if ($this->countModules('header')): ?>
 		<div id="masthead"><div><div>
-			<div class="container">
+			<div class="container-fluid">
 				<jdoc:include type="modules" name="masthead" style="rounded" />
 			</div>
 		</div></div></div>
@@ -115,6 +115,12 @@ $analytics = "UA-31248154-1"; // FIXME Update to client ID
 							</div>
 						<? endif; ?>
 					</div>
+
+					<?php if ($this->countModules('bottom')): ?>
+					<div id="bottom" class="row-fluid">
+						<jdoc:include type="modules" name="bottom" style="rounded" />
+					</div>
+					<?php endif; ?>
 				</div>
 			</div></div>
 		</div>

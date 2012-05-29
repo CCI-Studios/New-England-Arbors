@@ -39,6 +39,19 @@
   .hmenu.secondary li.active > a, .hmenu.secondary li.active > span,
   .hmenu.secondary a:hover, .hmenu.secondary span:hover {
     color: #b1cce1; }
+.hmenu.page-title ul {
+  margin: 0;
+  padding: 0; }
+  .hmenu.page-title ul li {
+    display: none; }
+  .hmenu.page-title ul li.active {
+    font-size: 40px;
+    line-height: 40px;
+    color: #fff;
+    display: block; }
+    .hmenu.page-title ul li.active a {
+      color: #fff;
+      text-decoration: none; }
 
 .vmenu .menu {
   margin: 0;
@@ -76,17 +89,18 @@
   background: whitesmoke;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch; }
-  .vmenu.mobile .menu li {
+  .vmenu.mobile .menu > li {
     font-size: 18px;
     line-height: 44px;
     padding: 0 0 0 1em;
     border-top: 1px solid #d8d8d8; }
-    .vmenu.mobile .menu li:first-child {
+    .vmenu.mobile .menu > li:first-child {
       border-top: none; }
-    .vmenu.mobile .menu li li {
+    .vmenu.mobile .menu > li li {
       background: #fff;
-      padding-left: 3em;
-      margin-left: -1em; }
+      padding-left: 2em;
+      margin-left: -1em;
+      border-top: 1px solid #d8d8d8; }
   .vmenu.mobile .menu ul {
     margin: 0 0 0 -1em;
     background: #d7d7d7; }

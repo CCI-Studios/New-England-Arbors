@@ -6,6 +6,8 @@
   left: 0;
   z-index: 5;
   box-shadow: 0 0 30px #333;
+  min-height: 100%;
+  background: #00548e;
   -webkit-transition: left 0.3s ease-in-out;
   -moz-transition: left 0.3s ease-in-out;
   -o-transition: left 0.3s ease-in-out;
@@ -19,6 +21,7 @@
   left: 0;
   width: 100%;
   top: 0;
+  padding: 0;
   background: #00548e url(../images/top-mobile-bg.png);
   -webkit-transition: left 0.3s ease-in-out;
   -moz-transition: left 0.3s ease-in-out;
@@ -50,8 +53,19 @@
   body.home #body {
     background: #fff; }
 
-#component > div {
-  padding: 0 10px; }
+#component {
+  margin-bottom: 25px; }
+  #component > div {
+    padding: 0 10px; }
+
+#sidebar2 {
+  margin-bottom: 25px; }
+
+#bottom {
+  border-top: 1px solid #d8d8d8;
+  clear: both;
+  padding-top: 25px;
+  margin-top: 25px; }
 
 #copyright {
   background: url(../images/copyright-bg1.png) top repeat-x;
@@ -80,13 +94,14 @@
     top: 7px;
     background: none;
     padding: 0;
+    max-width: 940px;
     margin: 0 auto; }
     #top > div {
       position: absolute;
       top: 0;
       right: 0;
       background: url(../images/top-bg.png) top left repeat-x;
-      padding-left: 15px; }
+      padding: 0 0 0 15px; }
       #top > div > div {
         background: url(../images/top-bg.png) bottom right repeat-x;
         padding-right: 15px;
@@ -105,7 +120,7 @@
     background: url(../images/sidebar-bg.png) bottom center no-repeat;
     padding-bottom: 10px; }
 
-  #component > div {
+  #sidebar1 + div #component > div {
     padding: 0 0 0 20px; } }
 @media only screen and (min-width: 980px) {
   .container-fluid {

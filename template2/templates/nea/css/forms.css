@@ -38,56 +38,5 @@ button {
   border: none;
   background: none; }
 
-// login
-
-div.login fieldset {
-  border: none;
-  padding: 0;
-}
-
-div.login-fields label {
-  display: block;
-  padding: 0 0 .5em;
-}
-
-div.login-fields input {
-  margin: 0 0 .5em;
-}
-
-// testimonials
-.ccms_form_element {
-  padding: 0;
-  *zoom: 1;
-  
-  &.cfdiv_text img {
-    padding: 0;
-    border: 0;
-    background: 0;
-    box-shadow: none;
-  }
-}
-
-.ccms_form_element label,
-.cfdiv_text label {
-  width: 100px;
-  padding-right: 100%;
-}
-
-.ccms_form_element input, 
-textarea, 
-input[type="file"] {
-  display: inline;
-  line-height: 25px;
-}
-
-@media only screen and (max-width: 480px) {
-
-  .ccms_form_element input, textarea, input[type="file"] {
-    width: 270px
-  }
-  
-  .chrono_captcha_input {
-    width: inherit !important;
-  }
-
-}/*/mediaquery*/
+form {
+  margin: 0; }
