@@ -57,4 +57,29 @@
 		}
 	}
 }
+
+@media only screen and (min-width: 768px) {
+	.media-blog {
+		.items-row {
+			float: left;
+		}
+
+
+		.item {
+			
+			.media {
+				padding-bottom: 0;
+			}
+
+
+			p {
+				margin: 1em 0;
+			}
+
+		}
+	}
+}
+
+@media only screen and (min-width: 980px) {
+	
 }
