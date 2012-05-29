@@ -38,3 +38,23 @@
 		}
 	}
 }
+
+.blog {
+	
+	.items-leading {
+		
+		> div {
+			border-bottom: 1px solid $bordercolor;
+		}
+	}
+	
+	.items-row {
+		border-bottom: 1px solid $bordercolor;
+		padding-top: 1em;
+		
+		p {
+			margin-left: 20px;
+		}
+	}
+}
+}
