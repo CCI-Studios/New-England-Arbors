@@ -24,16 +24,27 @@ CCI.Slideshow = new Class({
 
 		this.current = 0;
 
+		var tallestHeight = 0;
 		this.slides.each(function(slide, index) {
-			if (!this.tallestSlide ||
-				this.tallestSlide.getSize().y < slide.getSize().y) {
-				this.tallestSlide = slide;
-			}
-
+			var height = 0;
+			slide.setStyles({
+				opacity: 1,
+				display: 'block'
+			});
+			height = slide.getSize().y;
+			slide.setStyles({
+				opacity: 0,
+				display: ''
+			});
 			if (index == this.current) {
 				slide.setStyle('opacity', 1);
 			} else {
 				slide.setStyle('opacity', 0);
+			}
+
+			if (height > tallestHeight) {
+				this.tallestSlide = slide;
+				tallestHeight = height;
 			}
 		}.bind(this));
 
