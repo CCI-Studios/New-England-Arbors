@@ -16,7 +16,7 @@
 	@include transition(left 0.3s ease-in-out);
 
 	body.menu-open & {
-		left: 90%;
+		left: 86%;
 	}
 }
 
@@ -34,7 +34,7 @@
 	> div { padding: 7px 7px 3px; }
 
 	body.menu-open & {
-		left: 90%;
+		left: 86%;
 	}
 }
 
