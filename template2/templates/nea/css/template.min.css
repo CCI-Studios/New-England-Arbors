@@ -1411,6 +1411,9 @@ div.pagination ul {
 .table4column tr:first-child td {
   font-weight: bold; }
 
+.chronoform {
+  display: none; }
+
 @media only screen and (min-width: 980px) {
   .contactTable .form {
     float: left;
