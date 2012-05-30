@@ -35,7 +35,7 @@
 
 #header .hmenu {
 	padding-top: 40px;
-	text-align: right;
+	text-align: center;
 }
 
 .module.block {
@@ -64,5 +64,17 @@
 		padding-right: 15px;
 		color: #fff;
 		line-height: 45px;
+	}
+	
+	#header .hmenu {
+		text-align: center;
+		float: none;
+		margin: 0 auto;
+		clear: left;
+	}
+	#header .hmenu {
+		text-align: right;
+		float: right;
+		clear: right;
 	}
 }
