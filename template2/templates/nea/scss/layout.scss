@@ -68,7 +68,10 @@
 	background: #fff url(../images/body-bg.jpg) top center no-repeat;
 	padding-top: 30px;
 
-	body.home & { background: #fff; }
+	body.home & { 
+		background: #fff;
+		padding-top: 90px;
+		}
 }
 
 #component {
