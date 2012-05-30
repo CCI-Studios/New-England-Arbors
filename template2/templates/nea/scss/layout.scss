@@ -30,7 +30,7 @@
 	background: $maincolor url(../images/top-mobile-bg.png);
 	@include transition(left 0.3s ease-in-out);
 	
-	> div { padding: 5px 7px; }
+	> div { padding: 7px 7px 3px; }
 
 	body.menu-open & {
 		left: 90%;
