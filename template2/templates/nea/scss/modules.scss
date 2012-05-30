@@ -78,12 +78,82 @@ div.module.block {
 		width: auto;
 	}
 }
+
+.module.products {
+	float: none;
+	padding: 0 0 20px 0;
+	
+	.product {
+		width: 24.6875%; // 158/640
+		float: left;
+		margin-right: 8.645833333%; // 38/640
+	}
+	
+	> div {
+		padding-left: 20px;
+		margin-left: 10px;
+		background: url('../images/arrow-left.png') left center no-repeat;
+	}
+	
+	> div > div {
+		padding-right: 20px;
+		margin-right: 10px;
+		background: url('../images/arrow-right.png') right center no-repeat;
+	}
+	
+	> div > div > div {
+		width: 100%;
+		overflow: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+	
+	> div > div > div > div {
+		width: 1450px;
+	}
+	
+	.product {
+		width: auto;
+		margin: 0 35px;
+		&:first-child {margin: 0 35px;}
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	
 	#header .hmenu {
 		text-align: center;
 		float: none;
 		margin: 0 auto;
 		clear: left;
 	}
+	.module.products {
+		float: left;
+		width: 65.95744680199999%;
+		padding: 0;
+		
+		> div {
+			padding: 0;
+			margin: 0;
+			background: none;
+		}
+		
+		> div > div {
+			padding: 0;
+			margin: 0;
+			background: none;
+		}
+		
+		> div > div > div > div {
+			width: auto;
+		}
+		
+		.product {
+			margin: 0 5.654281099%;
+			&:first-child {margin: 0 5.654281099%;}
+		}
+
+	}
+	
 	div.module.block {
 		float: right;
 	}
@@ -93,4 +163,15 @@ div.module.block {
 		float: right;
 		clear: right;
 	}
+	
+	.module.products {
+		
+		.product {
+
+			margin: 0 5.815831987% 0 0;
+			&:first-child {margin: 0 5.815831987% 0 0;}
+		}
+
+	}
+
 }
