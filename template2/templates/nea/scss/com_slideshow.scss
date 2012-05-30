@@ -1,6 +1,6 @@
 .mod_slideshow {
 	position: relative;
-	margin: -85px 0 -55px;
+	margin-bottom: -61px;
 
 	&.loading {
 
@@ -13,38 +13,34 @@
 
 	.slide {
 		display: none;
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
 
 		.description {
-			margin-right: 55%;
 			color: #fff; 
 
 			h2 { 
 				color: #fff;
-				font-size: 24px;
+				font-size: 48px;
 			}
-			> div {
-				padding-top: 40px;
+
+			p {
+				margin: 1em 0 0;
 			}
 		}
 
 		.image {
-			position: absolute;
-			width: 55%;
-			right: 0;
-			bottom: 0;
-
-			> div {
-				padding: 0 20px;
-			}
-
-			img { 
-				max-width: 100%;
-				display: block;
-			}
+			display: none;
 		}
 
 		&.active {
 			display: block;
+			opacity: 1;
+
+			position: relative;
 		}
 	}
 
@@ -52,6 +48,7 @@
 		clear: both;
 		background: url(../images/slideshow-bg.png) top left;
 		padding-left: 17px;
+		cursor: pointer;
 
 		> div {
 			background: url(../images/slideshow-bg.png) bottom right;
@@ -61,7 +58,6 @@
 
 		.thumb {
 			float: left;
-			width: 25%;
 			background: url(../images/slideshow-thumb-bg.png) left no-repeat;
 
 			&:first-child { background: none; }
@@ -82,7 +78,6 @@
 
 				position: relative;
 				z-index: 3;
-
 				display: none;
 			}
 			.preview {
@@ -112,24 +107,60 @@
 			&.active .indicator {
 				display: block;
 			}
+			&.active .title {
+				background: url(../images/slideshow-hover-bg.png) bottom no-repeat;
+			}
 		}
 	}
 }
 
 @media screen and (min-width: 768px) {
 	.mod_slideshow {
+		margin-top: -85px;
+
+		.slide {
+			.description {
+				margin-right: 55%;
+				
+				> div {
+					padding-top: 135px;
+				}
+			}
+
+			.image {
+				display: block;
+				position: absolute;
+				width: 55%;
+				right: 0;
+				bottom: -18px;
+
+				> div {
+					padding: 0 20px;
+				}
+
+				img { 
+					max-width: 100%;
+					display: block;
+				}
+			}
+
+			&.active {
+				display: block;
+			}
+		}
+
 		.thumbs {
 
 			.thumb {
 				.title {
+					float: right;
+					width: 70%;
 					display: block;
+					text-align: center;
 				}
 				.preview {
-					position: absolute;
-					top: 50%;
-					left: 10px;
-					width: auto;
-					margin-top: -33px;
+					float: left;
+					width: 30%;
 				}
 			}
 		}
