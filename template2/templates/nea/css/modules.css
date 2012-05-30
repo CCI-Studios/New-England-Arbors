@@ -1,14 +1,14 @@
 #top .module {
   float: right;
-  margin: 0 5px; }
+  margin: 0 10px 0 0; }
   #top .module.show-menu {
     float: left; }
   #top .module:first-child {
     margin-left: 0; }
-#top .search form {
+#top .search {
   margin: 0;
   position: relative; }
-  #top .search form button {
+  #top .search button {
     position: absolute;
     top: 5px;
     left: 5px;
@@ -16,9 +16,12 @@
     height: 18px;
     background: url(../images/icon-search.png) center no-repeat;
     text-indent: -9999em; }
-  #top .search form input {
-    padding-left: 23px;
-    width: 100px; }
+  #top .search input {
+    padding: 0 10px 0 35px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    height: 25px; }
 
 #header .hmenu {
   padding-top: 40px;

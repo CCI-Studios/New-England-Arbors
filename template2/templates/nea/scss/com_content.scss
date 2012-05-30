@@ -11,13 +11,18 @@
 		width: 45%;
 		padding-right: 2.5%;
 		float: left;
+		margin: 0 0 10px 0;
 		
 		.media {
 			float: left;
-			padding: 0 2.5% 0 0;
+			padding: 0 7% 10px 0;
 			width: 125px;
 
 			img { display: block; }
+		}
+		
+		p {
+			margin-top: 3px;
 		}
 		
 		h2 {
@@ -32,4 +37,49 @@
 			margin: 0 0 0.5em 0;
 		}
 	}
+}
+
+.blog {
+	
+	.items-leading {
+		
+		> div {
+			border-bottom: 1px solid $bordercolor;
+		}
+	}
+	
+	.items-row {
+		border-bottom: 1px solid $bordercolor;
+		padding-top: 1em;
+		
+		p {
+			margin-left: 20px;
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.media-blog {
+		.items-row {
+			float: left;
+		}
+
+
+		.item {
+			
+			.media {
+				padding-bottom: 0;
+			}
+
+
+			p {
+				margin: 1em 0;
+			}
+
+		}
+	}
+}
+
+@media only screen and (min-width: 980px) {
+	
 }

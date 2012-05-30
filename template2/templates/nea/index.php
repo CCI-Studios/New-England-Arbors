@@ -86,11 +86,11 @@ $analytics = "UA-31248154-1"; // FIXME Update to client ID
 		</div>
 
 		<?php if ($this->countModules('header')): ?>
-		<div id="masthead"><div><div>
+		<div id="masthead"><div><div><div>
 			<div class="container-fluid">
 				<jdoc:include type="modules" name="masthead" style="rounded" />
 			</div>
-		</div></div></div>
+		</div></div></div></div>
 		<?php endif; ?>
 
 		<div id="body">

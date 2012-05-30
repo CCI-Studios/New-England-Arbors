@@ -1,4 +1,8 @@
-div .button {
+@import "_variables";
+@import "_mixins";
+
+div .button,
+.cfdiv_submit input {
 	display: inline-block;
 	*display: inline;
 	*zoom: 1;
@@ -12,13 +16,34 @@ div .button {
 	background: url(../images/button.png) center no-repeat;
 	text-align: center;
 	padding: 0;
+	border: 0;
 
 	a { 
 		color: #fff;
 		text-decoration: none;
 	}
 }
+.cfdiv_submit input {
+	line-height: 0;
+}
 
+.login button {
+	margin-top: 10px;
+}
+
+.categories-list ul {
+	list-style: none;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	
+	li {
+		padding: 1em 0;
+		&:first-child {
+			padding-top: 0;
+		}
+	}
+}
 
 .imageblock {
 	padding: 5px;
@@ -27,4 +52,32 @@ div .button {
 
 	border-radius: 4px;
 	box-shadow: 0px 12px 12px -12px #444;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+	
+}
+
+@media only screen and (min-width: 980px) {
+	
+	.contactTable {
+		.form {
+			float: left;
+			max-width: 34.042553191%;
+			padding-right: 1.063829787%;
+		}
+
+		.content {
+			float: none;
+			width: auto;
+			margin-left: 330px;
+
+			img {
+				float: right;
+				margin: 0 0 10px 10px;
+			}
+		}
+	}
 }

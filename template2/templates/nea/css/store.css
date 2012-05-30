@@ -1,0 +1,8 @@
+.products .product {
+  text-align: center; }
+  .products .product a {
+    color: #00548e;
+    text-decoration: none;
+    font-size: 24px; }
+    .products .product a p {
+      margin: 0 0 10px 0; }

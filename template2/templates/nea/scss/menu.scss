@@ -38,7 +38,7 @@
 			padding-left: 35px;
 
 			> a, > span {
-				font-size: 14px;
+				font-size: 16px;
 				color: $maincolor;
 				text-decoration: none;
 				display: block;
@@ -76,9 +76,10 @@
 			li { display: none; }
 
 			li.active {
-				font-size: 40px;
-				line-height: 40px;
+				font-size: 24px;
+				line-height: 60px;
 				color: #fff;
+				padding: 0 0 0 10px;
 				display: block;
 
 				a { 
@@ -111,8 +112,8 @@
 		}
 	}
 
-	&.sidebar {
-		margin: 1em 0;
+	&.sidebar ul {
+		margin: 0 0 1em 0;
 
 		li {
 			margin-left: -9px;
@@ -120,7 +121,7 @@
 
 			> a, > span {
 				display: block;
-				font-size: 14px;
+				font-size: 16px;
 				color: $maincolor;
 				height: 35px;
 				line-height: 35px;
@@ -179,6 +180,21 @@
 			color: $maincolor;
 			font-size: 1.428571429em; // 20/14
 			&:hover {background: none;}
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	
+	.hmenu {
+
+		&.page-title {
+			ul {
+
+				li.active {
+					padding: 0;
+				}
+			}
 		}
 	}
 }

@@ -3,13 +3,16 @@
 .media-blog .item {
   width: 45%;
   padding-right: 2.5%;
-  float: left; }
+  float: left;
+  margin: 0 0 10px 0; }
   .media-blog .item .media {
     float: left;
-    padding: 0 2.5% 0 0;
+    padding: 0 7% 10px 0;
     width: 125px; }
     .media-blog .item .media img {
       display: block; }
+  .media-blog .item p {
+    margin-top: 3px; }
   .media-blog .item h2 {
     font-size: 1em;
     margin: 0; }
@@ -18,3 +21,19 @@
     font-weight: bold;
     color: #00548e;
     margin: 0 0 0.5em 0; }
+
+.blog .items-leading > div {
+  border-bottom: 1px solid #d8d8d8; }
+.blog .items-row {
+  border-bottom: 1px solid #d8d8d8;
+  padding-top: 1em; }
+  .blog .items-row p {
+    margin-left: 20px; }
+
+@media only screen and (min-width: 768px) {
+  .media-blog .items-row {
+    float: left; }
+  .media-blog .item .media {
+    padding-bottom: 0; }
+  .media-blog .item p {
+    margin: 1em 0; } }

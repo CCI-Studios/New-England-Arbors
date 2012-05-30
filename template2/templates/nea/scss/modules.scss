@@ -2,13 +2,13 @@
 
 	.module {
 		float: right;
-		margin: 0 5px;
+		margin: 0 10px 0 0;
 
 		&.show-menu { float: left; }
 		&:first-child { margin-left: 0; }
 	}
 
-	.search form {
+	.search {
 		margin: 0;
 		position: relative;
 
@@ -24,8 +24,11 @@
 		}
 
 		input {
-			padding-left: 23px;
+			padding: 0 10px 0 35px;
 			width: 100px;
+			border: none;
+			border-radius: 10px;
+			height: 25px;
 		}
 	}
 }

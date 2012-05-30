@@ -23,7 +23,7 @@
 .hmenu.primary li {
   padding-left: 35px; }
   .hmenu.primary li > a, .hmenu.primary li > span {
-    font-size: 14px;
+    font-size: 16px;
     color: #00548e;
     text-decoration: none;
     display: block;
@@ -45,9 +45,10 @@
   .hmenu.page-title ul li {
     display: none; }
   .hmenu.page-title ul li.active {
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 60px;
     color: #fff;
+    padding: 0 0 0 10px;
     display: block; }
     .hmenu.page-title ul li.active a {
       color: #fff;
@@ -60,22 +61,22 @@
     display: block; }
   .vmenu .menu ul {
     margin: 0.5em 0; }
-.vmenu.sidebar {
-  margin: 1em 0; }
-  .vmenu.sidebar li {
+.vmenu.sidebar ul {
+  margin: 0 0 1em 0; }
+  .vmenu.sidebar ul li {
     margin-left: -9px;
     padding-left: 9px; }
-    .vmenu.sidebar li > a, .vmenu.sidebar li > span {
+    .vmenu.sidebar ul li > a, .vmenu.sidebar ul li > span {
       display: block;
-      font-size: 14px;
+      font-size: 16px;
       color: #00548e;
       height: 35px;
       line-height: 35px;
       margin-bottom: 4px;
       text-decoration: none; }
-  .vmenu.sidebar li.active, .vmenu.sidebar li:hover {
+  .vmenu.sidebar ul li.active, .vmenu.sidebar ul li:hover {
     background: url(../images/menu-roll-bg.png) left top no-repeat; }
-    .vmenu.sidebar li.active > a, .vmenu.sidebar li.active > span, .vmenu.sidebar li:hover > a, .vmenu.sidebar li:hover > span {
+    .vmenu.sidebar ul li.active > a, .vmenu.sidebar ul li.active > span, .vmenu.sidebar ul li:hover > a, .vmenu.sidebar ul li:hover > span {
       color: #fff;
       background: url(../images/menu-roll-bg.png) right bottom no-repeat; }
 .vmenu.mobile {
@@ -109,3 +110,7 @@
     font-size: 1.428571429em; }
     .vmenu.mobile a:hover {
       background: none; }
+
+@media only screen and (min-width: 768px) {
+  .hmenu.page-title ul li.active {
+    padding: 0; } }
