@@ -38,13 +38,21 @@
 	text-align: center;
 }
 
-.module.block {
+.module.logo {
+	text-align: center;
+	float: none;
+}
+
+div.module.block {
 	background: url(../images/block-bg1.png) left bottom no-repeat;
-	padding-left: 8px;
+	padding-left: 7px;
+	max-width: 500px;
+	margin: 0 auto;
+	&:first-child {margin: 0 auto;} //
 
 	> div { 
 		background: url(../images/block-bg1.png) right bottom no-repeat;
-		padding-right: 6px;
+		padding-right: 7px;
 	}
 	> div > div {
 		background: url(../images/block-bg3.png) bottom no-repeat;
@@ -72,6 +80,10 @@
 		margin: 0 auto;
 		clear: left;
 	}
+	div.module.block {
+		float: right;
+	}
+}
 	#header .hmenu {
 		text-align: right;
 		float: right;
