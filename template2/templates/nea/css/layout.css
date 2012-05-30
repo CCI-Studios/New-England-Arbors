@@ -22,6 +22,7 @@
   width: 100%;
   top: 0;
   padding: 0;
+  z-index: 10;
   background: #00548e url(../images/top-mobile-bg.png);
   -webkit-transition: left 0.3s ease-in-out;
   -moz-transition: left 0.3s ease-in-out;
@@ -29,7 +30,7 @@
   -ms-transition: left 0.3s ease-in-out;
   transition: left 0.3s ease-in-out; }
   #top > div {
-    padding: 5px 7px; }
+    padding: 7px 7px 3px; }
   body.menu-open #top {
     left: 90%; }
 
@@ -49,13 +50,14 @@
   #masthead > div > div > div {
     background: url("../images/bg_mastheadShadowBottom.png") bottom center repeat-x;
     padding-bottom: 7px;
-    max-height: 261px; }
+    max-height: 400px; }
 
 #body {
   background: white url(../images/body-bg.jpg) top center no-repeat;
   padding-top: 30px; }
   body.home #body {
-    background: #fff; }
+    background: #fff;
+    padding-top: 90px; }
 
 #component {
   margin-bottom: 25px; }

@@ -33,7 +33,8 @@
 .table4column tr td {
   width: 22.5%;
   padding: 1em 0 0 2.5%;
-  vertical-align: top; }
+  vertical-align: top;
+  border: 1px solid #d8d8d8; }
   .table4column tr td:first-child {
     font-weight: bold; }
 .table4column tr:first-child td {

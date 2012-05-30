@@ -21,11 +21,13 @@
 }
 
 .table4column {
+	
 	tr {
 		td {
 			width: 22.5%;
 			padding: 1em 0 0 2.5%;
 			vertical-align: top;
+			border: 1px solid $bordercolor;
 			&:first-child {font-weight: bold;}
 		}
 	&:first-child td {
