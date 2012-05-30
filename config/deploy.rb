@@ -58,14 +58,12 @@ namespace :deploy do
       # install DB and create default admin
       template = ERB.new(File.read('config/templates/joomla.sql.erb'), nil, '<>')
       structure = template.result(binding)
-      template = ERB.new(File.read('config/templates/data.sql.erb'), nil, '<>')
-      data = template.result(binding)
 
       t = <<-sql
         INSERT INTO #{db_prefix}_users VALUES (42, 'Administrator', 'admin', 'dummy@example.com', concat(md5(concat('#{admin_pass}', '1234')), ':1234'), 'depreciated', 0, 1, '0000-00-00', '0000-00-00', '', '');
         INSERT INTO #{db_prefix}_user_usergroup_map VALUES(42, 8);
       sql
-      put "#{structure}#{data}#{t}\n", "#{deploy_to}/shared/joomla.sql"
+      put "#{structure}#{t}\n", "#{deploy_to}/shared/joomla.sql"
       run "mysql -u#{db_user} -p\"#{db_pass}\" -hlocalhost #{db_name} < #{deploy_to}/shared/joomla.sql"
     end
 
@@ -92,32 +90,44 @@ namespace :deploy do
   namespace :nooku do
     task :setup do
       run <<-cmd
-        mkdir -p #{deploy_to}/shared &&
-        cd #{deploy_to}/shared &&
-        svn checkout -q #{nooku_url} nooku &&
-        ./symlinker #{deploy_to}/shared/nooku #{public}
-      cmd
-      
-      joomla17
-    end
-    
-    task :joomla17 do
-      run <<-cmd
-        mkdir -p #{public}/plugins/system/koowa &&
-        mv #{public}/plugins/system/koowa.php #{public}/plugins/system/koowa/koowa.php &&
-        mv #{public}/plugins/system/koowa.xml #{public}/plugins/system/koowa/koowa.xml
+        mkdir -p #{deploy_to}/shared;
+        cd #{deploy_to}/shared;
+        svn checkout -q #{nooku_url} nooku;
+        ./symlinker #{deploy_to}/shared/nooku #{public};
+
+        mkdir -p #{public}/plugins/system/koowa;
+        mv #{public}/plugins/system/koowa.php #{public}/plugins/system/koowa/koowa.php;
+        mv #{public}/plugins/system/koowa.xml #{public}/plugins/system/koowa/koowa.xml;
       cmd
     end
     
     task :update do
       run <<-cmd
-        cd #{deploy_to}/shared/nooku &&
-        svn update -q --force --accept 'theirs-full'
+        cd #{deploy_to}/shared/nooku;
+        svn update -q --force --accept 'theirs-full';
       cmd
     end
   end
 
   task :setup do
+    transaction do
+      run <<-CMD
+        mkdir -p #{deploy_to}/releases;
+        mkdir -p #{deploy_to}/shared;
+        mkdir -p #{deploy_to}/shared/extension_uploads;
+        mkdir -p #{public};
+        chmod 755 #{public};
+
+        cd #{deploy_to}/shared;
+        curl -sLk #{symlinker_url} > symlinker;
+        chmod +x symlinker;
+      CMD
+      
+      joomla::setup
+    end
+  end
+
+  task :restore do
     transaction do
       run "mkdir -p #{deploy_to}/releases"
       run "mkdir -p #{deploy_to}/shared"
@@ -130,7 +140,9 @@ namespace :deploy do
         chmod +x symlinker
       CMD
       
-      joomla::setup
+      run "mv #{public}/configuration.php #{deploy_to}/shared/config.php"
+      joomla::symlink
+      joomla::install_default
     end
   end
 
@@ -140,15 +152,24 @@ namespace :deploy do
   
   task :finalize do
     run <<-CMD
-      cd #{latest_release} &&
-      git submodule init &&
-      git submodule update
+      cd #{latest_release};
+      git submodule init;
+      git submodule update;
     CMD
   end
 
   task :symlink_modules, :except => { :no_release => true } do
-    extensions.each do |path|
-      run "#{deploy_to}/shared/symlinker #{current_path}/#{path} #{public}"
+    extensions.each do |extension|
+      real_path = "#{release_path}/#{extension}/media/#{extension}"
+      up_path = "#{deploy_to}/shared/extension_uploads/#{extension}"
+
+      run <<-CMD
+        #{deploy_to}/shared/symlinker #{current_path}/#{extension} #{public};
+        if [ -d #{real_path} ]; then
+          mkdir -p #{up_path};
+          ln -nsf #{up_path} #{real_path}/uploads;
+        fi
+      CMD
     end
   end
 
@@ -159,3 +180,4 @@ end
 
 after "deploy:symlink", "deploy:symlink_modules"
 after "deploy:finalize_update", "deploy:finalize"
+after "deploy:finalize_update", "deploy:symlink_modules"
