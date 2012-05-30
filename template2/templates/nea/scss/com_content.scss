@@ -8,17 +8,21 @@
 
 
 	.item {
-		width: 45%;
-		padding-right: 2.5%;
+		width: 100%;
+		padding: 0;
 		float: left;
 		margin: 0 0 10px 0;
 		
 		.media {
 			float: left;
-			padding: 0 7% 10px 0;
+			padding: 0 20px 10px 0;
 			width: 125px;
+			
+			.our-people & {
+				padding-right: 10px;	
+			}
 
-			img { display: block; }
+			img {display: block;}
 		}
 		
 		p {
@@ -77,6 +81,8 @@
 
 
 		.item {
+			width: 45%;
+			padding-right: 2.5%;
 			
 			.media {
 				padding-bottom: 0;
