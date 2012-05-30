@@ -126,6 +126,14 @@ div.module.block {
 		margin: 0 auto;
 		clear: left;
 	}
+	
+	.module.logo {
+		padding-top: 30px;
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	
 	.module.products {
 		float: left;
 		width: 65.95744680199999%;
@@ -158,10 +166,18 @@ div.module.block {
 		float: right;
 	}
 }
+
+@media only screen and (min-width: 980px) { 
 	#header .hmenu {
 		text-align: right;
 		float: right;
 		clear: right;
+	}
+	
+	.module.logo {
+		float: left;
+		width: auto;
+		padding: 0;
 	}
 	
 	.module.products {
