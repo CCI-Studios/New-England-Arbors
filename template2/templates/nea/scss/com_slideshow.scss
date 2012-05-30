@@ -1,6 +1,7 @@
 .mod_slideshow {
 	position: relative;
 	margin-bottom: -61px;
+	overflow: hidden;
 
 	&.loading {
 
@@ -116,21 +117,21 @@
 
 @media screen and (min-width: 768px) {
 	.mod_slideshow {
-		margin-top: -85px;
+		margin-top: -40px;
 
 		.slide {
 			.description {
 				margin-right: 55%;
 				
 				> div {
-					padding-top: 135px;
+					padding-top: 110px;
 				}
 			}
 
 			.image {
 				display: block;
 				position: absolute;
-				width: 55%;
+				width: 60%;
 				right: 0;
 				bottom: -18px;
 

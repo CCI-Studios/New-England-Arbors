@@ -1,6 +1,7 @@
 .mod_slideshow {
   position: relative;
-  margin-bottom: -61px; }
+  margin-bottom: -61px;
+  overflow: hidden; }
   .mod_slideshow .slides {
     position: relative; }
   .mod_slideshow .slide {
@@ -74,15 +75,15 @@
 
 @media screen and (min-width: 768px) {
   .mod_slideshow {
-    margin-top: -85px; }
+    margin-top: -40px; }
     .mod_slideshow .slide .description {
       margin-right: 55%; }
       .mod_slideshow .slide .description > div {
-        padding-top: 135px; }
+        padding-top: 110px; }
     .mod_slideshow .slide .image {
       display: block;
       position: absolute;
-      width: 55%;
+      width: 60%;
       right: 0;
       bottom: -18px; }
       .mod_slideshow .slide .image > div {
