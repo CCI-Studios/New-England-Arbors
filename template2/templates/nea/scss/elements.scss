@@ -59,6 +59,10 @@ ol {
 	color: $maincolor;
 }
 
+hr {
+	color: $bordercolor;
+}
+
 .left { float: left; }
 .right { float: right; }
 .hidden { display: none; }
