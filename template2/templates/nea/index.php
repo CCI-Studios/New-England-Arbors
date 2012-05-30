@@ -110,7 +110,7 @@ $analytics = "UA-31248154-1"; // FIXME Update to client ID
 						</div>
 
 						<? if ($this->countModules('sidebar2')): ?>
-							<div id="sidebar2" class="span4">
+							<div id="sidebar2">
 								<jdoc:include type="modules" name="sidebar2" style="rounded" />
 							</div>
 						<? endif; ?>
