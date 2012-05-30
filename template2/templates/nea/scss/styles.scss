@@ -79,6 +79,21 @@ div.pagination {
 	}
 }
 
+.table4column {
+	
+	tr {
+		td {
+			width: 22.5%;
+			padding: 5px;
+			vertical-align: top;
+			border: 1px solid $bordercolor;
+			&:first-child {font-weight: bold;}
+		}
+	&:first-child td {
+		font-weight: bold;
+	}
+	}
+}
 
 
 @media only screen and (min-width: 768px) {
