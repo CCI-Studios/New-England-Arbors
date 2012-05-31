@@ -13,7 +13,7 @@ class ComDealersModelDealers extends ComDefaultModelDefault
 
 	protected function _buildQueryOrder(KDatabaseQuery $query)
 	{
-		$query->order('title');
+		$query->order('title', 'ASC');
 	}
 
 	public function getStates()

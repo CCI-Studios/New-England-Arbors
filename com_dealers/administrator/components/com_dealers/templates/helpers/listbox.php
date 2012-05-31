@@ -41,8 +41,7 @@ class ComDealersTemplateHelperListbox extends ComDefaultTemplateHelperListbox
 		));
 
 		$model = $this->getService('com://site/dealers.model.dealers');
-		echo 'got model'; die;
-		//$states = $model->getStates();
+		$states = $model->getStates();
 
 		$options = array();
 		$options[] = $this->option(array('text' => JText::_($config->prompt), 'value' => ''));

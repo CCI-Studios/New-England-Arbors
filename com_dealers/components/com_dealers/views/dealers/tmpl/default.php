@@ -8,7 +8,7 @@
 <div class="item-page">
 	<h1>Dealers</h1>
 
-	<div id="map-canvas" style="width: 500px; height: 350px;"></div>
+	<div id="map-canvas" style="width: 300px; max-width: 100%; height: 300px;"></div>
 
 	<p>Search for a dealer <?= @helper('listbox.states', array('attribs'=>array('id'=>'location-select'))) ?></p>
 
@@ -16,8 +16,10 @@
 		<? foreach($dealers as $dealer): ?>
 		<div class="dealer" data-state="<?= $dealer->state ?>">
 			<h3>
-				<?= $dealer->title ?>
-				(<?= $dealer->authorized? 'Authorized Dealer' : 'Authorized Drop Shipper' ?>)
+				<a href="https://maps.google.com/maps?q=<?= "{$dealer->address1}, {$dealer->city}, {$dealer->state}, {$dealer->country}, {$dealer->zip}"; ?>&hl=en&t=m&z=16" target="_blank">
+					<?= $dealer->title ?>
+					(<?= $dealer->authorized? 'Authorized Dealer' : 'Authorized Drop Shipper' ?>)
+				</a>
 			</h3>
 			<p>
 				<?= $dealer->address1? $dealer->address1.'</br>':'' ?>

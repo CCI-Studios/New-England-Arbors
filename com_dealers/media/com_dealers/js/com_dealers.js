@@ -2,8 +2,8 @@ window.addEvent('domready', function() {
 	var canvas = $('map-canvas'),
 		markers = [],
 		map = new google.maps.Map(canvas, {
-			zoom: 3,
-			center: new google.maps.LatLng(41.640078,-102.392578),
+			zoom: 4,
+			center: new google.maps.LatLng(41.640078,-80.392578),
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 		}),
 		infoWindow = new google.maps.InfoWindow(),
