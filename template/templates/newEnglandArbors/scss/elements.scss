@@ -63,13 +63,13 @@ h4 {
 
 	border-radius: 4px;
 	box-shadow: 0px 12px 12px -12px #444;
+	height: auto;
 
 	img { height: auto; }
 }
 
 img {
 	max-width: 100%;
-	height: inherit;
 
 	.ie7 &, .ie8 & {
 		max-width: auto;

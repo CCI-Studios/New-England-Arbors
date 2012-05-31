@@ -21,16 +21,16 @@
         height: inherit; }
     .itemWrapper .leftSide .productThumbs {
       border: none;
-      text-align: center; }
-      .itemWrapper .leftSide .productThumbs a {
-        padding: 0 0 0 3%; }
-        .itemWrapper .leftSide .productThumbs a:first-child, .itemWrapper .leftSide .productThumbs a:nth-child(3n-2) {
-          padding-right: 0; }
-        .itemWrapper .leftSide .productThumbs a img {
-          padding: 4px 1.25%;
-          margin-bottom: 1em;
-          width: 27%;
-          height: inherit; }
+      text-align: center;
+      margin-left: -2%; }
+      .itemWrapper .leftSide .productThumbs > div {
+        float: left;
+        width: 47%;
+        margin-left: 2%;
+        margin-bottom: 1em; }
+        .itemWrapper .leftSide .productThumbs > div > div {
+          height: 100px;
+          overflow: hidden; }
     .itemWrapper .leftSide .productLinks {
       text-align: center; }
       .itemWrapper .leftSide .productLinks div.button {
@@ -103,11 +103,13 @@
         width: 70%;
         margin: 0 0 1em 5%; }
 
+@media screen and (min-width: 480px) {
+  .itemWrapper .leftSide .productThumbs > div {
+    width: 30%; } }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .itemWrapper .leftSide {
     margin: 0 auto;
     width: auto;
-    max-width: 80%;
     padding-right: 0;
     float: none; }
   .itemWrapper .productHeader {
@@ -137,7 +139,6 @@
   .itemWrapper .leftSide {
     margin: 0 auto;
     width: auto;
-    max-width: 80%;
     padding-right: 0;
     float: none; }
   .itemWrapper .productHeader {
