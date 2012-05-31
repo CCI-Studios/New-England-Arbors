@@ -8,12 +8,13 @@
 	
 	<div class="leftSide">
 		<div class="productImg">
-			<img src="{{ product.images[0] | product_img_url: 'large' }}" alt="" width="366" />
-			(ROLLOVER IMAGE TO ZOOM IN)
+			<img id="product-large-image" src="{{ product.images[0] | product_img_url: 'large' }}" alt="" width="366" class="imageblock" />
 		</div>
 		<div class="productThumbs">
 			{% for image in product.images %}
-			<a href="#"><img src="{{ image | product_img_url: 'compact' }}" alt="" class="imageblock" /></a>
+				<div><div class="imageblock">
+					<img src="{{ image | product_img_url: 'compact' }}" alt="" data-large="{{ image | product_img_url: 'large' }}" />
+				</div></div>
 			{% endfor %}
 		</div>
 		<div class="hr"></div>
