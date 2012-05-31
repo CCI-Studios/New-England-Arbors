@@ -68,7 +68,7 @@
     padding-left: 9px; }
     .vmenu.sidebar ul li > a, .vmenu.sidebar ul li > span {
       display: block;
-      font-size: 16px;
+      font-size: 15px;
       color: #00548e;
       height: 35px;
       line-height: 35px;
@@ -99,15 +99,16 @@
       border-top: none; }
     .vmenu.mobile .menu > li li {
       background: #fff;
-      padding-left: 2em;
-      margin-left: -1em;
-      border-top: 1px solid #d8d8d8; }
+      padding-left: 1.6em;
+      margin-left: -1.1em;
+      border-top: 1px solid #d8d8d8;
+      line-height: 40px; }
   .vmenu.mobile .menu ul {
     margin: 0 0 0 -1em;
     background: #d7d7d7; }
   .vmenu.mobile a {
     color: #00548e;
-    font-size: 1.428571429em; }
+    font-size: 20px; }
     .vmenu.mobile a:hover {
       background: none; }
 

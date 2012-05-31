@@ -121,7 +121,7 @@
 
 			> a, > span {
 				display: block;
-				font-size: 16px;
+				font-size: 15px;
 				color: $maincolor;
 				height: 35px;
 				line-height: 35px;
@@ -164,9 +164,10 @@
 
 				li {
 					background: #fff;
-					padding-left: 2em;
-					margin-left: -1em;
+					padding-left: 1.6em;
+					margin-left: -1.1em;
 					border-top: 1px solid $bordercolor;
+					line-height: 40px;
 				}
 			}
 
@@ -178,7 +179,7 @@
 
 		a { 
 			color: $maincolor;
-			font-size: 1.428571429em; // 20/14
+			font-size: 20px;
 			&:hover {background: none;}
 		}
 	}

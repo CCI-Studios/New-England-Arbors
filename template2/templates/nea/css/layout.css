@@ -14,7 +14,7 @@
   -ms-transition: left 0.3s ease-in-out;
   transition: left 0.3s ease-in-out; }
   body.menu-open #wrapper {
-    left: 90%; }
+    left: 86%; }
 
 #top {
   position: fixed;
@@ -32,7 +32,7 @@
   #top > div {
     padding: 7px 7px 3px; }
   body.menu-open #top {
-    left: 90%; }
+    left: 86%; }
 
 #header {
   margin-top: 41px;
