@@ -69,9 +69,10 @@
     display: inline-block;
     *display: inline;
     *zoom: 1;
-    padding: 0 40px 0 25px; }
-  .button a {
+    padding: 0 40px 0 25px;
     color: #fff; }
+    .button > *:hover {
+      text-decoration: none; }
 
 button[type="submit"],
 input[type="submit"] {
