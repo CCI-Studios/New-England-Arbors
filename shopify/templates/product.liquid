@@ -35,7 +35,8 @@
 					<!-- START VARIANTS -->
 					{% for variant in product.variants %}
 						{% if variant.available %}
-							<input type="radio" name="id" value="{{ variant.id }}" /> {{ variant.price | money }} - {{ variant.title | escape }} <br/>
+							<input type="radio" id="variant_{{variant.id}}" name="id" value="{{ variant.id }}" />
+							<label for="variant_{{variant.id}}"> {{ variant.price | money }} - {{ variant.title | escape }}</label><br/>
 						{% endif %}
 					{% endfor %}
 					<!-- END VARIANTS -->
