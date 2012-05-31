@@ -1,42 +1,25 @@
 @import "_variables.scss";
 
-// products page
-
-.categoryWrapper {
-	
-	.category {
-		width: 216px;
-		margin: 0 0 0 2.833333333%;
-	}
-}
-
-.productWrapper {
-	position: relative;
-	left: -2.127659574%; // 20/940
-	padding: 0 0 0 2.127659574%;
-	
-	.product {
-		width: 232px; // 232/720
-	}
-}
-
 .categoryWrapper,
 .productWrapper {
 	text-align: center;
+	margin-left: -2%;
 	
 	.category,
 	.product {
-		display: inline-block;
-		*display: inline;
-		*zoom: 1;
+		float: left;
+		width: 30%;
+		margin-left: 2%;
 		
 		a {
-			display: inline-block;
-			*display: inline;
-			*zoom: 1;
+			display: block;
 		}
 		
-		img {height: inherit;}
+		.image {
+			height: 125px;
+			overflow: hidden;
+			width: 95%;
+		}
 		
 		p {
 			color: $maincolor;
