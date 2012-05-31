@@ -1,0 +1,1 @@
+window.addEvent("domready",function(){var a=$("location-select"),b=$$(".com_dealers .dealer"),c="";if(!a)return;a.addEvent("change",function(){c=a.value;b.removeClass("hidden");if(c=="")return;b.each(function(a){a.get("data-state")!==c&&a.addClass("hidden")})})});
