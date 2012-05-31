@@ -4,6 +4,7 @@
 .productWrapper {
 	text-align: center;
 	margin-left: -2%;
+	zoom:1;
 	
 	.category,
 	.product {
@@ -24,7 +25,7 @@
 		
 		p {
 			color: $maincolor;
-			min-height: 2em;
+			min-height: 36px;
 
 			&.categoryName {
 				font-size: 1.142857143em; // 16/14

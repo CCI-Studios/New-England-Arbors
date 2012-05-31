@@ -113,6 +113,7 @@
 				display: inline-block;
 				*display: inline;
 				*zoom: 1;
+				margin: 0 0.5em 0.5em;
 
 				a {
 					background: url('../images/buttonGradient.png') bottom right no-repeat;
@@ -134,7 +135,7 @@
 			padding: 1em 0;
 			margin: 1em 0;
 			
-			input {
+			input[type=checkbox] {
 				float: left;
 				height: 1em;
 				margin: 0 5% 0 0; // 15/300
@@ -233,7 +234,7 @@
 			.productPrices {
 				width: 100%;
 
-				input {
+				input[type=checkbox] {
 					width: 5%;
 					float: left;
 					height: 1em;
@@ -256,3 +257,11 @@
 		}
 	}
 }/*/mediaquery*/
+
+.ie7, .ie8 {
+	.itemWrapper .leftSide .productThumbs {
+		> div {
+			width: 30%;
+		}
+	}
+}

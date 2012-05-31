@@ -77,7 +77,8 @@
         padding: 0 0 0 15px;
         display: inline-block;
         *display: inline;
-        *zoom: 1; }
+        *zoom: 1;
+        margin: 0 0.5em 0.5em; }
         .itemWrapper .rightSide .links li a {
           background: url("../images/buttonGradient.png") bottom right no-repeat;
           display: inline-block;
@@ -91,7 +92,7 @@
       border-top: 1px solid #d8d8d8;
       padding: 1em 0;
       margin: 1em 0; }
-      .itemWrapper .rightSide .productPrices input {
+      .itemWrapper .rightSide .productPrices input[type=checkbox] {
         float: left;
         height: 1em;
         margin: 0 5% 0 0; }
@@ -149,7 +150,7 @@
     float: none; }
     .itemWrapper .rightSide .productPrices {
       width: 100%; }
-      .itemWrapper .rightSide .productPrices input {
+      .itemWrapper .rightSide .productPrices input[type=checkbox] {
         width: 5%;
         float: left;
         height: 1em;
@@ -164,3 +165,5 @@
         width: 80%;
         margin: 0 0 1em 0; } }
 /*/mediaquery*/
+.ie7 .itemWrapper .leftSide .productThumbs > div, .ie8 .itemWrapper .leftSide .productThumbs > div {
+  width: 30%; }

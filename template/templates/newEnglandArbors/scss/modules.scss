@@ -32,6 +32,10 @@
 				border: none;
 				border-radius: 10px;
 				line-height: 25px;
+
+				.ie7 &, .ie8 & {
+					width: 85px;
+				}
 			}
 			button {
 				position: absolute;

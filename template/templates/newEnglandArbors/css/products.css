@@ -1,7 +1,8 @@
 .categoryWrapper,
 .productWrapper {
   text-align: center;
-  margin-left: -2%; }
+  margin-left: -2%;
+  zoom: 1; }
   .categoryWrapper .category,
   .categoryWrapper .product,
   .productWrapper .category,
@@ -27,7 +28,7 @@
     .productWrapper .category p,
     .productWrapper .product p {
       color: #00548e;
-      min-height: 2em; }
+      min-height: 36px; }
       .categoryWrapper .category p.categoryName,
       .categoryWrapper .product p.categoryName,
       .productWrapper .category p.categoryName,

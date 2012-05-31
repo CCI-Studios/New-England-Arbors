@@ -27,7 +27,7 @@
 .hr {
   border-top: 1px solid #d8d8d8;
   width: 100%;
-  height: 0;
+  height: 1px;
   clear: both;
   margin: 1em 0; }
 
@@ -63,31 +63,28 @@
   line-height: 35px;
   padding: 0 0 0 15px;
   display: inline-block;
-  *display: inline;
-  *zoom: 1; }
+  *display: inline; }
   .button > * {
     background: url("../images/buttonGradient.png") bottom right no-repeat;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
+    display: block;
     padding: 0 40px 0 25px;
-    color: #fff; }
+    color: #fff;
+    white-space: no-wrap; }
     .button > *:hover {
       text-decoration: none; }
 
-button[type="submit"],
 input[type="submit"] {
   font-family: 'Goudy Old Style';
   background: url("../images/button_submit.png") top left no-repeat;
   border-radius: 0;
   border: none;
   width: 140px;
+  display: block;
   text-align: center;
   height: 35px;
   vertical-align: middle;
   color: #fff;
   padding: 0; }
-  button[type="submit"].validate,
   input[type="submit"].validate {
     margin-top: .5em; }
 
