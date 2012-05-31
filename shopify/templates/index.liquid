@@ -5,10 +5,13 @@
 	{% unless collection.handle == 'frontpage' %}
 	<div class="category">
 		<a href="{{ collection.url }}">
-			<img src="{{ collection.products.first.images[0] | product_img_url: "medium" }}" alt="{{ collection.title | escape }}">
+			<div class="image imageblock">
+				<img src="{{ collection.products.first.images[0] | product_img_url: "medium" }}" alt="{{ collection.title | escape }}">
+			</div>
 			<p class="categoryName">{{ collection.title | escape }}</p>
 		</a>
 	</div>
 	{% endunless %}
 {% endfor %}
+	<div class="clear"></div>
 </div>

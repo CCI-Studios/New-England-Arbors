@@ -9,7 +9,9 @@
 		{% for product in collection.products %}
 			<div class="product">
 				<a href="{{ product.url | within: collection }}">
-					<img src="{{ product.images[0] | product_img_url: "medium" }}" alt="{{ product.images[0].alt | escape }}" width="223" />
+					<div class="image imageblock">
+						<img src="{{ product.images[0] | product_img_url: "medium" }}" alt="{{ product.images[0].alt | escape }}" />
+					</div>
 					<p class="productName">{{ product.title | escape }}</p>
 					<p class="productPrice">{{ product.price | money }}</p>
 				</a>
