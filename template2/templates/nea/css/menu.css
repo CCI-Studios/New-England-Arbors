@@ -38,7 +38,7 @@
     text-decoration: none; }
   .hmenu.secondary li.active > a, .hmenu.secondary li.active > span,
   .hmenu.secondary a:hover, .hmenu.secondary span:hover {
-    color: #b1cce1; }
+    color: #7ca3c4; }
 .hmenu.page-title ul {
   margin: 0;
   padding: 0; }
@@ -74,9 +74,9 @@
       line-height: 35px;
       margin-bottom: 4px;
       text-decoration: none; }
-  .vmenu.sidebar ul li.active, .vmenu.sidebar ul li:hover {
+  .vmenu.sidebar ul li:hover {
     background: url(../images/menu-roll-bg.png) left top no-repeat; }
-    .vmenu.sidebar ul li.active > a, .vmenu.sidebar ul li.active > span, .vmenu.sidebar ul li:hover > a, .vmenu.sidebar ul li:hover > span {
+    .vmenu.sidebar ul li:hover > a, .vmenu.sidebar ul li:hover > span {
       color: #fff;
       background: url(../images/menu-roll-bg.png) right bottom no-repeat; }
 .vmenu.mobile {
