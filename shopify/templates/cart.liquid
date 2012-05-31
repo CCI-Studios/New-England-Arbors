@@ -1,74 +1,59 @@
 <!-- START TITLE -->
-<div id="title" class="clear">
+<div id="title">
 	<h1>Your Cart</h1>
 	<h2><span>{{ cart.item_count }} {{ cart.item_count | pluralize: "Item", "Items" }}</span></h2>
 </div>
-<!-- END TITLE -->{% if cart.item_count == 0 %}
-<p id="empty">Your shopping cart is empty. <a href="/collections/all">Continue shopping...</a></p>{% else %}
-<form action="/cart" method="post" name="cartform">
-	<!-- START TABLE -->
-	<table cellpadding="0" cellspacing="0">
-		<!-- START HEADERS -->
-		<tr>
-			<th colspan="2" class="start">Description</th>
-			<th>Price</th>
-			<th>Quantity</th>
-			<th>Delete</th>
-			<th>Total</th>
-		</tr>
-		<!-- END HEADERS -->{% for item in cart.items %}
-		<!-- START PRODUCT {{ forloop.index }} -->
-		<tr class="{% cycle "odd", "even" %}">
-			<td class="pic">
-				<div><a href="{{ item.product.url | within: collections.all }}"><img src="{{ item.product.images[0] | product_img_url: "thumb" }}" alt="{{ item.title | escape }}" /></a></div>
-			</td>
-			<td>
-				<h3><a href="{{ item.product.url | within: collections.all }}">{{ item.title | escape }}</a></h3>
-				<p>{{ item.product.description | strip_html | strip_newlines | truncate: 180 }}</p>
-			</td>
-			<td>{{ item.price | money }}</td>
-			<td><input type="text" class="field" name="updates[]" id="updates_{{ item.variant.id }}" value="{{ item.quantity }}" /></td>
-			<td class="remove"><a href="/cart/change/{{ item.variant.id }}?quantity=0">Remove</a></td>
-			<td><strong>{{ item.line_price | money }}</strong></td>
-		</tr>
-		<!-- END PRODUCT {{ forloop.index }} -->{% endfor %}
-	</table>
-	<!-- END TABLE -->
-	<!-- START TOTAL -->
-	<div id="total" class="clear">
-		<!-- START CONTINUE -->
-		<div id="continue">
-			<p>Not ready to checkout? <a href="/collections/all">Continue shopping...</a></p>
-		</div>
-		<!-- END CONTINUE -->
-		<!-- START PRICE -->
-		<div id="price">
-			<h3>Total: <span>{{ cart.total_price | money }}</span></h3>
-		</div>
-		<!-- END PRICE -->
-	</div>
-	<!-- END TOTAL -->
-	<!-- START COMPLETE -->
-	<div id="complete" class="clear">{% if settings.notes == "enabled" %}
-		<!-- START NOTES -->
-		<div id="notes">
-			<label for="note">Tell us about any special instructions:</label>
-			<textarea name="note" id="note" rows="" cols="">{{ cart.note }}</textarea>
-		</div>
-		<!-- END NOTES -->{% endif %}
-		<!-- START CHECKOUT -->
-		<div id="checkout">
-			<input type="submit" value="Update" name="update" class="update" /> or 
-			<input type="submit" value="Check Out" name="checkout" class="checkout" />
-		</div>
+<!-- END TITLE -->
 
-		{% if additional_checkout_buttons %}
-      <div class="additional-checkout-buttons">
-        <p>- or -</p>
-        {{ content_for_additional_checkout_buttons }}
-      </div>
-    {% endif %}
-		<!-- END CHECKOUT -->
-	</div>
-	<!-- END COMPLETE -->
-</form>{% endif %}
+{% if cart.item_count == 0 %}
+	<p id="empty">Your shopping cart is empty. <a href="/collections/all">Continue shopping...</a></p>
+{% else %}
+	<form action="/cart" method="post" name="cartform">
+		
+		{% for item in cart.items %}
+		<div class="product" style="margin: 1em 0;">
+			<a href="{{ item.product.url | within: collections.all }}">
+				<img src="{{ item.product.images[0] | product_img_url: 'small' }}" alt="{{ item.title | escape }}" style="float: right; margin: 0 0 10px 10px" />
+			</a>
+			<h2>
+				<a href="{{ item.product.url | within: collections.all }}">{{ item.title | escape }}</a>
+			</h2>
+			<p>{{ item.product.description | strip_html | strip_newlines | truncate: 180 }}</p>
+			<p>
+				{{ item.price | money }}
+				<input type="text" name="updates[]" id="updates_{{item.variant.id}}" value="{{ item.quantity }}" />
+				<a href="/cart/change/{{ item.variant.id}}?quantity=0">Remove</a>
+				{{ item.line_price | money }}
+			</p>
+		</div>
+		{% endfor %}
+		
+		<h3>Total: <span>{{ cart.total_price | money }}</span></h3>
+
+		<!-- START COMPLETE -->
+		<div id="complete" class="clear">
+			{% if false %}
+				{% if settings.notes == "enabled" %}
+					<div id="notes">
+						<label for="note">Tell us about any special instructions:</label>
+						<textarea name="note" id="note" rows="" cols="">{{ cart.note }}</textarea>
+					</div>
+				{% endif %}
+			{% endif %}
+
+			<div id="checkout">
+				<input type="submit" value="Update" name="update" class="update" /> or 
+				<input type="submit" value="Check Out" name="checkout" class="checkout" />
+			</div>
+
+			{% if false %}
+				{% if additional_checkout_buttons %}
+					<div class="additional-checkout-buttons">
+						<p>- or -</p>
+						{{ content_for_additional_checkout_buttons }}
+					</div>
+				{% endif %}
+			{% endif %}
+		</div><em></em>
+	</form>
+{% endif %}
