@@ -5,7 +5,7 @@
 <style src="media://com_bars/css/com_bars.css" />
 
 <form action="<?= @route("view=submission&id={$submission->id}") ?>" method="post" class="-koowa-form" enctype="multipart/form-data">
-	<input type="hidden" name="MAX_FILE_SIZE" value="500000" />
+	<input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
 	
 	<div class="width-60 fltlft">
 		<fieldset class="adminform">
