@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS `#__dealers_dealer` (
+CREATE TABLE IF NOT EXISTS `#__dealers_dealers` (
 	`dealers_dealer_id` SERIAL,
 
 	`title` VARCHAR(250) NOT NULL,
@@ -6,8 +6,9 @@ CREATE TABLE IF NOT EXISTS `#__dealers_dealer` (
 	`address2` VARCHAR(250) NOT NULL,
 	`city` VARCHAR(20) NOT NULL,
 	`state` VARCHAR(15) NOT NULL,
-	`country` VARCHAR(10) NOT NULL,
+	`country` VARCHAR(40) NOT NULL,
 	`zip` VARCHAR(10) NOT NULL,
+	`authorized` TINYINT(1) NOT NULL,
 
 	`enabled` TINYINT(1) NOT NULL
-) ENGINE=InnoDB;;
+) ENGINE=InnoDB;

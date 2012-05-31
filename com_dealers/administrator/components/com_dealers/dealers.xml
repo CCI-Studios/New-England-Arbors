@@ -19,7 +19,7 @@
 	</sql></uninstall>
 	
     <administration>
-        <menu view="contests" img="media/com_dealers/images/icons/logo.png" link="option=com_dealers">Dealers</menu>
+        <menu view="dealers" img="media/com_dealers/images/icons/logo.png" link="option=com_dealers">Dealers</menu>
 
 		<files>
 			<folder>models</folder>

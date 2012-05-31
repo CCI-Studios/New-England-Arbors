@@ -31,7 +31,7 @@
 		<tbody>
 			<? foreach($dealers as $dealer): ?>
 				<tr>
-					<td>&nbsp;</td>
+					<td><?= @helper('grid.checkbox', array('row', $dealer)) ?></td>
 					<td><a href="<?= @route('view=dealer&id='. $dealer->id) ?>">
 						<?= $dealer->title; ?>
 					</a></td>
@@ -41,7 +41,7 @@
 					<td align="center"><?= $dealer->state ?></td>
 					<td align="center"><?= $dealer->country ?></td>
 					<td align="center"><?= $dealer->zip ?></td>
-					<td align="center"><?= @helper('grid.enabled', array('row'=>$dealer)) ?></td>
+					<td align="center"><?= @helper('grid.enable', array('row'=>$dealer)) ?></td>
 					<td align="center"><?= $dealer->id ?></td>
 				</tr>
 			<? endforeach; ?>

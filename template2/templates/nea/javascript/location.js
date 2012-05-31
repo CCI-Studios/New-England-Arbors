@@ -1,6 +1,6 @@
 window.addEvent('domready', function() {
 	var select = $('location-select'),
-		locations = $$('.locations-blog .items-leading > div'),
+		locations = $$('.com_dealers .dealer'),
 		state = '';
 
 	if (!select)
@@ -15,7 +15,7 @@ window.addEvent('domready', function() {
 			return;
 
 		locations.each(function(location) {
-			if (!location.getElement('div[data-state="' + state + '"]')) {
+			if (location.get('data-state') !==  state) {
 				location.addClass('hidden');
 			}
 		});

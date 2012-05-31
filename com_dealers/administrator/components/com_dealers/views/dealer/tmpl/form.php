@@ -16,6 +16,10 @@
 					<input type="text" id="field_title" name="title" value="<?= $dealer->title ?>" />
 				</li>
 				<li>
+					<label for="field_authorized"><?= @text('Authorized Dealer') ?></label>
+					<?= @helper('listbox.optionSelect', array('name'=>'authorized')) ?>
+				</li>
+				<li>
 					<label for="field_address1"><?= @text('Address 1') ?></label>
 					<input type="text" id="field_address1" name="address1" value="<?= $dealer->address1 ?>" />
 				</li>
