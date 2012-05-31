@@ -26,7 +26,8 @@
     .categoryWrapper .product p,
     .productWrapper .category p,
     .productWrapper .product p {
-      color: #00548e; }
+      color: #00548e;
+      min-height: 2em; }
       .categoryWrapper .category p.categoryName,
       .categoryWrapper .product p.categoryName,
       .productWrapper .category p.categoryName,

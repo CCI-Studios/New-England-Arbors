@@ -116,7 +116,6 @@ div.pagination {
 			.form {
 			float: left;
 			width: 32%;
-			min-width: 320px;
 			padding-right: 1%;
 		}
 
@@ -128,4 +127,19 @@ div.pagination {
 }
 
 @media only screen and (min-width: 980px) {
+}
+
+.ie7, .ie8 {
+	.contactTable {
+			.form {
+			float: left;
+			width: 32%;
+			padding-right: 1%;
+		}
+
+		.content {
+			width: 65%;
+			float: left;
+		}
+	}
 }

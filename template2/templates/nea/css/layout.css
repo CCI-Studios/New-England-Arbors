@@ -139,28 +139,40 @@
   .container-fluid {
     width: 940px;
     margin: 0 auto; } }
-html.ie7 .container-fluid, html.ie8 .container-fluid {
-  width: 940px;
-  padding: 0 10px;
-  margin: 0 auto; }
 html.ie7 #top, html.ie8 #top {
   position: relative;
   top: 7px;
   background: none;
   padding: 0;
+  max-width: 940px;
   margin: 0 auto; }
   html.ie7 #top > div, html.ie8 #top > div {
     position: absolute;
     top: 0;
     right: 0;
     background: url(../images/top-bg.png) top left repeat-x;
-    padding-left: 15px; }
+    padding: 0 0 0 15px; }
     html.ie7 #top > div > div, html.ie8 #top > div > div {
       background: url(../images/top-bg.png) bottom right repeat-x;
       padding-right: 15px;
       padding-top: 6px;
-      height: 35px; }
+      height: 35px;
+      width: 255px; }
 html.ie7 #header, html.ie8 #header {
-  border-top: 7px solid #2369A4;
+  border-top: 7px solid #0665a7;
   margin-top: 0;
-  padding-top: 20px; }
+  padding-top: 30px; }
+html.ie7 #component, html.ie8 #component {
+  margin-bottom: 25px; }
+  html.ie7 #component > div, html.ie8 #component > div {
+    padding: 0; }
+html.ie7 #sidebar1 + div, html.ie8 #sidebar1 + div {
+  border-left: 1px solid #d8d8d8; }
+html.ie7 #sidebar1, html.ie8 #sidebar1 {
+  background: url(../images/sidebar-bg.png) bottom center no-repeat;
+  padding-bottom: 10px; }
+html.ie7 #sidebar1 + div #component > div, html.ie8 #sidebar1 + div #component > div {
+  padding: 0 0 0 20px; }
+html.ie7 .container-fluid, html.ie8 .container-fluid {
+  width: 940px;
+  margin: 0 auto; }

@@ -107,7 +107,8 @@
       width: 30%; } }
 .ie7 .mod_slideshow, .ie8 .mod_slideshow {
   margin-top: -40px;
-  overflow: visible; }
+  overflow: visible;
+  zoom: 1; }
   .ie7 .mod_slideshow .slide .description, .ie8 .mod_slideshow .slide .description {
     margin-right: 58%; }
     .ie7 .mod_slideshow .slide .description > div, .ie8 .mod_slideshow .slide .description > div {
