@@ -9,7 +9,7 @@
 	<p>Submit a photo below to be added to the gallery. Photos will only appear after being approved.</p>
 
 	<form action="<?= @route("view=submission&id={$submission->id}") ?>" method="post" class="-koowa-form" enctype="multipart/form-data">
-		<input type="hidden" name="MAX_FILE_SIZE" value="500000" />
+		<input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
 				
 		<p>
 			<label for="field_title" class="hidden"><?= @text('Title') ?></label>
@@ -54,6 +54,7 @@
 		<p>
 			<label for="field_file" class="hidden"><?= @text('Image') ?></label>
 			<input type="file" name="file_upload" />
+			<p><small>There is a 5 megabyte image size limit.</small></p>
 		</p>
 
 		<p><input type="submit" class="button" /></p>

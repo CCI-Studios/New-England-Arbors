@@ -71,7 +71,7 @@ class ComContestDatabaseBehaviorUploadable extends KDatabaseBehaviorAbstract
  		}
 
  		if ($file['error'] !== 0 && $file['error'] !== 4) {
- 			JError::raiseWarning('300', 'Error uploading file.');
+ 			JError::raiseWarning('300', 'Error uploading file. Error: '. $file[error]);
  			return;
  		}
 
