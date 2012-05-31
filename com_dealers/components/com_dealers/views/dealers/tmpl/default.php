@@ -23,7 +23,7 @@
 				<?= $dealer->address1? $dealer->address1.'</br>':'' ?>
 				<?= $dealer->address2? $dealer->address2.'</br>':'' ?>
 				<?= $dealer->city? $dealer->city.'</br>':'' ?>
-				<?= $dealer->state? $dealer->state.'</br>':'' ?>
+				<?= $dealer->state? $dealer->state.', ':'' ?>
 				<?= $dealer->country? $dealer->country.'</br>':'' ?>
 				<?= $dealer->zip? $dealer->zip:'' ?>
 			</p>

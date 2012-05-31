@@ -9,14 +9,14 @@ window.addEvent('domready', function() {
 		infoWindow = new google.maps.InfoWindow(),
 		geocoder = new google.maps.Geocoder(),
 		request = new Request.JSON({
-			url: '/index.php?option=com_dealers&view=dealers&format=json',
+			url: '/index.php?option=com_dealers&view=dealers&format=json&limit=1000',
 			onSuccess: function (data) {
 				var geoLookup;
 
 				data.items.each(function(item) {
 					var marker, full;
 
-					item.mergedAddress = item.address1 +' '+ item.province +' '+ item.country +' '+ item.zip;
+					item.mergedAddress = item.address1 +' '+ item.state +' '+ item.country +' '+ item.zip;
 					item.fullAddress = '<h2>'+ item.title +'</h2><p>'+ item.address1 +'<br/>'+ 
 						item.state +', '+ item.country +'<br/>'+
 						item.zip +'</p>' +
@@ -37,9 +37,11 @@ window.addEvent('domready', function() {
           							infoWindow.open(map, marker);
         						}
       						})(marker));
+						} else {
+							console.log(item.title +' failed '+ item.mergedAddress);
 						}
 					});
 				});
 			}
-		}).get({ limit: 1000 });
+		}).get();
 });

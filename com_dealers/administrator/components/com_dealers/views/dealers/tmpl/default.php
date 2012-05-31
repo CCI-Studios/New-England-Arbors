@@ -31,7 +31,7 @@
 		<tbody>
 			<? foreach($dealers as $dealer): ?>
 				<tr>
-					<td><?= @helper('grid.checkbox', array('row', $dealer)) ?></td>
+					<td><?= @helper('grid.checkbox', array('row' => $dealer)) ?></td>
 					<td><a href="<?= @route('view=dealer&id='. $dealer->id) ?>">
 						<?= $dealer->title; ?>
 					</a></td>
