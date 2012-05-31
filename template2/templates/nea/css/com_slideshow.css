@@ -18,6 +18,9 @@
         font-size: 48px; }
       .mod_slideshow .slide .description p {
         margin: 1em 0 0; }
+      .mod_slideshow .slide .description a {
+        color: #fff;
+        text-decoration: underline; }
     .mod_slideshow .slide .image {
       display: none; }
     .mod_slideshow .slide.active {

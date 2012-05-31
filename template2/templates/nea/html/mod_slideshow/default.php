@@ -13,7 +13,13 @@
 					<?= $slide->description1 ?>
 				</div></div>
 			<? endif; ?>
-			<? if ($slide->image1) { echo "<div class=\"image\"><div><img src=\"{$imagePath}{$slide->image1}\" alt=\"\" /></div></div>"; } ?>
+			<? if ($slide->image1): ?>
+				<div class="image"><div>
+					<a href="<?= $slide->link ?>">
+						<img src="<?= $imagePath.$slide->image1 ?>" alt="<?= $slide->title ?>" />
+					</a>
+				</div></div>
+			<? endif; ?>
 		</div></div>
 		<? endforeach; ?>
 	</div></div>
