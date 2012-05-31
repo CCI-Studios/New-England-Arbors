@@ -173,3 +173,58 @@
 		}
 	}
 }
+
+.ie7, .ie8 {
+	.mod_slideshow {
+		margin-top: -40px;
+		overflow: visible;
+
+		.slide {
+			.description {
+				margin-right: 58%;
+				
+				> div {
+					padding-top: 110px;
+				}
+			}
+
+			.image {
+				display: block;
+				position: absolute;
+				width: 60%;
+				right: 0;
+				bottom: -18px;
+
+				> div {
+					padding: 0 20px;
+				}
+
+				img { 
+					max-width: 100%;
+					display: block;
+					float: right;
+				}
+			}
+
+			&.active {
+				display: block;
+			}
+		}
+
+		.thumbs {
+
+			.thumb {
+				.title {
+					float: right;
+					width: 70%;
+					display: block;
+					text-align: center;
+				}
+				.preview {
+					float: left;
+					width: 30%;
+				}
+			}
+		}
+	}
+}

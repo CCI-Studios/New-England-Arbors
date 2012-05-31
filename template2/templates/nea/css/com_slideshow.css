@@ -105,3 +105,32 @@
     .mod_slideshow .thumbs .thumb .preview {
       float: left;
       width: 30%; } }
+.ie7 .mod_slideshow, .ie8 .mod_slideshow {
+  margin-top: -40px;
+  overflow: visible; }
+  .ie7 .mod_slideshow .slide .description, .ie8 .mod_slideshow .slide .description {
+    margin-right: 58%; }
+    .ie7 .mod_slideshow .slide .description > div, .ie8 .mod_slideshow .slide .description > div {
+      padding-top: 110px; }
+  .ie7 .mod_slideshow .slide .image, .ie8 .mod_slideshow .slide .image {
+    display: block;
+    position: absolute;
+    width: 60%;
+    right: 0;
+    bottom: -18px; }
+    .ie7 .mod_slideshow .slide .image > div, .ie8 .mod_slideshow .slide .image > div {
+      padding: 0 20px; }
+    .ie7 .mod_slideshow .slide .image img, .ie8 .mod_slideshow .slide .image img {
+      max-width: 100%;
+      display: block;
+      float: right; }
+  .ie7 .mod_slideshow .slide.active, .ie8 .mod_slideshow .slide.active {
+    display: block; }
+  .ie7 .mod_slideshow .thumbs .thumb .title, .ie8 .mod_slideshow .thumbs .thumb .title {
+    float: right;
+    width: 70%;
+    display: block;
+    text-align: center; }
+  .ie7 .mod_slideshow .thumbs .thumb .preview, .ie8 .mod_slideshow .thumbs .thumb .preview {
+    float: left;
+    width: 30%; }
