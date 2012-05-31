@@ -71,10 +71,29 @@
         margin: 0; }
     .itemWrapper .rightSide .productAcc ul {
       padding: 0 0 0 10%; }
+    .itemWrapper .rightSide .links {
+      text-align: center; }
+      .itemWrapper .rightSide .links li {
+        background: url("../images/buttonGradient.png") top left no-repeat;
+        height: 35px;
+        line-height: 35px;
+        padding: 0 0 0 15px;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1; }
+        .itemWrapper .rightSide .links li a {
+          background: url("../images/buttonGradient.png") bottom right no-repeat;
+          display: inline-block;
+          *display: inline;
+          *zoom: 1;
+          padding: 0 15px 0 0;
+          color: #fff; }
+          .itemWrapper .rightSide .links li a:hover {
+            text-decoration: none; }
     .itemWrapper .rightSide .productPrices {
-      display: inline-block;
-      *display: inline;
-      *zoom: 1; }
+      border-top: 1px solid #d8d8d8;
+      padding: 1em 0;
+      margin: 1em 0; }
       .itemWrapper .rightSide .productPrices input {
         float: left;
         height: 1em;

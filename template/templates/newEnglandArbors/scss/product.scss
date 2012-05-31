@@ -105,12 +105,39 @@
 			}
 		}
 		
-		.productAcc ul {padding: 0 0 0 10%;} // 10/300
+		.productAcc ul { padding: 0 0 0 10%; } // 10/300
+
+		.links {
+			text-align: center;
+
+			li {
+				background: url('../images/buttonGradient.png') top left no-repeat;
+				height: 35px;
+				line-height: 35px;
+				padding: 0 0 0 15px;
+				display: inline-block;
+				*display: inline;
+				*zoom: 1;
+
+				a {
+					background: url('../images/buttonGradient.png') bottom right no-repeat;
+					display: inline-block;
+					*display: inline;
+					*zoom: 1;
+					padding: 0 15px 0 0;
+					color: #fff;
+
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
 		
 		.productPrices {
-			display: inline-block;
-			*display: inline;
-			*zoom: 1;
+			border-top: 1px solid $bordercolor;
+			padding: 1em 0;
+			margin: 1em 0;
 			
 			input {
 				float: left;
