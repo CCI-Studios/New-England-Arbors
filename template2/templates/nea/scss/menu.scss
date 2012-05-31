@@ -64,7 +64,7 @@
 
 		li.active > a, li.active > span,
 		a:hover, span:hover {
-			color: #b1cce1;
+			color: #7ca3c4;
 		}
 	}
 
@@ -130,7 +130,7 @@
 			}
 		}
 
-		li.active, li:hover {
+		li:hover {
 			background: url(../images/menu-roll-bg.png) left top no-repeat;
 
 			> a, > span {
