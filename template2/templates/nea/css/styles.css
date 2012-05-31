@@ -72,15 +72,22 @@ div.pagination ul {
 .chronoform {
   display: none; }
 
-@media only screen and (min-width: 980px) {
+.contactTable .content img {
+  float: right;
+  margin: 0 0 10px 10px; }
+
+@media only screen and (min-width: 768px) {
   .contactTable .form {
     float: left;
-    max-width: 34.042553191%;
-    padding-right: 1.063829787%; }
+    width: 32%;
+    padding-right: 1%; }
   .contactTable .content {
-    float: none;
-    width: auto;
-    margin-left: 330px; }
-    .contactTable .content img {
-      float: right;
-      margin: 0 0 10px 10px; } }
+    width: 65%;
+    float: left; } }
+.ie7 .contactTable .form, .ie8 .contactTable .form {
+  float: left;
+  width: 32%;
+  padding-right: 1%; }
+.ie7 .contactTable .content, .ie8 .contactTable .content {
+  width: 65%;
+  float: left; }
