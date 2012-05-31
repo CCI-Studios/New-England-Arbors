@@ -54,9 +54,6 @@
   .itemWrapper .rightSide {
     float: left;
     width: 44.444444444%; }
-    .itemWrapper .rightSide > div {
-      padding: 1em 0;
-      border-top: 1px solid #d8d8d8; }
     .itemWrapper .rightSide .productDetails dl {
       margin: 0;
       display: inline-block;
