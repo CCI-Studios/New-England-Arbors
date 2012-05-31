@@ -1,7 +1,7 @@
 <h1>{{ collection.title | escape }}</h1>
 
 {% paginate collection.products by 9 %}
-	<div id="paginate"><div>
+	<div class="paginate"><div>
 		{{ paginate | default_pagination }}
 	</div></div>
 	
@@ -21,7 +21,8 @@
 		<div class="clear"></div>
 	</div>
 	
-	<div id="paginate"><div>
+	
+	<div class="paginate"><div>
 		{{ paginate | default_pagination }}
 	</div></div>
 {% endpaginate %}

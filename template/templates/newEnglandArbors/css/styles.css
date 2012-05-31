@@ -99,6 +99,12 @@ input[type="submit"] {
 .captioned.left {
   margin: 0 .5em .5em 0; }
 
+.paginate {
+  margin: 1em 0;
+  font-size: 14px; }
+  .paginate span {
+    padding: 0.5em 1em 0.5em 0; }
+
 .module.block {
   width: 28.936170213%;
   background: url("../images/bg_blockGradient.png") bottom left no-repeat;
