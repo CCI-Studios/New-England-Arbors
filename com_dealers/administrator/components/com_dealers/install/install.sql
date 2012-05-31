@@ -9,6 +9,8 @@ CREATE TABLE IF NOT EXISTS `#__dealers_dealers` (
 	`country` VARCHAR(40) NOT NULL,
 	`zip` VARCHAR(10) NOT NULL,
 	`authorized` TINYINT(1) NOT NULL,
+	`lon` VARCHAR(30) NOT NULL,
+	`lat` VARCHAR(30) NOT NULL,
 
 	`enabled` TINYINT(1) NOT NULL
 ) ENGINE=InnoDB;

@@ -1,6 +1,5 @@
 <?php
 
-echo 'listbox'; die;
 class ComDealersTemplateHelperListbox extends ComDefaultTemplateHelperListbox
 {
 	public function optionSelect( $config = array())

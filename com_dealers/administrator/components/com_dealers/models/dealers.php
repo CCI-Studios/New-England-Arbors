@@ -14,8 +14,6 @@ class ComDealersModelDealers extends ComDefaultModelDefault
 	protected function _buildQueryOrder(KDatabaseQuery $query)
 	{
 		$query->order('title');
-
-		echo $query;
 	}
 
 	public function getStates()
@@ -28,9 +26,6 @@ class ComDealersModelDealers extends ComDefaultModelDefault
 				->select('state')
 				->order('state')
 				->distinct();
-
-			echo $query;
-			die;
 			$this->_states = $table->select($query);
 		}
 

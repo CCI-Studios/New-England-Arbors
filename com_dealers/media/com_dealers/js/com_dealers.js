@@ -16,31 +16,25 @@ window.addEvent('domready', function() {
 				data.items.each(function(item) {
 					var marker, full;
 
-					item.mergedAddress = item.address1 +' '+ item.state +' '+ item.country +' '+ item.zip;
+					item.mergedAddress = item.address1 +', '+ item.city +', '+ item.state +', '+ item.country +', '+ item.zip;
 					item.fullAddress = '<h2>'+ item.title +'</h2><p>'+ item.address1 +'<br/>'+ 
 						item.state +', '+ item.country +'<br/>'+
 						item.zip +'</p>' +
 						'<p><a href="'+ 
 						'https://maps.google.com/maps?q='+ item.mergedAddress +'&hl=en&t=m&z=16'
-						+'">Directions</a></p>';
-
-					geocoder.geocode({ address: item.mergedAddress }, function(location, status) {
-						if (location) {
-							marker = new google.maps.Marker({
-								position: location[0].geometry.location,
-								map: map
-							});
-
-							google.maps.event.addListener(marker, 'click', (function(marker) {
-        						return function() {
-          							infoWindow.setContent(item.fullAddress);
-          							infoWindow.open(map, marker);
-        						}
-      						})(marker));
-						} else {
-							console.log(item.title +' failed '+ item.mergedAddress);
-						}
+						+'" target="_blank">Directions</a></p>';
+				
+					marker = new google.maps.Marker({
+						position: new google.maps.LatLng(item.lat, item.lon),
+						map: map
 					});
+
+					google.maps.event.addListener(marker, 'click', (function(marker) {
+						return function() {
+  							infoWindow.setContent(item.fullAddress);
+  							infoWindow.open(map, marker);
+						}
+					})(marker));
 				});
 			}
 		}).get();
