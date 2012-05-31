@@ -28,7 +28,8 @@
   border-top: 1px solid #d8d8d8;
   width: 100%;
   height: 0;
-  clear: both; }
+  clear: both;
+  margin: 1em 0; }
 
 .table4column tr td {
   width: 22.5%;
