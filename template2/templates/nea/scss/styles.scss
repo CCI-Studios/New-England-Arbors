@@ -97,29 +97,35 @@ div.pagination {
 
 .chronoform {display: none;}
 
+.contactTable {
+	.form {
+	}
 
-@media only screen and (min-width: 768px) {
-	
+	.content {
+
+		img {
+			float: right;
+			margin: 0 0 10px 10px;
+		}
+	}
 }
 
-@media only screen and (min-width: 980px) {
-	
+@media only screen and (min-width: 768px) {
+
 	.contactTable {
-		.form {
+			.form {
 			float: left;
-			max-width: 34.042553191%;
-			padding-right: 1.063829787%;
+			width: 32%;
+			min-width: 320px;
+			padding-right: 1%;
 		}
 
 		.content {
-			float: none;
-			width: auto;
-			margin-left: 330px;
-
-			img {
-				float: right;
-				margin: 0 0 10px 10px;
-			}
+			width: 65%;
+			float: left;
 		}
 	}
+}
+
+@media only screen and (min-width: 980px) {
 }
