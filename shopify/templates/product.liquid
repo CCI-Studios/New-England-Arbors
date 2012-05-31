@@ -26,8 +26,6 @@
 		</div>
 		
 		<div class="productPrices">
-			
-			
 			<form method="post" action="/cart/add">
 				{% if product.variants.size == 1 %}
 					<input type="hidden" name="id" value="{{ product.variants.first.id }}" />
@@ -40,9 +38,8 @@
 						{% endif %}
 					{% endfor %}
 					<!-- END VARIANTS -->
+					<div class="hr"></div>
 				{% endif %}
-				
-				<div class="hr"></div>
 				
 				<button>
 					<div class="button"><span>
