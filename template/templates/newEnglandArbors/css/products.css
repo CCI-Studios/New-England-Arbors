@@ -20,13 +20,13 @@
     .productWrapper .product .image {
       height: 125px;
       overflow: hidden;
-      width: 95%; }
+      width: 95%;
+      margin-bottom: 7px; }
     .categoryWrapper .category p,
     .categoryWrapper .product p,
     .productWrapper .category p,
     .productWrapper .product p {
-      color: #00548e;
-      margin: 5px 0 35px 0; }
+      color: #00548e; }
       .categoryWrapper .category p.categoryName,
       .categoryWrapper .product p.categoryName,
       .productWrapper .category p.categoryName,
@@ -37,14 +37,14 @@
       .categoryWrapper .product p.productName,
       .productWrapper .category p.productName,
       .productWrapper .product p.productName {
-        width: 58%;
+        width: 62%;
         float: left;
         padding: 0 0 0 2%; }
       .categoryWrapper .category p.productPrice,
       .categoryWrapper .product p.productPrice,
       .productWrapper .category p.productPrice,
       .productWrapper .product p.productPrice {
-        width: 38%;
+        width: 33%;
         float: right;
         text-align: right;
         padding: 0 2% 0 0;
