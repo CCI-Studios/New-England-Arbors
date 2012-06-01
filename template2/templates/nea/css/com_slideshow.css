@@ -1,7 +1,6 @@
 .mod_slideshow {
   position: relative;
-  margin-bottom: -61px;
-  overflow: hidden; }
+  margin-bottom: -61px; }
   .mod_slideshow .slides {
     position: relative; }
   .mod_slideshow .slide {
@@ -19,8 +18,9 @@
       .mod_slideshow .slide .description p {
         margin: 1em 0 0; }
       .mod_slideshow .slide .description a {
-        color: #fff;
-        text-decoration: underline; }
+        color: #fff; }
+        .mod_slideshow .slide .description a:hover {
+          text-decoration: underline; }
     .mod_slideshow .slide .image {
       display: none; }
     .mod_slideshow .slide.active {
