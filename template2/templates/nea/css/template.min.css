@@ -1735,6 +1735,8 @@ div.module.block {
       padding: 0;
       margin: 0;
       background: none; }
+    .module.products > div > div > div {
+      overflow: auto; }
     .module.products > div > div > div > div {
       width: auto; }
     .module.products .product {
@@ -1756,9 +1758,9 @@ div.module.block {
     padding: 0; }
 
   .module.products .product {
-    margin: 0 5.815831987% 0 0; }
+    margin: 0 5.515831987% 0 0; }
     .module.products .product:first-child {
-      margin: 0 5.815831987% 0 0; } }
+      margin: 0 5.515831987% 0 0; } }
 .ie7 #header .hmenu, .ie8 #header .hmenu {
   text-align: center;
   float: none;
@@ -1797,8 +1799,6 @@ div.module.block {
   float: left;
   width: auto;
   padding: 0; }
-.ie7 .module.products > div > div > div, .ie8 .module.products > div > div > div {
-  overflow: auto; }
 .ie7 .module.products .product, .ie8 .module.products .product {
   margin: 0 5.815831987% 0 0; }
   .ie7 .module.products .product:first-child, .ie8 .module.products .product:first-child {
