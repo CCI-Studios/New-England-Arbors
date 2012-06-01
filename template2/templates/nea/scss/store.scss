@@ -10,6 +10,9 @@
 			color: $maincolor;
 			text-decoration: none;			
 			font-size: 24px;
+			&:hover p {
+				text-decoration: underline;
+			}
 			
 			p {
 				margin: 0 0 10px 0;
