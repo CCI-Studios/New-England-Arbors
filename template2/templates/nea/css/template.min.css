@@ -1263,6 +1263,9 @@ button {
 form {
   margin: 0; }
 
+.ccms_form_element {
+  margin: 1em 0 0 0; }
+
 html, body {
   min-height: 100%; }
 
