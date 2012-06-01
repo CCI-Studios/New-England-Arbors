@@ -1326,7 +1326,8 @@ ol {
   color: #00548e; }
 
 hr {
-  color: #d8d8d8; }
+  border: 1px solid #d8d8d8;
+  border-bottom: 0; }
 
 .left {
   float: left; }
@@ -1619,6 +1620,8 @@ html.ie7 .container-fluid, html.ie8 .container-fluid {
     color: #00548e;
     text-decoration: none;
     font-size: 24px; }
+    .products .product a:hover p {
+      text-decoration: underline; }
     .products .product a p {
       margin: 0 0 10px 0; }
 
