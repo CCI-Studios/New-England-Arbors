@@ -62,6 +62,13 @@
 			height: 90px;
 			padding: 17px 17px 9px 0;
 		}
+		
+		> div > div {
+			height: 91px;
+			margin: 0 -15px;
+			padding: 0 15px;
+			box-shadow: 0px 12px 12px -12px rgba(#444, .8);
+		}
 
 		.thumb {
 			float: left;
