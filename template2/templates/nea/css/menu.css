@@ -50,6 +50,8 @@
     color: #fff;
     padding: 0 0 0 10px;
     display: block; }
+    .ie7 .hmenu.page-title ul li.active, .ie8 .hmenu.page-title ul li.active {
+      padding: 0; }
     .hmenu.page-title ul li.active a {
       color: #fff;
       text-decoration: none; }

@@ -82,6 +82,8 @@
 				padding: 0 0 0 10px;
 				display: block;
 
+				.ie7 &, .ie8 & { padding: 0; }
+
 				a { 
 					color: #fff;
 					text-decoration: none;
