@@ -38,7 +38,7 @@
 						<option value="5">5</option>
 					</select>
 
-					<button>Rate Me</button>
+					<p><input type="submit" class="button" value="Rate Me" /></p>
 				</form>
 			</div>
 			<? endif; ?>
