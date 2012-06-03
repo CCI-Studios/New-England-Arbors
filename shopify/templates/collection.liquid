@@ -8,13 +8,13 @@
 	<div class="productWrapper">
 		{% for product in collection.products %}
 			<div class="product">
-				<a href="{{ product.url | within: collection }}">
-					<div class="image imageblock">
-						<img src="{{ product.images[0] | product_img_url: "medium" }}" alt="{{ product.images[0].alt | escape }}" />
-					</div>
-					<p class="productName">{{ product.title | escape }}</p>
-					<p class="productPrice">{{ product.price | money }}</p>
-				</a>
+				<div class="image imageblock"><a href="{{ product.url | within: collection }}">
+					<img src="{{ product.images[0] | product_img_url: "medium" }}" alt="{{ product.images[0].alt | escape }}" />
+				</a></div>
+
+				<div class="title"><a href="{{ product.url | within: collection }}">
+{{ product.title | escape }}<span class="price">{{ product.price | money }}</span>
+				</a></div>
 			</div>
 		{% endfor %}
 		

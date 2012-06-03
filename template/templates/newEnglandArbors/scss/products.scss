@@ -2,7 +2,6 @@
 
 .categoryWrapper,
 .productWrapper {
-	text-align: center;
 	margin-left: -2%;
 	zoom:1;
 	
@@ -22,28 +21,23 @@
 			width: 95%;
 			margin-bottom: 7px;
 		}
-		
-		p {
+
+		.title {
 			color: $maincolor;
 			min-height: 36px;
-
-			&.categoryName {
-				font-size: 1.142857143em; // 16/14
-				text-align: center;
-			}
-			&.productName {
-				width: 62%;
-				float: left;
-				padding: 0 0 0 2%;
-			}
-			&.productPrice {
-				width: 33%;
-				float: right;
-				text-align: right;
-				padding: 0 2% 0 0;
-				color: #000;
-			}
+			margin: 0 2%;
 		}
+
+		.price {
+			float: right;
+			text-align: right;
+			color: #000;
+		}
+	}
+
+	.category .title { 
+		font-size: 1.142857143em; // 16/14
+		text-align: center;
 	}
 }
 

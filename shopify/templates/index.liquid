@@ -4,12 +4,12 @@
 {% for collection in collections %}
 	{% unless collection.handle == 'frontpage' %}
 	<div class="category">
-		<a href="{{ collection.url }}">
-			<div class="image imageblock">
-				<img src="{{ collection.products.first.images[0] | product_img_url: "medium" }}" alt="{{ collection.title | escape }}">
-			</div>
-			<p class="categoryName">{{ collection.title | escape }}</p>
-		</a>
+		<div class="image imageblock"><a href="{{ collection.url }}">
+			<img src="{{ collection.products.first.images[0] | product_img_url: "medium" }}" alt="{{ collection.title | escape }}">
+		</a></div>
+		<div class="title"><a href="{{ collection.url }}">
+			{{ collection.title | escape }}
+		</a></div>
 	</div>
 	{% endunless %}
 {% endfor %}
