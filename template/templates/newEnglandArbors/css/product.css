@@ -123,7 +123,7 @@
     float: none; }
     .itemWrapper .rightSide .productPrices {
       width: 100%; }
-      .itemWrapper .rightSide .productPrices input {
+      .itemWrapper .rightSide .productPrices input[type="checkbox"] {
         width: 5%;
         float: left;
         height: 1em;
