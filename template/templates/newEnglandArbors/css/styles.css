@@ -182,3 +182,8 @@ input[type="submit"] {
     float: none;
     margin: 0 0 1em; } }
 /*/mediaquery*/
+@media only screen and (max-width: 767px) {
+  .phone-hidden {
+    display: none !important; }
+    .ie7 .phone-hidden, .ie8 .phone-hidden {
+      display: block !important; } }

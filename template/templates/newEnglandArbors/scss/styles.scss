@@ -225,3 +225,13 @@ input[type="submit"] {
 		}
 	}
 }/*/mediaquery*/
+
+@media only screen and (max-width: 767px) {
+	.phone-hidden { 
+		display: none !important;
+
+		.ie7 &, .ie8 & {
+			display: block !important;
+		}
+	}
+}
