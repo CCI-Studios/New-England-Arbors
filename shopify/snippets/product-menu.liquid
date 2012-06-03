@@ -1,0 +1,11 @@
+<div class="{{ product_classes }}">
+    <ul class="menu">
+		{% for product in collections %}
+			<li {% if link.active %}class="active"{% endif %}>
+				<a href="{{ product.url }}">
+					{{ product.title }}
+				</a>
+			</li>
+		{% endfor %}
+	</ul>
+</div>

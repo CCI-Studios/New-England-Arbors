@@ -20,7 +20,18 @@
 	
 	<div id="mobile-menu" class="mobile-only">
 		{% assign product_classes = 'moduletable_hmenu primary' %}
-		{% include 'product-menu' %}
+		<div class="{{ product_classes }}">
+		    <ul class="menu">
+				<li><a href="http://newenglandarbors.com">Home</a></li>
+				{% for product in collections %}
+					<li {% if link.active %}class="active"{% endif %}>
+						<a href="{{ product.url }}">
+							{{ product.title }}
+						</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
 	</div>
 
 	<div id="wrapper">
