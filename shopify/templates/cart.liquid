@@ -1,7 +1,6 @@
 <!-- START TITLE -->
 <div id="title">
-	<h1>Your Cart</h1>
-	<h2><span>{{ cart.item_count }} {{ cart.item_count | pluralize: "Item", "Items" }}</span></h2>
+	<h1>Your Cart <small>{{ cart.item_count }} {{ cart.item_count | pluralize: "Item", "Items" }}</small></h1>
 </div>
 <!-- END TITLE -->
 
@@ -9,25 +8,29 @@
 	<p id="empty">Your shopping cart is empty. <a href="/collections/all">Continue shopping...</a></p>
 {% else %}
 	<form action="/cart" method="post" name="cartform">
-		
 		{% for item in cart.items %}
 		<div class="product" style="margin: 1em 0;">
-			<a href="{{ item.product.url | within: collections.all }}">
-				<img src="{{ item.product.images[0] | product_img_url: 'small' }}" alt="{{ item.title | escape }}" style="float: right; margin: 0 0 10px 10px" />
-			</a>
 			<h2>
-				<a href="{{ item.product.url | within: collections.all }}">{{ item.title | escape }}</a>
+				<a href="{{ item.product.url | within: collections.all }}">{{ item.title | escape }}</a> - 
+				<small><a href="/cart/change/{{ item.variant.id}}?quantity=0">Remove</a></small>
 			</h2>
+			<div class="imageblock" style="float: right; margin: 0 0 10px 10px"><div><div>
+				<a href="{{ item.product.url | within: collections.all }}">
+					<img 
+						src="{{ item.product.images[0] | product_img_url: 'medium' }}"
+						alt="{{ item.title | escape }}" />
+				</a>
+			</div></div></div>
 			<p>{{ item.product.description | strip_html | strip_newlines | truncate: 180 }}</p>
 			<p>
 				{{ item.price | money }}
-				<input type="text" name="updates[]" id="updates_{{item.variant.id}}" value="{{ item.quantity }}" />
-				<a href="/cart/change/{{ item.variant.id}}?quantity=0">Remove</a>
-				{{ item.line_price | money }}
+				<input type="text" name="updates[]" id="updates_{{item.variant.id}}" style="width: 50px;" value="{{ item.quantity }}" />
+				<span class="right">{{ item.line_price | money }}</span>
 			</p>
 		</div>
 		{% endfor %}
 		
+		<div class="hr"></div>
 		<h3>Total: <span>{{ cart.total_price | money }}</span></h3>
 
 		<!-- START COMPLETE -->
@@ -44,8 +47,13 @@
 			<p><a href="/collections/all">Continue shopping...</a></p>
 
 			<div id="checkout">
-				<input type="submit" value="Update" name="update" class="update" /> or 
-				<input type="submit" value="Check Out" name="checkout" class="checkout" />
+				<div style="float: left;">
+					<input type="submit" value="Update" name="update" class="update" />
+				</div>
+				<div style="float: left; line-height: 35px;">&nbsp;or&nbsp;</div>
+				<div style="float: left;">
+					<input type="submit" value="Check Out" name="checkout" class="checkout" />
+				</div>
 			</div>
 
 			{% if false %}
