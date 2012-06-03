@@ -18,13 +18,12 @@ class ComDealersModelDealers extends ComDefaultModelDefault
 
 	public function getStates()
 	{
-		if (true || !$this->_states) {
+		if (!$this->_states) {
 			$table = $this->getTable();
 			$query = $table->getDatabase()->getQuery();
 
 			$query
-				->select('state')
-				->order('state')
+				->group('state')
 				->distinct();
 			$this->_states = $table->select($query);
 		}

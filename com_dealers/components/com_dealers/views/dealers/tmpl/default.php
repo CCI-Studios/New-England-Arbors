@@ -10,7 +10,7 @@
 
 	<div id="map-canvas" style="width: 300px; max-width: 100%; height: 300px;"></div>
 
-	<p>Search for a dealer <?= @helper('listbox.states', array('attribs'=>array('id'=>'location-select'))) ?></p>
+	<p>Search for a dealer: <?= @helper('listbox.states', array('attribs'=>array('id'=>'location-select'))) ?></p>
 
 	<div class="com_dealers">
 		<? foreach($dealers as $dealer): ?>
