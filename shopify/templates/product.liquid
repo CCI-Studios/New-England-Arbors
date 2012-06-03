@@ -12,9 +12,11 @@
 		</div>
 		<div class="productThumbs">
 			{% for image in product.images %}
-				<div><div class="imageblock">
-					<img src="{{ image | product_img_url: 'compact' }}" alt="" data-large="{{ image | product_img_url: 'large' }}" />
-				</div></div>
+				<div class="thumb">
+					<div class="imageblock"><div><div>
+						<img src="{{ image | product_img_url: 'compact' }}" alt="" data-large="{{ image | product_img_url: 'large' }}" />
+					</div></div></div>
+				</div>
 			{% endfor %}
 		</div>
 		<div class="hr"></div>

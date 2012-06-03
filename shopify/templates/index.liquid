@@ -4,9 +4,11 @@
 {% for collection in collections %}
 	{% unless collection.handle == 'frontpage' %}
 	<div class="category">
-		<div class="image imageblock"><a href="{{ collection.url }}">
-			<img src="{{ collection.products.first.images[0] | product_img_url: "medium" }}" alt="{{ collection.title | escape }}">
-		</a></div>
+		<div class="image imageblock"><div><div>
+			<a href="{{ collection.url }}">
+				<img src="{{ collection.products.first.images[0] | product_img_url: "medium" }}" alt="{{ collection.title | escape }}">
+			</a>
+		</div></div></div>
 		<div class="title"><a href="{{ collection.url }}">
 			{{ collection.title | escape }}
 		</a></div>

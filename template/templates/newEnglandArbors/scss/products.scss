@@ -15,11 +15,13 @@
 			display: block;
 		}
 		
-		.image {
-			height: 125px;
-			overflow: hidden;
-			width: 95%;
+		.imageblock {
 			margin-bottom: 7px;
+
+			> div { 
+				height: 125px;
+				line-height: 125px;
+			}
 		}
 
 		.title {

@@ -35,15 +35,16 @@
 			text-align: center;
 			margin-left: -2%;
 
-			> div {
+			.thumb {
 				float: left;
 				width: 47%;
 				margin-left: 2%;
 				margin-bottom: 1em;
+				cursor: pointer;
 				
-				> div {
+				.imageblock > div { 
 					height: 100px;
-					overflow: hidden;
+					line-height: 100px;
 				}
 			}
 		}
@@ -159,7 +160,7 @@
 
 @media screen and (min-width: 480px) {
 	.itemWrapper .leftSide .productThumbs {
-		> div {
+		.thumb {
 			width: 30%;
 		}
 	}
@@ -262,7 +263,7 @@
 
 .ie7, .ie8 {
 	.itemWrapper .leftSide .productThumbs {
-		> div {
+		.thumb {
 			width: 30%;
 		}
 	}

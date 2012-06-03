@@ -8,9 +8,11 @@
 	<div class="productWrapper">
 		{% for product in collection.products %}
 			<div class="product">
-				<div class="image imageblock"><a href="{{ product.url | within: collection }}">
-					<img src="{{ product.images[0] | product_img_url: "medium" }}" alt="{{ product.images[0].alt | escape }}" />
-				</a></div>
+				<div class="imageblock"><div><div>
+					<a href="{{ product.url | within: collection }}">
+						<img src="{{ product.images[0] | product_img_url: "medium" }}" alt="{{ product.images[0].alt | escape }}" />
+					</a>
+				</div></div></div>
 
 				<div class="title"><a href="{{ product.url | within: collection }}">
 {{ product.title | escape }}<span class="price">{{ product.price | money }}</span>

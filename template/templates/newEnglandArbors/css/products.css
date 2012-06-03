@@ -14,14 +14,17 @@
     .productWrapper .category a,
     .productWrapper .product a {
       display: block; }
-    .categoryWrapper .category .image,
-    .categoryWrapper .product .image,
-    .productWrapper .category .image,
-    .productWrapper .product .image {
-      height: 125px;
-      overflow: hidden;
-      width: 95%;
+    .categoryWrapper .category .imageblock,
+    .categoryWrapper .product .imageblock,
+    .productWrapper .category .imageblock,
+    .productWrapper .product .imageblock {
       margin-bottom: 7px; }
+      .categoryWrapper .category .imageblock > div,
+      .categoryWrapper .product .imageblock > div,
+      .productWrapper .category .imageblock > div,
+      .productWrapper .product .imageblock > div {
+        height: 125px;
+        line-height: 125px; }
     .categoryWrapper .category .title,
     .categoryWrapper .product .title,
     .productWrapper .category .title,
