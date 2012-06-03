@@ -28,10 +28,11 @@
 			position: relative;
 			
 			input {
-				padding: 0 10px 0 35px;
+				padding: 0 10px 0 27px;
 				border: none;
 				border-radius: 10px;
 				line-height: 25px;
+				width: 100px;
 
 				.ie7 &, .ie8 & {
 					width: 85px;

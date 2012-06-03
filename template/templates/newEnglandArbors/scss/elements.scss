@@ -19,6 +19,12 @@ body {
     font-style: normal;
 }
 
+:-moz-placeholder {
+  color: #999999; }
+
+::-webkit-input-placeholder {
+  color: #999999; }
+
 select, input, textarea {
 	color: #444; /* off black */
 	font-family: Goudy Old Style, Helvetica, Arial, sans-serif;
