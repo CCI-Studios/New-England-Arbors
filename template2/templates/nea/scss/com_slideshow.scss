@@ -1,7 +1,6 @@
 .mod_slideshow {
 	position: relative;
 	margin-bottom: -61px;
-	overflow: hidden;
 
 	&.loading {
 
@@ -34,7 +33,9 @@
 
 			a {
 				color: #fff;
-				text-decoration: underline;
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 		}
 
@@ -60,6 +61,13 @@
 			background: url(../images/slideshow-bg.png) bottom right;
 			height: 90px;
 			padding: 17px 17px 9px 0;
+		}
+		
+		> div > div {
+			height: 91px;
+			margin: 0 -15px;
+			padding: 0 15px;
+			box-shadow: 0px 12px 12px -12px rgba(#444, .8);
 		}
 
 		.thumb {
@@ -102,9 +110,9 @@
 				bottom: 100%;
 				left: 50%;
 				margin-left: -20px;
-				margin-bottom: -1px;
+				margin-bottom: -2px;
 				width: 39px;
-				height: 18px;
+				height: 19px;
 
 				display: none;
 				background: url(../images/slideshow-indicator-bg.png) no-repeat;

@@ -67,7 +67,7 @@ div.module.block {
 
 	h3 {
 		background: url(../images/block-bg2.png) top right no-repeat;
-		margin-right: -16px;
+		margin-right: -23px;
 		margin-bottom: 0;
 		padding-right: 15px;
 		color: #fff;
@@ -151,6 +151,10 @@ div.module.block {
 			background: none;
 		}
 		
+		> div > div > div {
+			overflow: auto;
+		}
+		
 		> div > div > div > div {
 			width: auto;
 		}
@@ -184,8 +188,8 @@ div.module.block {
 		
 		.product {
 
-			margin: 0 5.815831987% 0 0;
-			&:first-child {margin: 0 5.815831987% 0 0;}
+			margin: 0 5.515831987% 0 0;
+			&:first-child {margin: 0 5.515831987% 0 0;}
 		}
 
 	}
@@ -252,8 +256,6 @@ div.module.block {
 	}
 	
 	.module.products {
-
-		> div > div > div { overflow: auto; }
 		
 		.product {
 

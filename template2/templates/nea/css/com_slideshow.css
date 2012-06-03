@@ -1,7 +1,6 @@
 .mod_slideshow {
   position: relative;
-  margin-bottom: -61px;
-  overflow: hidden; }
+  margin-bottom: -61px; }
   .mod_slideshow .slides {
     position: relative; }
   .mod_slideshow .slide {
@@ -19,8 +18,9 @@
       .mod_slideshow .slide .description p {
         margin: 1em 0 0; }
       .mod_slideshow .slide .description a {
-        color: #fff;
-        text-decoration: underline; }
+        color: #fff; }
+        .mod_slideshow .slide .description a:hover {
+          text-decoration: underline; }
     .mod_slideshow .slide .image {
       display: none; }
     .mod_slideshow .slide.active {
@@ -36,6 +36,11 @@
       background: url(../images/slideshow-bg.png) bottom right;
       height: 90px;
       padding: 17px 17px 9px 0; }
+    .mod_slideshow .thumbs > div > div {
+      height: 91px;
+      margin: 0 -15px;
+      padding: 0 15px;
+      box-shadow: 0px 12px 12px -12px rgba(68, 68, 68, 0.8); }
     .mod_slideshow .thumbs .thumb {
       float: left;
       background: url(../images/slideshow-thumb-bg.png) left no-repeat; }
@@ -66,9 +71,9 @@
         bottom: 100%;
         left: 50%;
         margin-left: -20px;
-        margin-bottom: -1px;
+        margin-bottom: -2px;
         width: 39px;
-        height: 18px;
+        height: 19px;
         display: none;
         background: url(../images/slideshow-indicator-bg.png) no-repeat; }
       .mod_slideshow .thumbs .thumb.active .indicator {

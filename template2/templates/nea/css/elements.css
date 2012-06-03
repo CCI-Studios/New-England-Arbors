@@ -61,7 +61,8 @@ ol {
   color: #00548e; }
 
 hr {
-  color: #d8d8d8; }
+  border: 1px solid #d8d8d8;
+  border-bottom: 0; }
 
 .left {
   float: left; }

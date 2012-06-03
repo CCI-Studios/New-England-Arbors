@@ -60,7 +60,8 @@ ol {
 }
 
 hr {
-	color: $bordercolor;
+	border: 1px solid $bordercolor;
+	border-bottom: 0;
 }
 
 .left { float: left; }
