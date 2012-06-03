@@ -66,6 +66,9 @@
         .mod_slideshow .thumbs .thumb .preview img {
           max-width: 100%;
           vertical-align: middle; }
+        .mod_slideshow .thumbs .thumb .preview span {
+          display: inline-block;
+          height: 100%; }
       .mod_slideshow .thumbs .thumb .indicator {
         position: absolute;
         bottom: 100%;

@@ -29,7 +29,10 @@
 		foreach($slides as $index => $slide): ?>
 		<div class="thumb <?php if ($first) { echo 'active'; $first = false; } ?>" style="width: <?= 100/count($slides) ?>%;"><div><div>
 			<div class="title"><?= $slide->title ?></div>
-			<div class="preview"><img src="<?= "{$imagePath}{$slide->image2}" ?>" /></div>
+			<div class="preview">
+				<img src="<?= "{$imagePath}{$slide->image2}" ?>" />
+				<span></span>
+			</div>
 			<div class="indicator"></div>
 		</div></div></div>
 		<? endforeach; ?>
