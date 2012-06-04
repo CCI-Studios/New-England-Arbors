@@ -16,7 +16,7 @@
 			<? if ($slide->image1): ?>
 				<div class="image"><div>
 					<a href="<?= $slide->link ?>">
-						<img src="<?= $imagePath.$slide->image1 ?>" alt="<?= $slide->title ?>" />
+						<img src="/<?= $imagePath.$slide->image1 ?>" alt="<?= $slide->title ?>" />
 					</a>
 				</div></div>
 			<? endif; ?>
@@ -30,7 +30,7 @@
 		<div class="thumb <?php if ($first) { echo 'active'; $first = false; } ?>" style="width: <?= 100/count($slides) ?>%;"><div><div>
 			<div class="title"><?= $slide->title ?></div>
 			<div class="preview">
-				<img src="<?= "{$imagePath}{$slide->image2}" ?>" />
+				<img src="/<?= "{$imagePath}{$slide->image2}" ?>" />
 				<span></span>
 			</div>
 			<div class="indicator"></div>
