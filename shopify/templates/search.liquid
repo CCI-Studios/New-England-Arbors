@@ -15,13 +15,15 @@
 		<div class="productWrapper">
 			{% for item in search.results %}
 				<div class="product">
-					<a href="{{ item.url | within: collections.all }}">
-						<div class="image imageblock">
+					<div class="image imageblock"><div><div>
+						<a href="{{ item.url | within: collections.all }}">
 							<img src="{{ item.images[0] | product_img_url: "medium" }}" alt="{{ item.images[0].alt | escape }}" />
-						</div>
-						<p class="productName">{{ item.title | escape }}</p>
-						<p class="productPrice">{{ item.price | money }}</p>
-					</a>
+						</a>
+					</div></div></div>
+					
+					<div class="title"><a href="{{ item.url | within: collections.all }}">
+{{ item.title | escape }}<span class="price">{{ item.price | money }}</span>
+					</a></div>
 				</div>
 			{% endfor %}
 		
