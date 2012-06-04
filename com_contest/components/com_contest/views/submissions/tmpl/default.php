@@ -1,6 +1,6 @@
 <style src="/media/com_contest/css/com_contest.css" />
 <? @helper('behavior.modal') ?>
-
+<script src="/media/lib_koowa/js/koowa.js" />
 
 <div class="item-page">
 	<h1>Photo Contest</h1>
@@ -14,9 +14,11 @@
 	<div class="submission-list">
 		<?php foreach($submissions as $submission): ?>
 		<div class="item">
-			<p><a class="modal" href="/media/com_contest/uploads/<?= $submission->file ?>" rel="">
-				<img src="/media/com_contest/uploads/<?= $submission->file ?>" />
-			</a></p>
+			<div class="imageblock"><div><div>
+				<a class="modal" href="/media/com_contest/uploads/<?= $submission->file ?>" rel="">
+					<img src="/media/com_contest/uploads/<?= $submission->file ?>" />
+				</a>
+			</div></div></div>
 			<p>
 				<strong><?= $submission->title ?></strong><br/>
 				Average Rating: <?= number_format($submission->rating, 1) ?>
