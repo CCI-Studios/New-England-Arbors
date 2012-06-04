@@ -43,7 +43,8 @@
       box-shadow: 0px 12px 12px -12px rgba(68, 68, 68, 0.8); }
     .mod_slideshow .thumbs .thumb {
       float: left;
-      background: url(../images/slideshow-thumb-bg.png) left no-repeat; }
+      background: url(../images/slideshow-thumb-bg.png) left no-repeat;
+      height: 91px; }
       .mod_slideshow .thumbs .thumb:first-child {
         background: none; }
       .mod_slideshow .thumbs .thumb > div {
