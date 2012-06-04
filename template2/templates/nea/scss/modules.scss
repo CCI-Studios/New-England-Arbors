@@ -29,6 +29,10 @@
 			border: none;
 			border-radius: 10px;
 			height: 25px;
+			
+			.ie7 & {
+				line-height: 25px; //vertically aligns in ie7
+			}
 		}
 	}
 }
@@ -105,6 +109,8 @@ div.module.block {
 		width: 100%;
 		overflow: scroll;
 		-webkit-overflow-scrolling: touch;
+		
+		.ie7 & {overflow: hidden;}
 	}
 	
 	> div > div > div > div {
