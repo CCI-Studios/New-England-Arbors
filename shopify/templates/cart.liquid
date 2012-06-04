@@ -9,12 +9,12 @@
 {% else %}
 	<form action="/cart" method="post" name="cartform">
 		{% for item in cart.items %}
-		<div class="product" style="margin: 1em 0;">
+		<div class="product clear" style="margin: 1em 0;">
 			<h2>
 				<a href="{{ item.product.url | within: collections.all }}">{{ item.title | escape }}</a> - 
 				<small><a href="/cart/change/{{ item.variant.id}}?quantity=0">Remove</a></small>
 			</h2>
-			<div class="imageblock" style="float: right; margin: 0 0 10px 10px"><div><div>
+			<div class="imageblock" style="float: right; width: 150px; margin: 0 0 10px 10px"><div style="height: 100px"><div>
 				<a href="{{ item.product.url | within: collections.all }}">
 					<img 
 						src="{{ item.product.images[0] | product_img_url: 'medium' }}"
