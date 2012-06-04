@@ -43,7 +43,9 @@
     float: left; }
   .media-blog .item {
     width: 45%;
-    padding-right: 2.5%; }
+    padding-right: 2.5%;
+    position: relative;
+    *zoom: 1; }
     .media-blog .item .media {
       padding-bottom: 0; }
     .media-blog .item p {

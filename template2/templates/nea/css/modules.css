@@ -22,6 +22,8 @@
     border: none;
     border-radius: 10px;
     height: 25px; }
+    .ie7 #top .search input {
+      line-height: 25px; }
 
 #header .hmenu {
   padding-top: 40px;
@@ -78,6 +80,8 @@ div.module.block {
     width: 100%;
     overflow: scroll;
     -webkit-overflow-scrolling: touch; }
+    .ie7 .module.products > div > div > div {
+      overflow: hidden; }
   .module.products > div > div > div > div {
     width: 1450px; }
   .module.products .product {
