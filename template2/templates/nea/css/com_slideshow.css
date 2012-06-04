@@ -85,7 +85,7 @@
       .mod_slideshow .thumbs .thumb.active .title {
         background: url(../images/slideshow-hover-bg.png) bottom no-repeat; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .mod_slideshow {
     margin-top: -40px; }
     .mod_slideshow .slide .description {
