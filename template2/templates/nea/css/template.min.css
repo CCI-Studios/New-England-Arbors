@@ -1523,18 +1523,10 @@ div.pagination ul {
 
 #copyright {
   background: url(../images/copyright-bg1.png) top repeat-x;
-  padding-top: 20px; }
+  padding: 30px 0 10px; }
   #copyright > div {
     background: url(../images/copyright-bg2.png) bottom no-repeat;
-    padding: 10px 0 10px;
-    text-align: center;
-    font-size: 12px;
-    color: white; }
-    #copyright > div a {
-      color: #fff;
-      text-decoration: none; }
-      #copyright > div a:hover {
-        text-decoration: underline; }
+    padding-bottom: 20px; }
 
 #footer {
   padding: 20px 0 20px;
@@ -1727,6 +1719,15 @@ div.module.block {
     margin: 0 35px; }
     .module.products .product:first-child {
       margin: 0 35px; }
+
+div.copyright {
+  font-size: 12px;
+  color: white; }
+  div.copyright a {
+    color: #fff;
+    text-decoration: none; }
+    div.copyright a:hover {
+      text-decoration: underline; }
 
 @media only screen and (min-width: 768px) {
   #header .hmenu {
