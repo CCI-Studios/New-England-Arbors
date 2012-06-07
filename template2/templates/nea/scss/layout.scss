@@ -93,21 +93,11 @@
 
 #copyright {
 	background: url(../images/copyright-bg1.png) top repeat-x;
-	padding-top: 20px;
+	padding: 30px 0 10px;
 
-	> div { 
+	> div {
 		background: url(../images/copyright-bg2.png) bottom no-repeat;
-		padding: 10px 0 10px;
-		text-align: center;
-		font-size: 12px;
-		color: white;
-
-		a { 
-			color: #fff;
-			text-decoration: none;
-
-			&:hover { text-decoration: underline; }
-		}
+		padding-bottom: 20px;
 	}
 }
 
