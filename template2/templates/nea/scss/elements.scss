@@ -64,6 +64,10 @@ hr {
 	border-bottom: 0;
 }
 
+blockquote {
+	color: $maincolor;
+}
+
 .left { float: left; }
 .right { float: right; }
 .hidden { display: none; }
