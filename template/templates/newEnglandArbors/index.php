@@ -110,15 +110,14 @@ $analytics = "UA-31248154-1"; // FIXME Update to client ID
 		</div></div>
 
 			<div id="footer"><div class="container">
-				<jdoc:include type="modules" name="footer" style="xhtml" />
+				<div id="copyright">
+					&copy; <?php echo date('Y') ?> New England Arbors. All Rights Reserved.<br />
+					<a href="http://ccistudios.com">Site by CCI Studios</a>
+				</div>
+				<jdoc:include type="modules" name="footer" style="rounded" />
 			</div></div>
 
 			<div class="clear"></div>
-
-			<div id="copyright"><div class="container">
-				&copy; <?php echo date('Y') ?> New England Arbors. All Rights Reserved.<br />
-				<a href="http://ccistudios.com">Site by CCI Studios</a>
-			</div></div>
 	</div>
 
 <div class="hidden">
