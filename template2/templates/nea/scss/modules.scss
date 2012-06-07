@@ -127,6 +127,7 @@ div.module.block {
 div.copyright { 
 	font-size: 12px;
 	color: white;
+	text-align: center;
 
 	a { 
 		color: #fff;
@@ -134,6 +135,12 @@ div.copyright {
 
 		&:hover { text-decoration: underline; }
 	}
+}
+
+.module.partners {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 15px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -181,11 +188,20 @@ div.copyright {
 			margin: 0 5.654281099%;
 			&:first-child {margin: 0 5.654281099%;}
 		}
-
 	}
 	
 	div.module.block {
 		float: right;
+	}
+	
+	div.copyright { 
+		text-align: left;
+	}
+
+	.module.partners {
+		float: right;
+		width: auto;
+		margin: 0;
 	}
 }
 
@@ -205,13 +221,10 @@ div.copyright {
 	.module.products {
 		
 		.product {
-
 			margin: 0 5.515831987% 0 0;
 			&:first-child {margin: 0 5.515831987% 0 0;}
 		}
-
 	}
-
 }
 
 .ie7, .ie8 {
@@ -246,13 +259,17 @@ div.copyright {
 			background: none;
 		}
 		
+		> div > div > div {
+			overflow: auto;
+		}
+		
 		> div > div > div > div {
 			width: auto;
 		}
 		
 		.product {
-			margin: 0 5.654281099%;
-			&:first-child {margin: 0 5.654281099%;}
+			margin: 0 5.515831987% 0 0;
+			&:first-child {margin: 0 5.515831987% 0 0;}
 		}
 
 	}
@@ -281,6 +298,16 @@ div.copyright {
 			&:first-child {margin: 0 5.815831987% 0 0;}
 		}
 
+	}
+	
+	div.copyright { 
+		text-align: left;
+	}
+
+	.module.partners {
+		float: right;
+		width: auto;
+		margin: 0;
 	}
 
 }
