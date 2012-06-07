@@ -55,3 +55,16 @@
 
   .blog .items-row .item p iframe {
     width: 350px; } }
+.ie7 .media-blog .items-row, .ie8 .media-blog .items-row {
+  float: left; }
+.ie7 .media-blog .item, .ie8 .media-blog .item {
+  width: 45%;
+  padding-right: 2.5%;
+  position: relative;
+  *zoom: 1; }
+  .ie7 .media-blog .item .media, .ie8 .media-blog .item .media {
+    padding-bottom: 0; }
+  .ie7 .media-blog .item p, .ie8 .media-blog .item p {
+    margin: 1em 0; }
+.ie7 .blog .items-row .item p iframe, .ie8 .blog .items-row .item p iframe {
+  width: 350px; }
