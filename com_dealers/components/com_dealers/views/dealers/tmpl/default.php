@@ -6,7 +6,7 @@
 
 
 <div class="item-page">
-	<h1>Dealers</h1>
+	<h1>Dealer Locator</h1>
 
 	<div id="map-canvas" style="width: 300px; max-width: 100%; height: 300px;"></div>
 
