@@ -48,6 +48,9 @@
 		
 		> div {
 			border-bottom: 1px solid $bordercolor;
+			.testimonials &:first-child {
+				border-top: 1px solid $bordercolor;
+			}
 		}
 	}
 	
