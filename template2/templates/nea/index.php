@@ -130,11 +130,12 @@ $analytics = "UA-31248154-1"; // FIXME Update to client ID
 			<jdoc:include type="modules" name="footer" style="rounded" />
 		</div></div>
 		
-		<div id="copyright"><div>
-			<p>
+		<div id="copyright"><div class="container-fluid">
+			<jdoc:include type="modules" name="copyright" style="rounded" />
+			<div class="copyright">
 				&copy; <?= date('Y'); ?> New England Arbors. All Rights Reserved.<br/>
 				Site by <a href="http://ccistudios.com" target="_blank">CCI Studios</a>
-			</p>
+			</div>
 		</div></div>
 	</div>
 
