@@ -25,6 +25,8 @@
 
 .blog .items-leading > div {
   border-bottom: 1px solid #d8d8d8; }
+  .testimonials .blog .items-leading > div:first-child {
+    border-top: 1px solid #d8d8d8; }
 .blog .items-row .item {
   border-bottom: 1px solid #d8d8d8;
   padding-top: 1em; }
