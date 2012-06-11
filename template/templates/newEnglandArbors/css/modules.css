@@ -18,10 +18,10 @@
       border: none;
       font-size: 16px;
       border-radius: 10px;
-      line-height: 25px;
+      height: 25px;
       width: 100px; }
       .ie7 #headerTop .moduletable .search input, .ie8 #headerTop .moduletable .search input {
-        width: 85px; }
+        width: 61px; }
     #headerTop .moduletable .search button {
       position: absolute;
       top: 4px;
