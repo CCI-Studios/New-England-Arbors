@@ -1,5 +1,6 @@
 html, body {
-  min-height: 100%; }
+  min-height: 100%;
+}
 
 body {
   color: #444;
@@ -8,73 +9,92 @@ body {
   font-size: 0.875em;
   /*14px/16px*/
   overflow-x: hidden;
-  background: #00548e; }
+  background: #00548e;
+}
 
 @font-face {
   font-family: 'Goudy Old Style';
   src: url("../resources/GOUDOS.eot");
   src: url("../resources/GOUDOS.eot?#iefix") format("embedded-opentype"), url("../resources/GOUDOS.TTF") format("truetype");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 
 select, input, textarea {
   color: #444;
   /* off black */
-  font-family: Goudy Old Style, Helvetica, Arial, sans-serif; }
+  font-family: Goudy Old Style, Helvetica, Arial, sans-serif;
+}
 
 h1, h2, h3, h4, h5, h6 {
   color: #00548e;
   font-weight: normal;
-  margin: 0 0 0.7em; }
+  margin: 0 0 0.7em;
+}
 
 h1 {
-  font-size: 1.714285714em; }
+  font-size: 1.714285714em;
+}
 
 h2 {
-  font-size: 1.142857143em; }
+  font-size: 1.142857143em;
+}
 
 h3 {
-  font-size: 1em; }
+  font-size: 1em;
+}
 
 .module h3,
 .moduletable h3 {
   font-size: 1.714285714em;
-  font-weight: normal; }
+  font-weight: normal;
+}
 
 h4 {
-  font-size: 1.142857143em; }
+  font-size: 1.142857143em;
+}
 
 .item-page h1,
 .item-page h4,
 .blog h1 {
-  margin-top: 0; }
+  margin-top: 0;
+}
 
 a,
 a:visited {
   color: #00548e;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 a:hover {
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
 ol {
-  color: #00548e; }
+  color: #00548e;
+}
 
 hr {
   border: 1px solid #d8d8d8;
-  border-bottom: 0; }
+  border-bottom: 0;
+}
 
 blockquote {
-  color: #00548e; }
+  color: #00548e;
+}
 
 .left {
-  float: left; }
+  float: left;
+}
 
 .right {
-  float: right; }
+  float: right;
+}
 
 .hidden {
-  display: none; }
+  display: none;
+}
 
 .clr, .clear {
-  clear: both; }
+  clear: both;
+}

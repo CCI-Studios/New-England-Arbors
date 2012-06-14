@@ -1,5 +1,6 @@
 .container-fluid {
-  padding: 0 10px; }
+  padding: 0 10px;
+}
 
 #wrapper {
   position: relative;
@@ -12,9 +13,11 @@
   -moz-transition: left 0.3s ease-in-out;
   -o-transition: left 0.3s ease-in-out;
   -ms-transition: left 0.3s ease-in-out;
-  transition: left 0.3s ease-in-out; }
-  body.menu-open #wrapper {
-    left: 86%; }
+  transition: left 0.3s ease-in-out;
+}
+body.menu-open #wrapper {
+  left: 86%;
+}
 
 #top {
   position: fixed;
@@ -28,65 +31,83 @@
   -moz-transition: left 0.3s ease-in-out;
   -o-transition: left 0.3s ease-in-out;
   -ms-transition: left 0.3s ease-in-out;
-  transition: left 0.3s ease-in-out; }
-  #top > div {
-    padding: 7px 7px 3px; }
-  body.menu-open #top {
-    left: 86%; }
+  transition: left 0.3s ease-in-out;
+}
+#top > div {
+  padding: 7px 7px 3px;
+}
+body.menu-open #top {
+  left: 86%;
+}
 
 #header {
   margin-top: 41px;
   padding: 25px 0 30px;
-  background: #fff; }
+  background: #fff;
+}
 
 #masthead {
   background: url("../images/bg_masthead.jpg") top center repeat-x;
-  font-size: 1.714285714em; }
-  #masthead > div {
-    background: url("../images/bg_mastheadGlow.png") top center no-repeat; }
-  #masthead > div > div {
-    background: url("../images/bg_mastheadShadowTop.png") top center repeat-x;
-    padding-top: 7px; }
-  #masthead > div > div > div {
-    background: url("../images/bg_mastheadShadowBottom.png") bottom center repeat-x;
-    padding-bottom: 7px;
-    max-height: 400px; }
+  font-size: 1.714285714em;
+}
+#masthead > div {
+  background: url("../images/bg_mastheadGlow.png") top center no-repeat;
+}
+#masthead > div > div {
+  background: url("../images/bg_mastheadShadowTop.png") top center repeat-x;
+  padding-top: 7px;
+}
+#masthead > div > div > div {
+  background: url("../images/bg_mastheadShadowBottom.png") bottom center repeat-x;
+  padding-bottom: 7px;
+  max-height: 400px;
+}
 
 #body {
   background: white url(../images/body-bg.jpg) top center no-repeat;
-  padding-top: 30px; }
-  body.home #body {
-    background: #fff;
-    padding-top: 90px; }
+  padding-top: 30px;
+}
+body.home #body {
+  background: #fff;
+  padding-top: 90px;
+}
 
 #component {
-  margin-bottom: 25px; }
-  #component > div {
-    padding: 0 10px; }
+  margin-bottom: 25px;
+}
+#component > div {
+  padding: 0 10px;
+}
 
 #sidebar2 {
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+}
 
 #bottom {
   border-top: 1px solid #d8d8d8;
   clear: both;
   padding-top: 25px;
-  margin-top: 25px; }
+  margin-top: 25px;
+}
 
 #copyright {
   background: url(../images/copyright-bg1.png) top repeat-x;
-  padding: 30px 0 10px; }
-  #copyright > div {
-    background: url(../images/copyright-bg2.png) bottom no-repeat;
-    padding-bottom: 20px; }
+  padding: 30px 0 10px;
+}
+#copyright > div {
+  background: url(../images/copyright-bg2.png) bottom no-repeat;
+  padding-bottom: 20px;
+}
 
 #footer {
   padding: 20px 0 20px;
-  background: #fff; }
-  #footer > div {
-    border-top: 1px solid #d8d8d8;
-    background: url(../images/footer-bg.png) bottom no-repeat;
-    padding: 28px 0 30px; }
+  background: #fff;
+}
+#footer > div {
+  border-top: 1px solid #d8d8d8;
+  background: url(../images/footer-bg.png) bottom no-repeat;
+  padding: 28px 0 30px;
+}
 
 @media only screen and (min-width: 768px) {
   #top {
@@ -95,76 +116,98 @@
     background: none;
     padding: 0;
     max-width: 940px;
-    margin: 0 auto; }
-    #top > div {
-      position: absolute;
-      top: 0;
-      right: 0;
-      background: url(../images/top-bg.png) top left repeat-x;
-      padding: 0 0 0 15px; }
-      #top > div > div {
-        background: url(../images/top-bg.png) bottom right repeat-x;
-        padding-right: 15px;
-        padding-top: 6px;
-        height: 35px; }
+    margin: 0 auto;
+  }
+  #top > div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(../images/top-bg.png) top left repeat-x;
+    padding: 0 0 0 15px;
+  }
+  #top > div > div {
+    background: url(../images/top-bg.png) bottom right repeat-x;
+    padding-right: 15px;
+    padding-top: 6px;
+    height: 35px;
+  }
 
   #header {
     border-top: 7px solid #0665a7;
     margin-top: 0;
-    padding-top: 30px; }
+    padding-top: 30px;
+  }
 
   #component {
-    margin-bottom: 25px; }
-    #component > div {
-      padding: 0; }
+    margin-bottom: 25px;
+  }
+  #component > div {
+    padding: 0;
+  }
 
   #sidebar1 + div {
-    border-left: 1px solid #d8d8d8; }
+    border-left: 1px solid #d8d8d8;
+  }
 
   #sidebar1 {
     background: url(../images/sidebar-bg.png) bottom center no-repeat;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+  }
 
   #sidebar1 + div #component > div {
-    padding: 0 0 0 20px; } }
+    padding: 0 0 0 20px;
+  }
+}
 @media only screen and (min-width: 980px) {
   .container-fluid {
     width: 940px;
-    margin: 0 auto; } }
+    margin: 0 auto;
+  }
+}
 html.ie7 #top, html.ie8 #top {
   position: relative;
   top: 7px;
   background: none;
   padding: 0;
   max-width: 940px;
-  margin: 0 auto; }
-  html.ie7 #top > div, html.ie8 #top > div {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: url(../images/top-bg.png) top left repeat-x;
-    padding: 0 0 0 15px; }
-    html.ie7 #top > div > div, html.ie8 #top > div > div {
-      background: url(../images/top-bg.png) bottom right repeat-x;
-      padding-right: 15px;
-      padding-top: 6px;
-      height: 35px;
-      width: 255px; }
+  margin: 0 auto;
+}
+html.ie7 #top > div, html.ie8 #top > div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../images/top-bg.png) top left repeat-x;
+  padding: 0 0 0 15px;
+}
+html.ie7 #top > div > div, html.ie8 #top > div > div {
+  background: url(../images/top-bg.png) bottom right repeat-x;
+  padding-right: 15px;
+  padding-top: 6px;
+  height: 35px;
+  width: 255px;
+}
 html.ie7 #header, html.ie8 #header {
   border-top: 7px solid #0665a7;
   margin-top: 0;
-  padding-top: 30px; }
+  padding-top: 30px;
+}
 html.ie7 #component, html.ie8 #component {
-  margin-bottom: 25px; }
-  html.ie7 #component > div, html.ie8 #component > div {
-    padding: 0; }
+  margin-bottom: 25px;
+}
+html.ie7 #component > div, html.ie8 #component > div {
+  padding: 0;
+}
 html.ie7 #sidebar1 + div, html.ie8 #sidebar1 + div {
-  border-left: 1px solid #d8d8d8; }
+  border-left: 1px solid #d8d8d8;
+}
 html.ie7 #sidebar1, html.ie8 #sidebar1 {
   background: url(../images/sidebar-bg.png) bottom center no-repeat;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+}
 html.ie7 #sidebar1 + div #component > div, html.ie8 #sidebar1 + div #component > div {
-  padding: 0 0 0 20px; }
+  padding: 0 0 0 20px;
+}
 html.ie7 .container-fluid, html.ie8 .container-fluid {
   width: 940px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
