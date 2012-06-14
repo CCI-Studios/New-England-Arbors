@@ -1,0 +1,55 @@
+body {
+    background: white;    
+}
+
+#header {
+    background: url('logo-2x.png') center 5px no-repeat;
+    background-size: 300px 80px;
+    height: 110px;
+}
+
+#header h1 {display: none;}
+
+#steps {top: 86px;}
+
+#thumbs td {
+    border-bottom: 1px solid #d8d8d8;
+    background: none;
+}
+
+#thumbs div.image {
+    border: 0;
+}
+
+#thumbs h3 {color: #00548E;}
+#thumbs span {color: black;}
+
+#wallet {
+    background-image: none !important;
+    background-color: #d8d8d8 !important;
+}
+
+#cost {
+    color: #00548e;
+}
+
+#footer {
+    background: url('copyright-bg1.png') top center repeat-x !important;
+    width: 100%;
+    color: white;
+    text-shadow: none;
+}
+
+#buttons input, input.submit-btn {
+    border: 1px solid #086aae;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #086aae), color-stop(1, #00548e));
+}
+
+#products h2, 
+h2.title.mobile,
+.group h3, .pgroup h3, #email label, #products h2, #overview h2, h2.title {
+    background: #00548e !important;
+    border-color: #00548e;
+    color: white;
+    text-shadow: none;
+}

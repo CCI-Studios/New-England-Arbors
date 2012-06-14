@@ -1,0 +1,66 @@
+div.wallet-highlight {
+    background: #00548e;
+}
+
+body {
+    background: #fff url('bg_checkout.jpg') top center repeat-x;
+    padding: 20px 0 0;
+    border-top: 7px solid #00548E;
+}
+
+#container {
+    width: auto;
+    margin: 0;
+}
+
+#header {
+    background: url('logo-1x.png') 13px top no-repeat;  
+    margin: 30px auto 0;
+    height: 170px;
+}
+
+span.title,
+span.subtitle {display: none;}
+
+#main {
+    background: #FCFCFC;
+    margin-top: 100px;
+    margin: 0 auto 20px;
+    border: 1px solid #EDE9E9;
+}
+
+#products {
+    border-color: #d8d8d8;
+    padding-top: 20px;
+}
+
+#thumbs div {
+    border: 0;
+}
+#thumbs h3 {color: #00548e; font-weight: bold;}
+#thumbs span {color: #00548e;}
+
+#overview {
+    background: #FCFCFC;
+    border-color: #d8d8d8;
+    padding: 0 10px;
+}
+
+#wallet {
+    width: 278px;
+    padding-bottom: 20px;
+}
+
+#overview .hint {
+    color: #00548e;
+}
+
+#cost {
+    color: #00548e;
+}
+
+#footer {
+    background: url('copyright-bg1.png') top center repeat-x;
+    width: 100%;
+    color: white;
+}
