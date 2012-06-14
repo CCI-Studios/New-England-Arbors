@@ -47,7 +47,9 @@
   float: left;
   display: inline-block;
   *display: inline;
-  *zoom: 1; }
+  *zoom: 1;
+  width: 301px;
+  /* fix for ie8 img max-width */ }
 
 .module.welcome {
   float: left;

@@ -71,6 +71,8 @@
 	display: inline-block;
 	*display: inline;
 	*zoom: 1;
+
+	width: 301px; /* fix for ie8 img max-width */
 }
 
 // #top modules
