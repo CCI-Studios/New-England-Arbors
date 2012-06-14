@@ -277,5 +277,12 @@
 			width: 319px; /* stupid ie */
 			float: right;
 		}
+
+		.leftSide { float: left; zoom: 1; }
+		.rightSide { 
+			float: right; 
+			width: 319px;
+			zoom: 1;
+		}
 	}
 }

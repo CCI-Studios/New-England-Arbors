@@ -175,3 +175,10 @@
   width: 319px;
   /* stupid ie */
   float: right; }
+.ie7 .itemWrapper .leftSide {
+  float: left;
+  zoom: 1; }
+.ie7 .itemWrapper .rightSide {
+  float: right;
+  width: 319px;
+  zoom: 1; }
