@@ -262,9 +262,20 @@
 }/*/mediaquery*/
 
 .ie7, .ie8 {
-	.itemWrapper .leftSide .productThumbs {
-		.thumb {
-			width: 30%;
+	.itemWrapper {
+		.leftSide .productThumbs {
+			.thumb {
+				width: 30%;
+			}
+		}
+	}
+}
+
+.ie7 {
+	.itemWrapper {
+		.productHeader {
+			width: 319px; /* stupid ie */
+			float: right;
 		}
 	}
 }
