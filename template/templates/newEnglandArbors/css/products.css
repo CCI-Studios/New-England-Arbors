@@ -44,10 +44,32 @@
     font-size: 1.142857143em;
     text-align: center; }
 
+@media only screen and (max-width: 767px) {
+  .categoryWrapper .category,
+  .categoryWrapper .product,
+  .productWrapper .category,
+  .productWrapper .product {
+    width: 48%; }
+    .categoryWrapper .category:nth-child(odd),
+    .categoryWrapper .product:nth-child(odd),
+    .productWrapper .category:nth-child(odd),
+    .productWrapper .product:nth-child(odd) {
+      clear: left; }
+    .categoryWrapper .category .productName,
+    .categoryWrapper .product .productName,
+    .productWrapper .category .productName,
+    .productWrapper .product .productName {
+      text-align: left; } }
+/*/mediaquery*/
 @media only screen and (max-width: 480px) {
-  .categoryWrapper .category .productName,
-  .categoryWrapper .product .productName,
-  .productWrapper .category .productName,
-  .productWrapper .product .productName {
-    text-align: left; } }
+  .categoryWrapper .category,
+  .categoryWrapper .product,
+  .productWrapper .category,
+  .productWrapper .product {
+    width: 98%; }
+    .categoryWrapper .category .productName,
+    .categoryWrapper .product .productName,
+    .productWrapper .category .productName,
+    .productWrapper .product .productName {
+      text-align: left; } }
 /*/mediaquery*/

@@ -43,6 +43,21 @@
 	}
 }
 
+@media only screen and (max-width: 767px) {
+
+	.categoryWrapper,
+	.productWrapper {
+
+		.category,
+		.product {
+			width: 48%;
+			
+			&:nth-child(odd) { clear: left; }
+			.productName {text-align:left;}
+		}
+	}
+}/*/mediaquery*/
+
 @media only screen and (max-width: 480px) {
 
 	.categoryWrapper,
@@ -50,6 +65,7 @@
 
 		.category,
 		.product {
+			width: 98%;
 			
 			.productName {text-align:left;}
 		}
