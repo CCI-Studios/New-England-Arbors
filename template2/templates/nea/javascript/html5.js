@@ -1,10 +1,10 @@
 (function (window, document) {
-	window.addEvent('load', function () {
+	window.addEvent('domready', function () {
 		if (Modernizr.input.placeholder) {
 			return;
 		}
 
-		$$('input[placeholder]').each(function (input) {
+		$$('input[placeholder], textarea[placeholder]').each(function (input) {
 			var placeholder = input.getProperty('placeholder');
 
 			input.addEvents({
@@ -19,6 +19,8 @@
 					}
 				}
 			});
+			
+			input.value = placeholder;
 		});
 	});
 }(this, this.document));
