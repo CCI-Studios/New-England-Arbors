@@ -19,6 +19,8 @@
 					}
 				}
 			});
+			
+			input.value = 'placeholder';
 		});
 	});
 }(this, this.document));
