@@ -24,29 +24,35 @@ CCI.Slideshow = new Class({
 
 		this.current = 0;
 
-		var tallestHeight = 0;
-		this.slides.each(function(slide, index) {
-			var height = 0;
-			slide.setStyles({
-				opacity: 1,
-				display: 'block'
-			});
-			height = slide.getSize().y;
-			slide.setStyles({
-				opacity: 0,
-				display: ''
-			});
-			if (index == this.current) {
-				slide.setStyle('opacity', 1);
-			} else {
-				slide.setStyle('opacity', 0);
-			}
+		window.addEvent('load', function() {
+			var tallestHeight = 0;
+			this.slides.each(function(slide, index) {
+				var height = 0;
+				slide.setStyles({
+					opacity: 1,
+					display: 'block'
+				});
+				height = slide.getSize().y;
 
-			if (height > tallestHeight) {
-				this.tallestSlide = slide;
-				tallestHeight = height;
-			}
+				slide.setStyles({
+					opacity: 0,
+					display: ''
+				});
+				if (index == this.current) {
+					slide.setStyle('opacity', 1);
+				} else {
+					slide.setStyle('opacity', 0);
+				}
+
+				if (height > tallestHeight) {
+					this.tallestSlide = slide;
+					tallestHeight = height;
+				}
+			}.bind(this));
+			
+			this.resizeHeight();
 		}.bind(this));
+		
 
 		this.thumbs.each(function(thumb, index) {
 			thumb.addEvent('click', function() {
@@ -54,7 +60,6 @@ CCI.Slideshow = new Class({
 			}.bind(this));
 		}.bind(this));
 
-		this.resizeHeight();
 		window.addEvent('resize', function() {
 			this.resizeHeight();
 		}.bind(this));
