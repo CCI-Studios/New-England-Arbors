@@ -16,7 +16,9 @@
 		$index = 0;
 		foreach($submissions as $submission): ?>
 
-		<div class="hidden"><?= $index ?></div>
+		<? if ($index % 3 == 0): ?>
+			<div class="clear"></div>
+		<? endif; ?>
 
 		<div class="item">
 			<div class="imageblock"><div><div>
@@ -54,6 +56,7 @@
 		<?php
 		$index++;
 		endforeach; ?>
+		<div class="clear"></div>
 	</div>
 
 	<? if ($total > 10): ?>
