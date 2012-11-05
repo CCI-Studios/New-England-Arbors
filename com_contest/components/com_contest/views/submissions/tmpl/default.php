@@ -12,7 +12,12 @@
 	<p><a href="<?= @route('view=submission&layout=form') ?>">Submit your own image.</a>
 
 	<div class="submission-list">
-		<?php foreach($submissions as $submission): ?>
+		<?php
+		$index = 0;
+		foreach($submissions as $submission): ?>
+
+		<div class="hidden"><?= $index ?></div>
+
 		<div class="item">
 			<div class="imageblock"><div><div>
 				<a class="modal" href="/media/com_contest/uploads/<?= $submission->file ?>" rel="">
@@ -31,7 +36,7 @@
 					<input type="hidden" name="contest_submission_id" value="<?= $submission->id ?>" />
 					<input type="hidden" name="action" value="save" />
 
-					
+
 					<select name="rating">
 						<option value="1">1</option>
 						<option value="2">2</option>
@@ -46,7 +51,9 @@
 			<? endif; ?>
 
 		</div>
-		<?php endforeach; ?>
+		<?php
+		$index++;
+		endforeach; ?>
 	</div>
 
 	<? if ($total > 10): ?>
