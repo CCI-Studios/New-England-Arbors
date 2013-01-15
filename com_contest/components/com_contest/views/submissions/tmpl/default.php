@@ -3,13 +3,18 @@
 <script src="/media/lib_koowa/js/koowa.js" />
 
 <div class="item-page">
-	<h1>Photo Contest</h1>
+	<h1>
+		Photo Contest
+		<? echo ($archive) ? $year : ''; ?>
+	</h1>
 
-	<? if ($description): ?>
+	<? if ($description && !$archive): ?>
 		<p><?= $description ?></p>
 	<? endif; ?>
 
-	<p><a href="<?= @route('view=submission&layout=form') ?>">Submit your own image.</a>
+	<? if (!$archive): ?>
+		<p><a href="<?= @route('view=submission&layout=form') ?>">Submit your own image.</a></p>
+	<? endif; ?>
 
 	<div class="submission-list">
 		<?php
@@ -31,7 +36,7 @@
 				Average Rating: <?= number_format($submission->rating, 1) ?>
 			</p>
 
-			<? if(!$submission->hasRated()): ?>
+			<? if(!$submission->hasRated() && !$archive): ?>
 			<div class="rating">
 				<form action="<?= @route('view=rating') ?>" class="-koowa-form" method="post">
 					<input type="hidden" name="ip" value="<?= KRequest::get('server.REMOTE_ADDR', 'raw') ?>" />
@@ -57,6 +62,10 @@
 		$index++;
 		endforeach; ?>
 		<div class="clear"></div>
+
+		<? if (!$submissions->count()): ?>
+			<p>There are no submissions for <?= $year ?>. View our <a href="<?= JRoute::_("index.php?Itemid=$archive_itemid") ?>">archive</a> to see previous years.</p>
+		<?php endif; ?>
 	</div>
 
 	<? if ($total > 10): ?>

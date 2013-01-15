@@ -8,7 +8,8 @@ class ComContestModelSubmissions extends ComDefaultModelDefault
 		parent::__construct($config);
 
 		$this->_state
-			->insert('enabled', 'int');
+			->insert('enabled', 'int')
+			->insert('year', 'int');
 	}
 
 	protected function _buildQueryOrder(KDatabaseQuery $query)
@@ -27,6 +28,12 @@ class ComContestModelSubmissions extends ComDefaultModelDefault
 		if (is_numeric($state->enabled)) {
 			$query->where('enabled', '=', $state->enabled);
 		}
+
+		if (is_numeric($state->year)) {
+			$query->where('YEAR(created_on)', '=', $state->year);
+		}
+
+		//echo $query;
 
 		parent::_buildQueryWhere($query);
 	}
